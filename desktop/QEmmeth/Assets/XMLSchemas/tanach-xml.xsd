@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsixml"/>
+    <xs:element name="Tanach">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="teiHeader"/>
+                <xs:element ref="tanach"/>
+                <xs:element ref="notes"/>
+            </xs:sequence>
+            <xs:attribute ref="xsi:noNamespaceSchemaLocation" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="teiHeader">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fileDesc"/>
+                <xs:element ref="encodingDesc"/>
+                <xs:element ref="profileDesc"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fileDesc">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titleStmt"/>
+                <xs:element ref="editionStmt"/>
+                <xs:element ref="extent"/>
+                <xs:element ref="publicationStmt"/>
+                <xs:element ref="notesStmt"/>
+                <xs:element ref="sourceDesc"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="titleStmt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="title"/>
+                <xs:element maxOccurs="unbounded" ref="editor"/>
+                <xs:element maxOccurs="unbounded" ref="respStmt"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="editionStmt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="edition"/>
+                <xs:element ref="respStmt"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="extent" type="xs:string"/>
+    <xs:element name="publicationStmt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="authority"/>
+                <xs:element ref="distributor"/>
+                <xs:element ref="availability"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="authority">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="date"/>
+                <xs:element ref="name"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="distributor">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="name"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="availability">
+        <xs:complexType mixed="true">
+            <xs:attribute name="status" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="notesStmt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="note"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sourceDesc">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="biblItem"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="biblItem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="title"/>
+                <xs:element maxOccurs="unbounded" ref="editor"/>
+                <xs:element minOccurs="0" ref="respStmt"/>
+                <xs:element ref="edition"/>
+                <xs:element ref="imprint"/>
+                <xs:element ref="idno"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="imprint">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="publisher"/>
+                <xs:element ref="pubPlace"/>
+                <xs:element ref="date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="publisher" type="xs:string"/>
+    <xs:element name="pubPlace" type="xs:string"/>
+    <xs:element name="idno">
+        <xs:complexType mixed="true">
+            <xs:attribute name="type" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="encodingDesc">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="profileDesc">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="creation"/>
+                <xs:element ref="langUsage"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="creation">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="langUsage">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="language"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="language">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NCName">
+                    <xs:attribute name="ident" use="required" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="tanach">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="book"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="names"/>
+                <xs:element maxOccurs="unbounded" ref="c"/>
+                <xs:element ref="vs"/>
+                <xs:element ref="cs"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="names">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="abbrev"/>
+                <xs:element ref="number"/>
+                <xs:element ref="filename"/>
+                <xs:element ref="hebrewname"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="abbrev" type="xs:string"/>
+    <xs:element name="number" type="xs:integer"/>
+    <xs:element name="filename" type="xs:NCName"/>
+    <xs:element name="hebrewname" type="xs:string"/>
+    <xs:element name="c">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="v"/>
+                <xs:element ref="vs"/>
+            </xs:sequence>
+            <xs:attribute name="n" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="v">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element ref="k"/>
+                    <xs:element ref="q"/>
+                    <xs:element ref="samekh"/>
+                    <xs:element ref="w"/>
+                </xs:choice>
+                <xs:element minOccurs="0" ref="pe"/>
+            </xs:sequence>
+            <xs:attribute name="n" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="k" type="xs:string"/>
+    <xs:element name="q">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="x"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="samekh">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="w">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="x"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pe">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="cs" type="xs:integer"/>
+    <xs:element name="notes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="note"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="title">
+        <xs:complexType mixed="true">
+            <xs:attribute name="level" type="xs:NCName"/>
+            <xs:attribute name="type" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="editor" type="xs:string"/>
+    <xs:element name="respStmt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="resp"/>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="name"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="resp" type="xs:string"/>
+    <xs:element name="edition">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="date"/>
+                <xs:element ref="version"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="version" type="xs:decimal"/>
+    <xs:element name="date" type="xs:string"/>
+    <xs:element name="name">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:anyURI">
+                    <xs:attribute name="type" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="note">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="note"/>
+                <xs:element ref="code"/>
+                <xs:element ref="gccode"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="code" type="xs:integer"/>
+    <xs:element name="gccode" type="xs:NMTOKEN"/>
+    <xs:element name="x" type="xs:NMTOKEN"/>
+    <xs:element name="vs" type="xs:integer"/>
+</xs:schema>

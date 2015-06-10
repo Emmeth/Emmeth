@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Assets/icons/Moleskine.ico</file>
+    </qresource>
+</RCC>

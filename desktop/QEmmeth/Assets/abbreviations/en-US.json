@@ -1,0 +1,146 @@
+{
+    "encoding":"unicode",
+    "language":"english",
+    "native":"english",
+    "code":"en-US",
+
+    "dividers": {
+        "verse":":",
+        "verse":".",
+        "booknumber-after":"."
+    },
+
+    "format": {
+        "booknummer":"arabic",
+        "booknumer":"roman",
+        "book":"latin", //not the encoding, but the alphabet system (hebrew,arabic,etc.)
+        "book-after":".",
+        "chapter":"arabic",
+        "verse":"arabic"
+    },
+
+    "multiples": {
+        "verse":",",
+        "chapter":";",
+        "range":"-",
+        "end":"."
+    },
+
+    "arrangement": {
+        "booknumber",
+        "booknumber-after",
+        "book",
+        "book-after",
+        "chapter",
+        "verse",
+        "translation",
+        "end"
+    },
+
+
+    "names": {
+        "Genesis":[{
+            "Gen",
+            "Genesis"
+        }]
+
+        "Exodus"
+        "Leviticus"
+        "Numbers"
+        "Deuteronomy"
+        "Joshua"
+        "Judges"
+        "Ruth"
+        "1 Samuel"
+        "2 Samuel"
+        "1 Kings"
+        "2 Kings"
+        "1 Chronicles"
+        "2 Chronicles"
+        "Ezra"
+        "Nehemiah"
+        "Esther"
+        "Job"
+        "Psalms"
+        "Proverbs"
+        "Ecclesiastes"
+        "Song of Solomon"
+        "Isaiah"
+        "Jeremiah"
+        "Lamentations"
+        "Ezekiel"
+        "Daniel"
+        "Hosea"
+        "Joel"
+        "Amos"
+        "Obadiah"
+        "Jonah"
+        "Micah"
+        "Nahum"
+        "Habakkuk"
+        "Zephaniah"
+        "Haggai"
+        "Zechariah"
+        "Malachi"
+        "Tobit"
+        "1 Esdras"
+        "2 Esdras"
+        "3 Esdras"
+        "4 Esdras"
+        "Judith"
+        "1 Maccabees"
+        "2 Maccabees"
+        "3 Maccabees"
+        "4 Maccabees"
+        "Prayer of Manasseh"
+        "Wisdom"
+        "Sirach"
+        "Baruch"
+        "Letter of Jeremiah"
+        "Psalm 151"
+        "Matthew"
+        "Mark"
+        "Luke"
+        "John"
+        "Acts"
+        "Romans"
+        "1 Corinthians"
+        "2 Corinthians"
+        "Galatians"
+        "Ephesians"
+        "Philippians"
+        "Colossians"
+        "1 Thessalonians"
+        "2 Thessalonians"
+        "1 Timothy"
+        "2 Timothy"
+        "Titus"
+        "Philemon"
+        "Hebrews"
+        "James"
+        "1 Peter"
+        "2 Peter"
+        "1 John"
+        "2 John"
+        "3 John"
+        "Jude"
+        "Revelation"
+    },
+
+    "groups": {
+        "torah": { },
+        "nevi'im": {},
+        "wisdom": {},
+        "ketuvim": {},
+        "major prophets": {},
+        "minor prophets": {},
+        "old testmament": {},
+        "new testament": {},
+        "gospels": {},
+        "apostolic history": {},
+        "pauline epistles":{},
+        "epistles": {},
+        "general epistles": {},
+        "apocalypse": {}
+    },
+}
