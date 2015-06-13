@@ -17,7 +17,7 @@ void aboutDialog::open()
     aDialog->setWindowTitle("About Emmeth");
     QHBoxLayout *hLayout = new QHBoxLayout;
     QVBoxLayout *layout =new QVBoxLayout;
-    aDialog->setWindowIcon(QIcon(":/Assets/icons/Moleskine.ico"));
+    aDialog->setWindowIcon(QIcon(":/assets/icons/Moleskine.ico"));
 
     //Copyright
     QLabel *label1 = new QLabel(tr("<h1>About Emmeth</h1>"));
@@ -63,7 +63,7 @@ void aboutDialog::open()
     imageLabel->setScaledContents(true);
     //TODO
     //change file path to Application Directory
-    QPixmap pixmap("C:/Users/Benni/Programmierung/Emmeth/desktop/QEmmeth/Assets/icons/128.png");
+    QPixmap pixmap("C:/Users/Benni/Programmierung/Emmeth/desktop/QEmmeth/assets/icons/128.png");
     qDebug() << qApp->applicationDirPath();
     imageLabel->setPixmap(pixmap);
 

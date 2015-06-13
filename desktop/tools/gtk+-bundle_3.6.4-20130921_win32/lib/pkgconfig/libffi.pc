@@ -1,0 +1,10 @@
+prefix=/srv/win32builder/fixed_364/build/win32
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${libdir}/libffi-3.0.12/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.0.12
+Libs: -L${libdir} -lffi
+Cflags: -I${includedir}

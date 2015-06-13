@@ -1,4 +1,5 @@
 {
+    "mainframe"     : "Tanach",
     "Tanach"        :"mainframe",
     "teiHeader"     :"header",
     "notes"         :"ignore",

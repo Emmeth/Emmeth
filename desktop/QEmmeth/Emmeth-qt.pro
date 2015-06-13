@@ -17,11 +17,10 @@ SOURCES += main.cpp\
     xmlreader.cpp \
     libary.cpp \
     bookstore.cpp \
-    htmlreader.h \
     htmlreader.cpp \
     aboutDialog.cpp \
-    pdfreader.cpp \
-    jsonreader.cpp
+    txteditor.cpp \
+    jsonparser.cpp
 
 FORMS    += mainwindow.ui \
     bookstore.ui
@@ -29,11 +28,12 @@ FORMS    += mainwindow.ui \
 HEADERS += \
     bookstore.h \
     libary.h \
+    htmlreader.h \
     mainwindow.h \
     xmlreader.h \
     aboutDialog.h \
-    pdfreader.h \
-    jsonreader.h
+    txteditor.h \
+    jsonparser.h
 
 RESOURCES += \
     icons.qrc \
@@ -42,18 +42,18 @@ RESOURCES += \
     strings.qrc
 
 DISTFILES += \
-    Assets/icons/128.png \
-    Assets/icons/16.png \
-    Assets/icons/24.png \
-    Assets/icons/32.png \
-    Assets/icons/48.png \
-    Assets/icons/256.png \
-    Assets/icons/512.png \
+    assets/icons/128.png \
+    assets/icons/16.png \
+    assets/icons/24.png \
+    assets/icons/32.png \
+    assets/icons/48.png \
+    assets/icons/256.png \
+    assets/icons/512.png \
     README.md \
     GPL3.txt \
     GPL3.html \
-    Assets/XMLSchemas/tanach-xml.xsd \
-    Assets/XMLSchemas/tanach-xml.json \
+    assets/xmlschemas/tanach-xml.xsd \
+    assets/xmlschemas/tanach-xml.json \
     XMLHandlers.md \
-    Assets/abbreviations/info.md \
-    Assets/abbreviations/en-US.json
+    assets/abbreviations/info.md \
+    assets/abbreviations/en-US.json

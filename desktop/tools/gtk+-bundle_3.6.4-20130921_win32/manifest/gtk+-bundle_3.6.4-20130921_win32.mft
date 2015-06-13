@@ -1,0 +1,4363 @@
+/srv/win32builder/fixed_364/build/win32
+├── bin
+│   ├── autopoint
+│   ├── croco-0.6-config
+│   ├── envsubst.exe
+│   ├── fc-cache.exe
+│   ├── fc-cat.exe
+│   ├── fc-list.exe
+│   ├── fc-match.exe
+│   ├── fc-pattern.exe
+│   ├── fc-query.exe
+│   ├── fc-scan.exe
+│   ├── freetype-config
+│   ├── gdbus-codegen
+│   ├── gdbus.exe
+│   ├── gdk-pixbuf-csource.exe
+│   ├── gdk-pixbuf-pixdata.exe
+│   ├── gdk-pixbuf-query-loaders.exe
+│   ├── gettext.exe
+│   ├── gettextize
+│   ├── gettext.sh
+│   ├── gio-querymodules.exe
+│   ├── glib-compile-resources.exe
+│   ├── glib-compile-schemas.exe
+│   ├── glib-genmarshal.exe
+│   ├── glib-gettextize
+│   ├── glib-mkenums
+│   ├── gobject-query.exe
+│   ├── gresource.exe
+│   ├── gsettings.exe
+│   ├── gspawn-win32-helper-console.exe
+│   ├── gspawn-win32-helper.exe
+│   ├── gtk3-demo-application.exe
+│   ├── gtk3-demo.exe
+│   ├── gtk3-widget-factory.exe
+│   ├── gtk-query-immodules-3.0.exe
+│   ├── gtk-update-icon-cache.exe
+│   ├── gtk-update-icon-cache.exe.manifest
+│   ├── libatk-1.0-0.dll
+│   ├── libcairo-2.dll
+│   ├── libcairo-gobject-2.dll
+│   ├── libcairo-script-interpreter-2.dll
+│   ├── libcroco-0.6-3.dll
+│   ├── libffi-6.dll
+│   ├── libfontconfig-1.dll
+│   ├── libfreetype-6.dll
+│   ├── libgailutil-3-0.dll
+│   ├── libgdk-3-0.dll
+│   ├── libgdk_pixbuf-2.0-0.dll
+│   ├── libgio-2.0-0.dll
+│   ├── libglib-2.0-0.dll
+│   ├── libgmodule-2.0-0.dll
+│   ├── libgobject-2.0-0.dll
+│   ├── libgthread-2.0-0.dll
+│   ├── libgtk-3-0.dll
+│   ├── libiconv-2.dll
+│   ├── libintl-8.dll
+│   ├── libjasper-1.dll
+│   ├── libjpeg-9.dll
+│   ├── liblzma-5.dll
+│   ├── libpango-1.0-0.dll
+│   ├── libpangocairo-1.0-0.dll
+│   ├── libpangoft2-1.0-0.dll
+│   ├── libpangowin32-1.0-0.dll
+│   ├── libpixman-1-0.dll
+│   ├── libpng15-15.dll
+│   ├── libpng15-config
+│   ├── libpng-config -> libpng15-config
+│   ├── librsvg-2-2.dll
+│   ├── libtiff-5.dll
+│   ├── libxml2-2.dll
+│   ├── ngettext.exe
+│   ├── pango-querymodules.exe
+│   ├── pango-view.exe
+│   ├── pkg-config.exe
+│   ├── pthreadGC2.dll
+│   ├── xml2-config
+│   └── zlib1.dll
+├── etc
+│   ├── fonts
+│   │   ├── conf.d
+│   │   │   ├── 20-unhint-small-vera.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/20-unhint-small-vera.conf
+│   │   │   ├── 30-metric-aliases.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/30-metric-aliases.conf
+│   │   │   ├── 30-urw-aliases.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/30-urw-aliases.conf
+│   │   │   ├── 40-nonlatin.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/40-nonlatin.conf
+│   │   │   ├── 45-latin.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/45-latin.conf
+│   │   │   ├── 49-sansserif.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/49-sansserif.conf
+│   │   │   ├── 50-user.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/50-user.conf
+│   │   │   ├── 51-local.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/51-local.conf
+│   │   │   ├── 60-latin.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/60-latin.conf
+│   │   │   ├── 65-fonts-persian.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/65-fonts-persian.conf
+│   │   │   ├── 65-nonlatin.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/65-nonlatin.conf
+│   │   │   ├── 69-unifont.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/69-unifont.conf
+│   │   │   ├── 80-delicious.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/80-delicious.conf
+│   │   │   ├── 90-synthetic.conf -> /srv/win32builder/fixed_364/build/win32/share/fontconfig/conf.avail/90-synthetic.conf
+│   │   │   └── README
+│   │   └── fonts.conf
+│   ├── gtk-3.0
+│   │   ├── im-multipress.conf
+│   │   └── settings.ini
+│   └── pango
+│       └── pango.modules
+├── gtk+-bundle_3.6.4-20130921_win32.README.txt
+├── include
+│   ├── atk-1.0
+│   │   └── atk
+│   │       ├── atkaction.h
+│   │       ├── atkcomponent.h
+│   │       ├── atkdocument.h
+│   │       ├── atkeditabletext.h
+│   │       ├── atk-enum-types.h
+│   │       ├── atkgobjectaccessible.h
+│   │       ├── atk.h
+│   │       ├── atkhyperlink.h
+│   │       ├── atkhyperlinkimpl.h
+│   │       ├── atkhypertext.h
+│   │       ├── atkimage.h
+│   │       ├── atkmisc.h
+│   │       ├── atknoopobjectfactory.h
+│   │       ├── atknoopobject.h
+│   │       ├── atkobjectfactory.h
+│   │       ├── atkobject.h
+│   │       ├── atkplug.h
+│   │       ├── atkregistry.h
+│   │       ├── atkrelation.h
+│   │       ├── atkrelationset.h
+│   │       ├── atkrelationtype.h
+│   │       ├── atkselection.h
+│   │       ├── atksocket.h
+│   │       ├── atkstate.h
+│   │       ├── atkstateset.h
+│   │       ├── atkstreamablecontent.h
+│   │       ├── atktable.h
+│   │       ├── atktext.h
+│   │       ├── atkutil.h
+│   │       ├── atkvalue.h
+│   │       └── atkwindow.h
+│   ├── autosprintf.h
+│   ├── cairo
+│   │   ├── cairo-deprecated.h
+│   │   ├── cairo-features.h
+│   │   ├── cairo-ft.h
+│   │   ├── cairo-gobject.h
+│   │   ├── cairo.h
+│   │   ├── cairo-pdf.h
+│   │   ├── cairo-ps.h
+│   │   ├── cairo-script-interpreter.h
+│   │   ├── cairo-svg.h
+│   │   ├── cairo-version.h
+│   │   └── cairo-win32.h
+│   ├── fontconfig
+│   │   ├── fcfreetype.h
+│   │   ├── fcprivate.h
+│   │   └── fontconfig.h
+│   ├── freetype2
+│   │   └── freetype
+│   │       ├── config
+│   │       │   ├── ftconfig.h
+│   │       │   ├── ftheader.h
+│   │       │   ├── ftmodule.h
+│   │       │   ├── ftoption.h
+│   │       │   └── ftstdlib.h
+│   │       ├── freetype.h
+│   │       ├── ftadvanc.h
+│   │       ├── ftautoh.h
+│   │       ├── ftbbox.h
+│   │       ├── ftbdf.h
+│   │       ├── ftbitmap.h
+│   │       ├── ftbzip2.h
+│   │       ├── ftcache.h
+│   │       ├── ftchapters.h
+│   │       ├── ftcid.h
+│   │       ├── fterrdef.h
+│   │       ├── fterrors.h
+│   │       ├── ftgasp.h
+│   │       ├── ftglyph.h
+│   │       ├── ftgxval.h
+│   │       ├── ftgzip.h
+│   │       ├── ftimage.h
+│   │       ├── ftincrem.h
+│   │       ├── ftlcdfil.h
+│   │       ├── ftlist.h
+│   │       ├── ftlzw.h
+│   │       ├── ftmac.h
+│   │       ├── ftmm.h
+│   │       ├── ftmodapi.h
+│   │       ├── ftmoderr.h
+│   │       ├── ftotval.h
+│   │       ├── ftoutln.h
+│   │       ├── ftpfr.h
+│   │       ├── ftrender.h
+│   │       ├── ftsizes.h
+│   │       ├── ftsnames.h
+│   │       ├── ftstroke.h
+│   │       ├── ftsynth.h
+│   │       ├── ftsystem.h
+│   │       ├── fttrigon.h
+│   │       ├── fttypes.h
+│   │       ├── ftwinfnt.h
+│   │       ├── ftxf86.h
+│   │       ├── t1tables.h
+│   │       ├── ttnameid.h
+│   │       ├── tttables.h
+│   │       ├── tttags.h
+│   │       └── ttunpat.h
+│   ├── ft2build.h
+│   ├── gail-3.0
+│   │   └── libgail-util
+│   │       ├── gailmisc.h
+│   │       ├── gailtextutil.h
+│   │       └── gail-util.h
+│   ├── gdk-pixbuf-2.0
+│   │   └── gdk-pixbuf
+│   │       ├── gdk-pixbuf-animation.h
+│   │       ├── gdk-pixbuf-core.h
+│   │       ├── gdk-pixbuf-enum-types.h
+│   │       ├── gdk-pixbuf-features.h
+│   │       ├── gdk-pixbuf.h
+│   │       ├── gdk-pixbuf-io.h
+│   │       ├── gdk-pixbuf-loader.h
+│   │       ├── gdk-pixbuf-marshal.h
+│   │       ├── gdk-pixbuf-simple-anim.h
+│   │       ├── gdk-pixbuf-transform.h
+│   │       └── gdk-pixdata.h
+│   ├── gettext-po.h
+│   ├── gio-win32-2.0
+│   │   └── gio
+│   │       ├── gwin32inputstream.h
+│   │       └── gwin32outputstream.h
+│   ├── glib-2.0
+│   │   ├── gio
+│   │   │   ├── gactiongroupexporter.h
+│   │   │   ├── gactiongroup.h
+│   │   │   ├── gaction.h
+│   │   │   ├── gactionmap.h
+│   │   │   ├── gappinfo.h
+│   │   │   ├── gapplicationcommandline.h
+│   │   │   ├── gapplication.h
+│   │   │   ├── gasyncinitable.h
+│   │   │   ├── gasyncresult.h
+│   │   │   ├── gbufferedinputstream.h
+│   │   │   ├── gbufferedoutputstream.h
+│   │   │   ├── gcancellable.h
+│   │   │   ├── gcharsetconverter.h
+│   │   │   ├── gcontenttype.h
+│   │   │   ├── gconverter.h
+│   │   │   ├── gconverterinputstream.h
+│   │   │   ├── gconverteroutputstream.h
+│   │   │   ├── gcredentials.h
+│   │   │   ├── gdatainputstream.h
+│   │   │   ├── gdataoutputstream.h
+│   │   │   ├── gdbusactiongroup.h
+│   │   │   ├── gdbusaddress.h
+│   │   │   ├── gdbusauthobserver.h
+│   │   │   ├── gdbusconnection.h
+│   │   │   ├── gdbuserror.h
+│   │   │   ├── gdbusinterface.h
+│   │   │   ├── gdbusinterfaceskeleton.h
+│   │   │   ├── gdbusintrospection.h
+│   │   │   ├── gdbusmenumodel.h
+│   │   │   ├── gdbusmessage.h
+│   │   │   ├── gdbusmethodinvocation.h
+│   │   │   ├── gdbusnameowning.h
+│   │   │   ├── gdbusnamewatching.h
+│   │   │   ├── gdbusobject.h
+│   │   │   ├── gdbusobjectmanagerclient.h
+│   │   │   ├── gdbusobjectmanager.h
+│   │   │   ├── gdbusobjectmanagerserver.h
+│   │   │   ├── gdbusobjectproxy.h
+│   │   │   ├── gdbusobjectskeleton.h
+│   │   │   ├── gdbusproxy.h
+│   │   │   ├── gdbusserver.h
+│   │   │   ├── gdbusutils.h
+│   │   │   ├── gdesktopappinfo.h
+│   │   │   ├── gdrive.h
+│   │   │   ├── gemblemedicon.h
+│   │   │   ├── gemblem.h
+│   │   │   ├── gfileattribute.h
+│   │   │   ├── gfileenumerator.h
+│   │   │   ├── gfile.h
+│   │   │   ├── gfileicon.h
+│   │   │   ├── gfileinfo.h
+│   │   │   ├── gfileinputstream.h
+│   │   │   ├── gfileiostream.h
+│   │   │   ├── gfilemonitor.h
+│   │   │   ├── gfilenamecompleter.h
+│   │   │   ├── gfileoutputstream.h
+│   │   │   ├── gfilterinputstream.h
+│   │   │   ├── gfilteroutputstream.h
+│   │   │   ├── gicon.h
+│   │   │   ├── ginetaddress.h
+│   │   │   ├── ginetaddressmask.h
+│   │   │   ├── ginetsocketaddress.h
+│   │   │   ├── ginitable.h
+│   │   │   ├── ginputstream.h
+│   │   │   ├── gioenums.h
+│   │   │   ├── gioenumtypes.h
+│   │   │   ├── gioerror.h
+│   │   │   ├── gio.h
+│   │   │   ├── giomodule.h
+│   │   │   ├── gioscheduler.h
+│   │   │   ├── giostream.h
+│   │   │   ├── giotypes.h
+│   │   │   ├── gloadableicon.h
+│   │   │   ├── gmemoryinputstream.h
+│   │   │   ├── gmemoryoutputstream.h
+│   │   │   ├── gmenuexporter.h
+│   │   │   ├── gmenu.h
+│   │   │   ├── gmenumodel.h
+│   │   │   ├── gmount.h
+│   │   │   ├── gmountoperation.h
+│   │   │   ├── gnativevolumemonitor.h
+│   │   │   ├── gnetworkaddress.h
+│   │   │   ├── gnetworkmonitor.h
+│   │   │   ├── gnetworkservice.h
+│   │   │   ├── goutputstream.h
+│   │   │   ├── gpermission.h
+│   │   │   ├── gpollableinputstream.h
+│   │   │   ├── gpollableoutputstream.h
+│   │   │   ├── gpollableutils.h
+│   │   │   ├── gproxyaddressenumerator.h
+│   │   │   ├── gproxyaddress.h
+│   │   │   ├── gproxy.h
+│   │   │   ├── gproxyresolver.h
+│   │   │   ├── gremoteactiongroup.h
+│   │   │   ├── gresolver.h
+│   │   │   ├── gresource.h
+│   │   │   ├── gseekable.h
+│   │   │   ├── gsettingsbackend.h
+│   │   │   ├── gsettings.h
+│   │   │   ├── gsettingsschema.h
+│   │   │   ├── gsimpleactiongroup.h
+│   │   │   ├── gsimpleaction.h
+│   │   │   ├── gsimpleasyncresult.h
+│   │   │   ├── gsimplepermission.h
+│   │   │   ├── gsocketaddressenumerator.h
+│   │   │   ├── gsocketaddress.h
+│   │   │   ├── gsocketclient.h
+│   │   │   ├── gsocketconnectable.h
+│   │   │   ├── gsocketconnection.h
+│   │   │   ├── gsocketcontrolmessage.h
+│   │   │   ├── gsocket.h
+│   │   │   ├── gsocketlistener.h
+│   │   │   ├── gsocketservice.h
+│   │   │   ├── gsrvtarget.h
+│   │   │   ├── gtcpconnection.h
+│   │   │   ├── gtcpwrapperconnection.h
+│   │   │   ├── gtestdbus.h
+│   │   │   ├── gthemedicon.h
+│   │   │   ├── gthreadedsocketservice.h
+│   │   │   ├── gtlsbackend.h
+│   │   │   ├── gtlscertificate.h
+│   │   │   ├── gtlsclientconnection.h
+│   │   │   ├── gtlsconnection.h
+│   │   │   ├── gtlsdatabase.h
+│   │   │   ├── gtlsfiledatabase.h
+│   │   │   ├── gtlsinteraction.h
+│   │   │   ├── gtlspassword.h
+│   │   │   ├── gtlsserverconnection.h
+│   │   │   ├── gvfs.h
+│   │   │   ├── gvolume.h
+│   │   │   ├── gvolumemonitor.h
+│   │   │   ├── gzlibcompressor.h
+│   │   │   └── gzlibdecompressor.h
+│   │   ├── glib
+│   │   │   ├── deprecated
+│   │   │   │   ├── gallocator.h
+│   │   │   │   ├── gcache.h
+│   │   │   │   ├── gcompletion.h
+│   │   │   │   ├── gmain.h
+│   │   │   │   ├── grel.h
+│   │   │   │   └── gthread.h
+│   │   │   ├── galloca.h
+│   │   │   ├── garray.h
+│   │   │   ├── gasyncqueue.h
+│   │   │   ├── gatomic.h
+│   │   │   ├── gbacktrace.h
+│   │   │   ├── gbase64.h
+│   │   │   ├── gbitlock.h
+│   │   │   ├── gbookmarkfile.h
+│   │   │   ├── gbytes.h
+│   │   │   ├── gcharset.h
+│   │   │   ├── gchecksum.h
+│   │   │   ├── gconvert.h
+│   │   │   ├── gdataset.h
+│   │   │   ├── gdate.h
+│   │   │   ├── gdatetime.h
+│   │   │   ├── gdir.h
+│   │   │   ├── genviron.h
+│   │   │   ├── gerror.h
+│   │   │   ├── gfileutils.h
+│   │   │   ├── ggettext.h
+│   │   │   ├── ghash.h
+│   │   │   ├── ghmac.h
+│   │   │   ├── ghook.h
+│   │   │   ├── ghostutils.h
+│   │   │   ├── gi18n.h
+│   │   │   ├── gi18n-lib.h
+│   │   │   ├── giochannel.h
+│   │   │   ├── gkeyfile.h
+│   │   │   ├── glist.h
+│   │   │   ├── gmacros.h
+│   │   │   ├── gmain.h
+│   │   │   ├── gmappedfile.h
+│   │   │   ├── gmarkup.h
+│   │   │   ├── gmem.h
+│   │   │   ├── gmessages.h
+│   │   │   ├── gnode.h
+│   │   │   ├── goption.h
+│   │   │   ├── gpattern.h
+│   │   │   ├── gpoll.h
+│   │   │   ├── gprimes.h
+│   │   │   ├── gprintf.h
+│   │   │   ├── gqsort.h
+│   │   │   ├── gquark.h
+│   │   │   ├── gqueue.h
+│   │   │   ├── grand.h
+│   │   │   ├── gregex.h
+│   │   │   ├── gscanner.h
+│   │   │   ├── gsequence.h
+│   │   │   ├── gshell.h
+│   │   │   ├── gslice.h
+│   │   │   ├── gslist.h
+│   │   │   ├── gspawn.h
+│   │   │   ├── gstdio.h
+│   │   │   ├── gstrfuncs.h
+│   │   │   ├── gstringchunk.h
+│   │   │   ├── gstring.h
+│   │   │   ├── gtestutils.h
+│   │   │   ├── gthread.h
+│   │   │   ├── gthreadpool.h
+│   │   │   ├── gtimer.h
+│   │   │   ├── gtimezone.h
+│   │   │   ├── gtrashstack.h
+│   │   │   ├── gtree.h
+│   │   │   ├── gtypes.h
+│   │   │   ├── gunicode.h
+│   │   │   ├── gurifuncs.h
+│   │   │   ├── gutils.h
+│   │   │   ├── gvariant.h
+│   │   │   ├── gvarianttype.h
+│   │   │   ├── gversion.h
+│   │   │   ├── gversionmacros.h
+│   │   │   └── gwin32.h
+│   │   ├── glib.h
+│   │   ├── glib-object.h
+│   │   ├── glib-unix.h
+│   │   ├── gmodule.h
+│   │   └── gobject
+│   │       ├── gbinding.h
+│   │       ├── gboxed.h
+│   │       ├── gclosure.h
+│   │       ├── genums.h
+│   │       ├── glib-types.h
+│   │       ├── gmarshal.h
+│   │       ├── gobject.h
+│   │       ├── gobjectnotifyqueue.c
+│   │       ├── gparam.h
+│   │       ├── gparamspecs.h
+│   │       ├── gsignal.h
+│   │       ├── gsourceclosure.h
+│   │       ├── gtype.h
+│   │       ├── gtypemodule.h
+│   │       ├── gtypeplugin.h
+│   │       ├── gvaluearray.h
+│   │       ├── gvaluecollector.h
+│   │       ├── gvalue.h
+│   │       └── gvaluetypes.h
+│   ├── gtk-3.0
+│   │   ├── gdk
+│   │   │   ├── gdkapplaunchcontext.h
+│   │   │   ├── gdkcairo.h
+│   │   │   ├── gdkcolor.h
+│   │   │   ├── gdkconfig.h
+│   │   │   ├── gdkcursor.h
+│   │   │   ├── gdkdevice.h
+│   │   │   ├── gdkdevicemanager.h
+│   │   │   ├── gdkdisplay.h
+│   │   │   ├── gdkdisplaymanager.h
+│   │   │   ├── gdkdnd.h
+│   │   │   ├── gdkenumtypes.h
+│   │   │   ├── gdkevents.h
+│   │   │   ├── gdk.h
+│   │   │   ├── gdkkeys.h
+│   │   │   ├── gdkkeysyms-compat.h
+│   │   │   ├── gdkkeysyms.h
+│   │   │   ├── gdkmain.h
+│   │   │   ├── gdkpango.h
+│   │   │   ├── gdkpixbuf.h
+│   │   │   ├── gdkprivate.h
+│   │   │   ├── gdkproperty.h
+│   │   │   ├── gdkrectangle.h
+│   │   │   ├── gdkrgba.h
+│   │   │   ├── gdkscreen.h
+│   │   │   ├── gdkselection.h
+│   │   │   ├── gdktestutils.h
+│   │   │   ├── gdkthreads.h
+│   │   │   ├── gdktypes.h
+│   │   │   ├── gdkversionmacros.h
+│   │   │   ├── gdkvisual.h
+│   │   │   ├── gdkwin32.h
+│   │   │   ├── gdkwindow.h
+│   │   │   └── win32
+│   │   │       ├── gdkwin32cursor.h
+│   │   │       ├── gdkwin32display.h
+│   │   │       ├── gdkwin32displaymanager.h
+│   │   │       ├── gdkwin32dnd.h
+│   │   │       ├── gdkwin32keys.h
+│   │   │       ├── gdkwin32screen.h
+│   │   │       └── gdkwin32window.h
+│   │   └── gtk
+│   │       ├── deprecated
+│   │       │   ├── gtkcolorseldialog.h
+│   │       │   ├── gtkcolorsel.h
+│   │       │   ├── gtkfontsel.h
+│   │       │   ├── gtkhandlebox.h
+│   │       │   ├── gtkhbbox.h
+│   │       │   ├── gtkhbox.h
+│   │       │   ├── gtkhpaned.h
+│   │       │   ├── gtkhscale.h
+│   │       │   ├── gtkhscrollbar.h
+│   │       │   ├── gtkhseparator.h
+│   │       │   ├── gtkhsv.h
+│   │       │   ├── gtkrc.h
+│   │       │   ├── gtkstyle.h
+│   │       │   ├── gtktable.h
+│   │       │   ├── gtktearoffmenuitem.h
+│   │       │   ├── gtkvbbox.h
+│   │       │   ├── gtkvbox.h
+│   │       │   ├── gtkvpaned.h
+│   │       │   ├── gtkvscale.h
+│   │       │   ├── gtkvscrollbar.h
+│   │       │   └── gtkvseparator.h
+│   │       ├── gtkaboutdialog.h
+│   │       ├── gtkaccelgroup.h
+│   │       ├── gtkaccellabel.h
+│   │       ├── gtkaccelmap.h
+│   │       ├── gtkaccessible.h
+│   │       ├── gtkactionable.h
+│   │       ├── gtkactiongroup.h
+│   │       ├── gtkaction.h
+│   │       ├── gtkactivatable.h
+│   │       ├── gtkadjustment.h
+│   │       ├── gtkalignment.h
+│   │       ├── gtkappchooserbutton.h
+│   │       ├── gtkappchooserdialog.h
+│   │       ├── gtkappchooser.h
+│   │       ├── gtkappchooserwidget.h
+│   │       ├── gtkapplication.h
+│   │       ├── gtkapplicationwindow.h
+│   │       ├── gtkarrow.h
+│   │       ├── gtkaspectframe.h
+│   │       ├── gtkassistant.h
+│   │       ├── gtkbbox.h
+│   │       ├── gtkbindings.h
+│   │       ├── gtkbin.h
+│   │       ├── gtkborder.h
+│   │       ├── gtkbox.h
+│   │       ├── gtkbuildable.h
+│   │       ├── gtkbuilder.h
+│   │       ├── gtkbutton.h
+│   │       ├── gtkcalendar.h
+│   │       ├── gtkcellareabox.h
+│   │       ├── gtkcellareacontext.h
+│   │       ├── gtkcellarea.h
+│   │       ├── gtkcelleditable.h
+│   │       ├── gtkcelllayout.h
+│   │       ├── gtkcellrendereraccel.h
+│   │       ├── gtkcellrenderercombo.h
+│   │       ├── gtkcellrenderer.h
+│   │       ├── gtkcellrendererpixbuf.h
+│   │       ├── gtkcellrendererprogress.h
+│   │       ├── gtkcellrendererspin.h
+│   │       ├── gtkcellrendererspinner.h
+│   │       ├── gtkcellrenderertext.h
+│   │       ├── gtkcellrenderertoggle.h
+│   │       ├── gtkcellview.h
+│   │       ├── gtkcheckbutton.h
+│   │       ├── gtkcheckmenuitem.h
+│   │       ├── gtkclipboard.h
+│   │       ├── gtkcolorbutton.h
+│   │       ├── gtkcolorchooserdialog.h
+│   │       ├── gtkcolorchooser.h
+│   │       ├── gtkcolorchooserwidget.h
+│   │       ├── gtkcolorutils.h
+│   │       ├── gtkcombobox.h
+│   │       ├── gtkcomboboxtext.h
+│   │       ├── gtkcontainer.h
+│   │       ├── gtkcssprovider.h
+│   │       ├── gtkcsssection.h
+│   │       ├── gtkdebug.h
+│   │       ├── gtkdialog.h
+│   │       ├── gtkdnd.h
+│   │       ├── gtkdrawingarea.h
+│   │       ├── gtkeditable.h
+│   │       ├── gtkentrybuffer.h
+│   │       ├── gtkentrycompletion.h
+│   │       ├── gtkentry.h
+│   │       ├── gtkenums.h
+│   │       ├── gtkeventbox.h
+│   │       ├── gtkexpander.h
+│   │       ├── gtkfilechooserbutton.h
+│   │       ├── gtkfilechooserdialog.h
+│   │       ├── gtkfilechooser.h
+│   │       ├── gtkfilechooserwidget.h
+│   │       ├── gtkfilefilter.h
+│   │       ├── gtkfixed.h
+│   │       ├── gtkfontbutton.h
+│   │       ├── gtkfontchooserdialog.h
+│   │       ├── gtkfontchooser.h
+│   │       ├── gtkfontchooserwidget.h
+│   │       ├── gtkframe.h
+│   │       ├── gtkgradient.h
+│   │       ├── gtkgrid.h
+│   │       ├── gtk.h
+│   │       ├── gtkiconfactory.h
+│   │       ├── gtkicontheme.h
+│   │       ├── gtkiconview.h
+│   │       ├── gtkimage.h
+│   │       ├── gtkimagemenuitem.h
+│   │       ├── gtkimcontext.h
+│   │       ├── gtkimcontextinfo.h
+│   │       ├── gtkimcontextsimple.h
+│   │       ├── gtkimmodule.h
+│   │       ├── gtkimmulticontext.h
+│   │       ├── gtkinfobar.h
+│   │       ├── gtkinvisible.h
+│   │       ├── gtklabel.h
+│   │       ├── gtklayout.h
+│   │       ├── gtklevelbar.h
+│   │       ├── gtklinkbutton.h
+│   │       ├── gtkliststore.h
+│   │       ├── gtklockbutton.h
+│   │       ├── gtkmain.h
+│   │       ├── gtkmenubar.h
+│   │       ├── gtkmenubutton.h
+│   │       ├── gtkmenu.h
+│   │       ├── gtkmenuitem.h
+│   │       ├── gtkmenushell.h
+│   │       ├── gtkmenutoolbutton.h
+│   │       ├── gtkmessagedialog.h
+│   │       ├── gtkmisc.h
+│   │       ├── gtkmodules.h
+│   │       ├── gtkmountoperation.h
+│   │       ├── gtknotebook.h
+│   │       ├── gtknumerableicon.h
+│   │       ├── gtkoffscreenwindow.h
+│   │       ├── gtkorientable.h
+│   │       ├── gtkoverlay.h
+│   │       ├── gtkpagesetup.h
+│   │       ├── gtkpaned.h
+│   │       ├── gtkpapersize.h
+│   │       ├── gtkplug.h
+│   │       ├── gtkprintcontext.h
+│   │       ├── gtkprintoperation.h
+│   │       ├── gtkprintoperationpreview.h
+│   │       ├── gtkprintsettings.h
+│   │       ├── gtkprogressbar.h
+│   │       ├── gtkradioaction.h
+│   │       ├── gtkradiobutton.h
+│   │       ├── gtkradiomenuitem.h
+│   │       ├── gtkradiotoolbutton.h
+│   │       ├── gtkrange.h
+│   │       ├── gtkrecentaction.h
+│   │       ├── gtkrecentchooserdialog.h
+│   │       ├── gtkrecentchooser.h
+│   │       ├── gtkrecentchoosermenu.h
+│   │       ├── gtkrecentchooserwidget.h
+│   │       ├── gtkrecentfilter.h
+│   │       ├── gtkrecentmanager.h
+│   │       ├── gtkscalebutton.h
+│   │       ├── gtkscale.h
+│   │       ├── gtkscrollable.h
+│   │       ├── gtkscrollbar.h
+│   │       ├── gtkscrolledwindow.h
+│   │       ├── gtksearchentry.h
+│   │       ├── gtkselection.h
+│   │       ├── gtkseparator.h
+│   │       ├── gtkseparatormenuitem.h
+│   │       ├── gtkseparatortoolitem.h
+│   │       ├── gtksettings.h
+│   │       ├── gtkshow.h
+│   │       ├── gtksizegroup.h
+│   │       ├── gtksizerequest.h
+│   │       ├── gtksocket.h
+│   │       ├── gtkspinbutton.h
+│   │       ├── gtkspinner.h
+│   │       ├── gtkstatusbar.h
+│   │       ├── gtkstatusicon.h
+│   │       ├── gtkstock.h
+│   │       ├── gtkstylecontext.h
+│   │       ├── gtkstyleproperties.h
+│   │       ├── gtkstyleprovider.h
+│   │       ├── gtkswitch.h
+│   │       ├── gtksymboliccolor.h
+│   │       ├── gtktestutils.h
+│   │       ├── gtktextattributes.h
+│   │       ├── gtktextbuffer.h
+│   │       ├── gtktextbufferrichtext.h
+│   │       ├── gtktextchild.h
+│   │       ├── gtktextdisplay.h
+│   │       ├── gtktextiter.h
+│   │       ├── gtktextlayout.h
+│   │       ├── gtktextmark.h
+│   │       ├── gtktexttag.h
+│   │       ├── gtktexttagtable.h
+│   │       ├── gtktextview.h
+│   │       ├── gtkthemingengine.h
+│   │       ├── gtktoggleaction.h
+│   │       ├── gtktogglebutton.h
+│   │       ├── gtktoggletoolbutton.h
+│   │       ├── gtktoolbar.h
+│   │       ├── gtktoolbutton.h
+│   │       ├── gtktoolitemgroup.h
+│   │       ├── gtktoolitem.h
+│   │       ├── gtktoolpalette.h
+│   │       ├── gtktoolshell.h
+│   │       ├── gtktooltip.h
+│   │       ├── gtktreednd.h
+│   │       ├── gtktreemodelfilter.h
+│   │       ├── gtktreemodel.h
+│   │       ├── gtktreemodelsort.h
+│   │       ├── gtktreeselection.h
+│   │       ├── gtktreesortable.h
+│   │       ├── gtktreestore.h
+│   │       ├── gtktreeviewcolumn.h
+│   │       ├── gtktreeview.h
+│   │       ├── gtktypebuiltins.h
+│   │       ├── gtktypes.h
+│   │       ├── gtkuimanager.h
+│   │       ├── gtkversion.h
+│   │       ├── gtkviewport.h
+│   │       ├── gtkvolumebutton.h
+│   │       ├── gtkwidget.h
+│   │       ├── gtkwidgetpath.h
+│   │       ├── gtkwindow.h
+│   │       └── gtkx.h
+│   ├── iconv.h
+│   ├── jasper
+│   │   ├── jas_cm.h
+│   │   ├── jas_config2.h
+│   │   ├── jas_config.h
+│   │   ├── jas_debug.h
+│   │   ├── jas_fix.h
+│   │   ├── jas_getopt.h
+│   │   ├── jas_icc.h
+│   │   ├── jas_image.h
+│   │   ├── jas_init.h
+│   │   ├── jas_malloc.h
+│   │   ├── jas_math.h
+│   │   ├── jasper.h
+│   │   ├── jas_seq.h
+│   │   ├── jas_stream.h
+│   │   ├── jas_string.h
+│   │   ├── jas_tmr.h
+│   │   ├── jas_tvp.h
+│   │   ├── jas_types.h
+│   │   └── jas_version.h
+│   ├── jconfig.h
+│   ├── jerror.h
+│   ├── jmorecfg.h
+│   ├── jpeglib.h
+│   ├── libcharset.h
+│   ├── libcroco-0.6
+│   │   └── libcroco
+│   │       ├── cr-additional-sel.h
+│   │       ├── cr-attr-sel.h
+│   │       ├── cr-cascade.h
+│   │       ├── cr-declaration.h
+│   │       ├── cr-doc-handler.h
+│   │       ├── cr-enc-handler.h
+│   │       ├── cr-fonts.h
+│   │       ├── cr-input.h
+│   │       ├── cr-num.h
+│   │       ├── cr-om-parser.h
+│   │       ├── cr-parser.h
+│   │       ├── cr-parsing-location.h
+│   │       ├── cr-prop-list.h
+│   │       ├── cr-pseudo.h
+│   │       ├── cr-rgb.h
+│   │       ├── cr-selector.h
+│   │       ├── cr-sel-eng.h
+│   │       ├── cr-simple-sel.h
+│   │       ├── cr-statement.h
+│   │       ├── cr-string.h
+│   │       ├── cr-style.h
+│   │       ├── cr-stylesheet.h
+│   │       ├── cr-term.h
+│   │       ├── cr-tknzr.h
+│   │       ├── cr-token.h
+│   │       ├── cr-utils.h
+│   │       ├── libcroco-config.h
+│   │       └── libcroco.h
+│   ├── libintl.h
+│   ├── libpng15
+│   │   ├── pngconf.h
+│   │   ├── png.h
+│   │   └── pnglibconf.h
+│   ├── librsvg-2.0
+│   │   └── librsvg
+│   │       ├── librsvg-enum-types.h
+│   │       ├── librsvg-features.h
+│   │       ├── rsvg-cairo.h
+│   │       └── rsvg.h
+│   ├── libxml2
+│   │   └── libxml
+│   │       ├── c14n.h
+│   │       ├── catalog.h
+│   │       ├── chvalid.h
+│   │       ├── debugXML.h
+│   │       ├── dict.h
+│   │       ├── DOCBparser.h
+│   │       ├── encoding.h
+│   │       ├── entities.h
+│   │       ├── globals.h
+│   │       ├── hash.h
+│   │       ├── HTMLparser.h
+│   │       ├── HTMLtree.h
+│   │       ├── list.h
+│   │       ├── nanoftp.h
+│   │       ├── nanohttp.h
+│   │       ├── parser.h
+│   │       ├── parserInternals.h
+│   │       ├── pattern.h
+│   │       ├── relaxng.h
+│   │       ├── SAX2.h
+│   │       ├── SAX.h
+│   │       ├── schemasInternals.h
+│   │       ├── schematron.h
+│   │       ├── threads.h
+│   │       ├── tree.h
+│   │       ├── uri.h
+│   │       ├── valid.h
+│   │       ├── xinclude.h
+│   │       ├── xlink.h
+│   │       ├── xmlautomata.h
+│   │       ├── xmlerror.h
+│   │       ├── xmlexports.h
+│   │       ├── xmlIO.h
+│   │       ├── xmlmemory.h
+│   │       ├── xmlmodule.h
+│   │       ├── xmlreader.h
+│   │       ├── xmlregexp.h
+│   │       ├── xmlsave.h
+│   │       ├── xmlschemas.h
+│   │       ├── xmlschemastypes.h
+│   │       ├── xmlstring.h
+│   │       ├── xmlunicode.h
+│   │       ├── xmlversion.h
+│   │       ├── xmlwriter.h
+│   │       ├── xpath.h
+│   │       ├── xpathInternals.h
+│   │       └── xpointer.h
+│   ├── localcharset.h
+│   ├── lzma
+│   │   ├── base.h
+│   │   ├── bcj.h
+│   │   ├── block.h
+│   │   ├── check.h
+│   │   ├── container.h
+│   │   ├── delta.h
+│   │   ├── filter.h
+│   │   ├── hardware.h
+│   │   ├── index.h
+│   │   ├── index_hash.h
+│   │   ├── lzma.h
+│   │   ├── stream_flags.h
+│   │   ├── version.h
+│   │   └── vli.h
+│   ├── lzma.h
+│   ├── pango-1.0
+│   │   └── pango
+│   │       ├── pango-attributes.h
+│   │       ├── pango-bidi-type.h
+│   │       ├── pango-break.h
+│   │       ├── pangocairo.h
+│   │       ├── pango-context.h
+│   │       ├── pango-coverage.h
+│   │       ├── pango-engine.h
+│   │       ├── pango-enum-types.h
+│   │       ├── pangofc-decoder.h
+│   │       ├── pangofc-font.h
+│   │       ├── pangofc-fontmap.h
+│   │       ├── pango-features.h
+│   │       ├── pango-font.h
+│   │       ├── pango-fontmap.h
+│   │       ├── pango-fontset.h
+│   │       ├── pangoft2.h
+│   │       ├── pango-glyph.h
+│   │       ├── pango-glyph-item.h
+│   │       ├── pango-gravity.h
+│   │       ├── pango.h
+│   │       ├── pango-item.h
+│   │       ├── pango-language.h
+│   │       ├── pango-layout.h
+│   │       ├── pango-matrix.h
+│   │       ├── pango-modules.h
+│   │       ├── pango-ot.h
+│   │       ├── pango-renderer.h
+│   │       ├── pango-script.h
+│   │       ├── pango-tabs.h
+│   │       ├── pango-types.h
+│   │       ├── pango-utils.h
+│   │       └── pangowin32.h
+│   ├── pixman-1
+│   │   ├── pixman.h
+│   │   └── pixman-version.h
+│   ├── pngconf.h -> libpng15/pngconf.h
+│   ├── png.h -> libpng15/png.h
+│   ├── pnglibconf.h -> libpng15/pnglibconf.h
+│   ├── tiffconf.h
+│   ├── tiff.h
+│   ├── tiffio.h
+│   ├── tiffvers.h
+│   ├── zconf.h
+│   └── zlib.h
+├── lib
+│   ├── atk-1.0.def
+│   ├── atk-1.0.lib
+│   ├── cairo.def
+│   ├── cairo.lib
+│   ├── fontconfig.def
+│   ├── fontconfig.lib
+│   ├── gailutil.def
+│   ├── gailutil.lib
+│   ├── gdbus-2.0
+│   │   └── codegen
+│   │       ├── codegen_docbook.py
+│   │       ├── codegen_docbook.pyc
+│   │       ├── codegen_docbook.pyo
+│   │       ├── codegen_main.py
+│   │       ├── codegen_main.pyc
+│   │       ├── codegen_main.pyo
+│   │       ├── codegen.py
+│   │       ├── codegen.pyc
+│   │       ├── codegen.pyo
+│   │       ├── config.py
+│   │       ├── config.pyc
+│   │       ├── config.pyo
+│   │       ├── dbustypes.py
+│   │       ├── dbustypes.pyc
+│   │       ├── dbustypes.pyo
+│   │       ├── __init__.py
+│   │       ├── __init__.pyc
+│   │       ├── __init__.pyo
+│   │       ├── parser.py
+│   │       ├── parser.pyc
+│   │       ├── parser.pyo
+│   │       ├── utils.py
+│   │       ├── utils.pyc
+│   │       └── utils.pyo
+│   ├── gdk-pixbuf-2.0
+│   │   └── 2.10.0
+│   │       ├── loaders
+│   │       │   ├── libpixbufloader-svg.dll
+│   │       │   └── libpixbufloader-svg.dll.a
+│   │       └── loaders.cache
+│   ├── gdk_pixbuf-2.0.def
+│   ├── gdk_pixbuf-2.0.lib
+│   ├── gdk-win32-3.0.def
+│   ├── gdk-win32-3.0.lib
+│   ├── gio
+│   │   └── modules
+│   ├── gio-2.0.def
+│   ├── gio-2.0.lib
+│   ├── glib-2.0
+│   │   └── include
+│   │       └── glibconfig.h
+│   ├── glib-2.0.def
+│   ├── glib-2.0.lib
+│   ├── gmodule-2.0.def
+│   ├── gmodule-2.0.lib
+│   ├── gobject-2.0.def
+│   ├── gobject-2.0.lib
+│   ├── gthread-2.0.def
+│   ├── gthread-2.0.lib
+│   ├── gtk-3.0
+│   │   └── 3.0.0
+│   │       ├── immodules
+│   │       └── immodules.cache
+│   ├── gtk-win32-3.0.def
+│   ├── gtk-win32-3.0.lib
+│   ├── libatk-1.0.dll.a
+│   ├── libcairo.dll.a
+│   ├── libcairo-gobject.dll.a
+│   ├── libcairo-script-interpreter.dll.a
+│   ├── libcroco-0.6.dll.a
+│   ├── libffi-3.0.12
+│   │   └── include
+│   │       ├── ffi.h
+│   │       └── ffitarget.h
+│   ├── libffi.dll.a
+│   ├── libfontconfig.dll.a
+│   ├── libfreetype.dll.a
+│   ├── libgailutil-3.dll.a
+│   ├── libgdk-3.dll.a
+│   ├── libgdk_pixbuf-2.0.dll.a
+│   ├── libgio-2.0.dll.a
+│   ├── libglib-2.0.dll.a
+│   ├── libgmodule-2.0.dll.a
+│   ├── libgobject-2.0.dll.a
+│   ├── libgthread-2.0.dll.a
+│   ├── libgtk-3.dll.a
+│   ├── libiconv.dll.a
+│   ├── libintl.dll.a
+│   ├── libjasper.dll.a
+│   ├── libjpeg.dll.a
+│   ├── liblzma.dll.a
+│   ├── libpango-1.0.dll.a
+│   ├── libpangocairo-1.0.dll.a
+│   ├── libpangoft2-1.0.dll.a
+│   ├── libpangowin32-1.0.dll.a
+│   ├── libpixman-1.dll.a
+│   ├── libpng15.dll.a
+│   ├── libpng.dll.a -> libpng15.dll.a
+│   ├── librsvg-2.dll.a
+│   ├── libtiff.dll.a
+│   ├── libxml2.dll.a
+│   ├── libz.dll.a
+│   ├── pango
+│   │   └── 1.6.0
+│   │       └── modules
+│   ├── pango-1.0.def
+│   ├── pango-1.0.lib
+│   ├── pangocairo-1.0.def
+│   ├── pangocairo-1.0.lib
+│   ├── pangoft2-1.0.def
+│   ├── pangoft2-1.0.lib
+│   ├── pangowin32-1.0.def
+│   ├── pangowin32-1.0.lib
+│   ├── pkgconfig
+│   │   ├── atk.pc
+│   │   ├── cairo-fc.pc
+│   │   ├── cairo-ft.pc
+│   │   ├── cairo-gobject.pc
+│   │   ├── cairo.pc
+│   │   ├── cairo-pdf.pc
+│   │   ├── cairo-png.pc
+│   │   ├── cairo-ps.pc
+│   │   ├── cairo-svg.pc
+│   │   ├── cairo-win32-font.pc
+│   │   ├── cairo-win32.pc
+│   │   ├── fontconfig.pc
+│   │   ├── freetype2.pc
+│   │   ├── gail-3.0.pc
+│   │   ├── gdk-3.0.pc
+│   │   ├── gdk-pixbuf-2.0.pc
+│   │   ├── gdk-win32-3.0.pc
+│   │   ├── gio-2.0.pc
+│   │   ├── gio-windows-2.0.pc
+│   │   ├── glib-2.0.pc
+│   │   ├── gmodule-2.0.pc
+│   │   ├── gmodule-export-2.0.pc
+│   │   ├── gmodule-no-export-2.0.pc
+│   │   ├── gobject-2.0.pc
+│   │   ├── gthread-2.0.pc
+│   │   ├── gtk+-3.0.pc
+│   │   ├── gtk+-win32-3.0.pc
+│   │   ├── libcroco-0.6.pc
+│   │   ├── libffi.pc
+│   │   ├── liblzma.pc
+│   │   ├── libpng15.pc
+│   │   ├── libpng.pc -> libpng15.pc
+│   │   ├── librsvg-2.0.pc
+│   │   ├── libtiff-4.pc
+│   │   ├── libxml-2.0.pc
+│   │   ├── pangocairo.pc
+│   │   ├── pangoft2.pc
+│   │   ├── pango.pc
+│   │   ├── pangowin32.pc
+│   │   ├── pixman-1.pc
+│   │   └── zlib.pc
+│   └── xml2Conf.sh
+├── manifest
+│   └── gtk+-bundle_3.6.4-20130921_win32.mft
+├── share
+│   ├── aclocal
+│   │   ├── codeset.m4
+│   │   ├── fcntl-o.m4
+│   │   ├── freetype2.m4
+│   │   ├── gettext.m4
+│   │   ├── glib-2.0.m4
+│   │   ├── glibc21.m4
+│   │   ├── glibc2.m4
+│   │   ├── glib-gettext.m4
+│   │   ├── gsettings.m4
+│   │   ├── gtk-3.0.m4
+│   │   ├── iconv.m4
+│   │   ├── intdiv0.m4
+│   │   ├── intldir.m4
+│   │   ├── intl.m4
+│   │   ├── intlmacosx.m4
+│   │   ├── intmax.m4
+│   │   ├── inttypes_h.m4
+│   │   ├── inttypes-pri.m4
+│   │   ├── lcmessage.m4
+│   │   ├── lib-ld.m4
+│   │   ├── lib-link.m4
+│   │   ├── lib-prefix.m4
+│   │   ├── libxml.m4
+│   │   ├── lock.m4
+│   │   ├── longlong.m4
+│   │   ├── nls.m4
+│   │   ├── pkg.m4
+│   │   ├── po.m4
+│   │   ├── printf-posix.m4
+│   │   ├── progtest.m4
+│   │   ├── size_max.m4
+│   │   ├── stdint_h.m4
+│   │   ├── threadlib.m4
+│   │   ├── uintmax_t.m4
+│   │   ├── visibility.m4
+│   │   ├── wchar_t.m4
+│   │   ├── wint_t.m4
+│   │   └── xsize.m4
+│   ├── bash-completion
+│   │   └── completions
+│   │       ├── gdbus
+│   │       ├── gresource
+│   │       └── gsettings
+│   ├── doc
+│   │   ├── cairo_1.10.2-2_win32
+│   │   │   ├── COPYING
+│   │   │   ├── COPYING-LGPL-2.1
+│   │   │   └── COPYING-MPL-1.1
+│   │   ├── glib-2.34.3
+│   │   │   └── COPYING
+│   │   ├── gtk+-3.6.4
+│   │   │   └── COPYING
+│   │   ├── libxml2-2.8.0
+│   │   │   ├── Copyright
+│   │   │   ├── examples
+│   │   │   │   ├── testHTML.c
+│   │   │   │   ├── testSAX.c
+│   │   │   │   ├── testXPath.c
+│   │   │   │   └── xmllint.c
+│   │   │   └── html
+│   │   │       ├── DOM.gif
+│   │   │       ├── encoding.html
+│   │   │       ├── examples.xml
+│   │   │       ├── examples.xsl
+│   │   │       ├── FAQ.html
+│   │   │       ├── html
+│   │   │       │   ├── book1.html
+│   │   │       │   ├── home.png
+│   │   │       │   ├── index.html
+│   │   │       │   ├── left.png
+│   │   │       │   ├── libxml-c14n.html
+│   │   │       │   ├── libxml-catalog.html
+│   │   │       │   ├── libxml-chvalid.html
+│   │   │       │   ├── libxml-debugXML.html
+│   │   │       │   ├── libxml-dict.html
+│   │   │       │   ├── libxml-DOCBparser.html
+│   │   │       │   ├── libxml-encoding.html
+│   │   │       │   ├── libxml-entities.html
+│   │   │       │   ├── libxml-globals.html
+│   │   │       │   ├── libxml-hash.html
+│   │   │       │   ├── libxml-HTMLparser.html
+│   │   │       │   ├── libxml-HTMLtree.html
+│   │   │       │   ├── libxml-lib.html
+│   │   │       │   ├── libxml-list.html
+│   │   │       │   ├── libxml-nanoftp.html
+│   │   │       │   ├── libxml-nanohttp.html
+│   │   │       │   ├── libxml-parser.html
+│   │   │       │   ├── libxml-parserInternals.html
+│   │   │       │   ├── libxml-pattern.html
+│   │   │       │   ├── libxml-relaxng.html
+│   │   │       │   ├── libxml-SAX2.html
+│   │   │       │   ├── libxml-SAX.html
+│   │   │       │   ├── libxml-schemasInternals.html
+│   │   │       │   ├── libxml-schematron.html
+│   │   │       │   ├── libxml-threads.html
+│   │   │       │   ├── libxml-tree.html
+│   │   │       │   ├── libxml-uri.html
+│   │   │       │   ├── libxml-valid.html
+│   │   │       │   ├── libxml-xinclude.html
+│   │   │       │   ├── libxml-xlink.html
+│   │   │       │   ├── libxml-xmlautomata.html
+│   │   │       │   ├── libxml-xmlerror.html
+│   │   │       │   ├── libxml-xmlexports.html
+│   │   │       │   ├── libxml-xmlIO.html
+│   │   │       │   ├── libxml-xmlmemory.html
+│   │   │       │   ├── libxml-xmlmodule.html
+│   │   │       │   ├── libxml-xmlreader.html
+│   │   │       │   ├── libxml-xmlregexp.html
+│   │   │       │   ├── libxml-xmlsave.html
+│   │   │       │   ├── libxml-xmlschemas.html
+│   │   │       │   ├── libxml-xmlschemastypes.html
+│   │   │       │   ├── libxml-xmlstring.html
+│   │   │       │   ├── libxml-xmlunicode.html
+│   │   │       │   ├── libxml-xmlversion.html
+│   │   │       │   ├── libxml-xmlwriter.html
+│   │   │       │   ├── libxml-xpath.html
+│   │   │       │   ├── libxml-xpathInternals.html
+│   │   │       │   ├── libxml-xpointer.html
+│   │   │       │   ├── libxml-xzlib.html
+│   │   │       │   ├── right.png
+│   │   │       │   └── up.png
+│   │   │       ├── io1.c
+│   │   │       ├── io1.res
+│   │   │       ├── io2.c
+│   │   │       ├── io2.res
+│   │   │       ├── Libxml2-Logo-180x168.gif
+│   │   │       ├── Libxml2-Logo-90x34.gif
+│   │   │       ├── libxml.gif
+│   │   │       ├── parse1.c
+│   │   │       ├── parse2.c
+│   │   │       ├── parse3.c
+│   │   │       ├── parse4.c
+│   │   │       ├── reader1.c
+│   │   │       ├── reader1.res
+│   │   │       ├── reader2.c
+│   │   │       ├── reader3.c
+│   │   │       ├── reader3.res
+│   │   │       ├── reader4.c
+│   │   │       ├── reader4.res
+│   │   │       ├── redhat.gif
+│   │   │       ├── smallfootonly.gif
+│   │   │       ├── structure.gif
+│   │   │       ├── test1.xml
+│   │   │       ├── test2.xml
+│   │   │       ├── test3.xml
+│   │   │       ├── testWriter.c
+│   │   │       ├── tree1.c
+│   │   │       ├── tree1.res
+│   │   │       ├── tree2.c
+│   │   │       ├── tree2.res
+│   │   │       ├── tst.xml
+│   │   │       ├── tutorial
+│   │   │       │   ├── apa.html
+│   │   │       │   ├── apb.html
+│   │   │       │   ├── apc.html
+│   │   │       │   ├── apd.html
+│   │   │       │   ├── ape.html
+│   │   │       │   ├── apf.html
+│   │   │       │   ├── apg.html
+│   │   │       │   ├── aph.html
+│   │   │       │   ├── api.html
+│   │   │       │   ├── ar01s02.html
+│   │   │       │   ├── ar01s03.html
+│   │   │       │   ├── ar01s04.html
+│   │   │       │   ├── ar01s05.html
+│   │   │       │   ├── ar01s06.html
+│   │   │       │   ├── ar01s07.html
+│   │   │       │   ├── ar01s08.html
+│   │   │       │   ├── ar01s09.html
+│   │   │       │   ├── images
+│   │   │       │   │   ├── blank.png
+│   │   │       │   │   ├── callouts
+│   │   │       │   │   │   ├── 10.png
+│   │   │       │   │   │   ├── 1.png
+│   │   │       │   │   │   ├── 2.png
+│   │   │       │   │   │   ├── 3.png
+│   │   │       │   │   │   ├── 4.png
+│   │   │       │   │   │   ├── 5.png
+│   │   │       │   │   │   ├── 6.png
+│   │   │       │   │   │   ├── 7.png
+│   │   │       │   │   │   ├── 8.png
+│   │   │       │   │   │   └── 9.png
+│   │   │       │   │   ├── caution.png
+│   │   │       │   │   ├── draft.png
+│   │   │       │   │   ├── home.png
+│   │   │       │   │   ├── important.png
+│   │   │       │   │   ├── next.png
+│   │   │       │   │   ├── note.png
+│   │   │       │   │   ├── prev.png
+│   │   │       │   │   ├── tip.png
+│   │   │       │   │   ├── toc-blank.png
+│   │   │       │   │   ├── toc-minus.png
+│   │   │       │   │   ├── toc-plus.png
+│   │   │       │   │   ├── up.png
+│   │   │       │   │   └── warning.png
+│   │   │       │   ├── includeaddattribute.c
+│   │   │       │   ├── includeaddkeyword.c
+│   │   │       │   ├── includeconvert.c
+│   │   │       │   ├── includegetattribute.c
+│   │   │       │   ├── includekeyword.c
+│   │   │       │   ├── includexpath.c
+│   │   │       │   ├── index.html
+│   │   │       │   ├── ix01.html
+│   │   │       │   └── xmltutorial.pdf
+│   │   │       ├── w3c.png
+│   │   │       ├── writer.xml
+│   │   │       ├── xml.html
+│   │   │       ├── xpath1.c
+│   │   │       ├── xpath1.res
+│   │   │       ├── xpath2.c
+│   │   │       └── xpath2.res
+│   │   ├── pango-1.30.1
+│   │   │   └── COPYING
+│   │   ├── pkg-config
+│   │   │   └── pkg-config-guide.html
+│   │   ├── tiff-4.0.3
+│   │   │   ├── ChangeLog
+│   │   │   ├── COPYRIGHT
+│   │   │   ├── html
+│   │   │   │   ├── addingtags.html
+│   │   │   │   ├── bugs.html
+│   │   │   │   ├── build.html
+│   │   │   │   ├── contrib.html
+│   │   │   │   ├── document.html
+│   │   │   │   ├── images
+│   │   │   │   │   ├── back.gif
+│   │   │   │   │   ├── bali.jpg
+│   │   │   │   │   ├── cat.gif
+│   │   │   │   │   ├── cover.jpg
+│   │   │   │   │   ├── cramps.gif
+│   │   │   │   │   ├── dave.gif
+│   │   │   │   │   ├── info.gif
+│   │   │   │   │   ├── jello.jpg
+│   │   │   │   │   ├── jim.gif
+│   │   │   │   │   ├── note.gif
+│   │   │   │   │   ├── oxford.gif
+│   │   │   │   │   ├── quad.jpg
+│   │   │   │   │   ├── ring.gif
+│   │   │   │   │   ├── smallliz.jpg
+│   │   │   │   │   ├── strike.gif
+│   │   │   │   │   └── warning.gif
+│   │   │   │   ├── images.html
+│   │   │   │   ├── index.html
+│   │   │   │   ├── internals.html
+│   │   │   │   ├── intro.html
+│   │   │   │   ├── libtiff.html
+│   │   │   │   ├── man
+│   │   │   │   │   ├── bmp2tiff.1.html
+│   │   │   │   │   ├── fax2ps.1.html
+│   │   │   │   │   ├── fax2tiff.1.html
+│   │   │   │   │   ├── gif2tiff.1.html
+│   │   │   │   │   ├── index.html
+│   │   │   │   │   ├── libtiff.3tiff.html
+│   │   │   │   │   ├── pal2rgb.1.html
+│   │   │   │   │   ├── ppm2tiff.1.html
+│   │   │   │   │   ├── ras2tiff.1.html
+│   │   │   │   │   ├── raw2tiff.1.html
+│   │   │   │   │   ├── rgb2ycbcr.1.html
+│   │   │   │   │   ├── sgi2tiff.1.html
+│   │   │   │   │   ├── thumbnail.1.html
+│   │   │   │   │   ├── tiff2bw.1.html
+│   │   │   │   │   ├── tiff2pdf.1.html
+│   │   │   │   │   ├── tiff2ps.1.html
+│   │   │   │   │   ├── tiff2rgba.1.html
+│   │   │   │   │   ├── TIFFbuffer.3tiff.html
+│   │   │   │   │   ├── TIFFClose.3tiff.html
+│   │   │   │   │   ├── tiffcmp.1.html
+│   │   │   │   │   ├── TIFFcodec.3tiff.html
+│   │   │   │   │   ├── TIFFcolor.3tiff.html
+│   │   │   │   │   ├── tiffcp.1.html
+│   │   │   │   │   ├── tiffcrop.1.html
+│   │   │   │   │   ├── TIFFDataWidth.3tiff.html
+│   │   │   │   │   ├── tiffdither.1.html
+│   │   │   │   │   ├── tiffdump.1.html
+│   │   │   │   │   ├── TIFFError.3tiff.html
+│   │   │   │   │   ├── TIFFFieldDataType.3tiff.html
+│   │   │   │   │   ├── TIFFFieldName.3tiff.html
+│   │   │   │   │   ├── TIFFFieldPassCount.3tiff.html
+│   │   │   │   │   ├── TIFFFieldReadCount.3tiff.html
+│   │   │   │   │   ├── TIFFFieldTag.3tiff.html
+│   │   │   │   │   ├── TIFFFieldWriteCount.3tiff.html
+│   │   │   │   │   ├── TIFFFlush.3tiff.html
+│   │   │   │   │   ├── TIFFGetField.3tiff.html
+│   │   │   │   │   ├── tiffgt.1.html
+│   │   │   │   │   ├── tiffinfo.1.html
+│   │   │   │   │   ├── tiffmedian.1.html
+│   │   │   │   │   ├── TIFFmemory.3tiff.html
+│   │   │   │   │   ├── TIFFOpen.3tiff.html
+│   │   │   │   │   ├── TIFFPrintDirectory.3tiff.html
+│   │   │   │   │   ├── TIFFquery.3tiff.html
+│   │   │   │   │   ├── TIFFReadDirectory.3tiff.html
+│   │   │   │   │   ├── TIFFReadEncodedStrip.3tiff.html
+│   │   │   │   │   ├── TIFFReadEncodedTile.3tiff.html
+│   │   │   │   │   ├── TIFFReadRawStrip.3tiff.html
+│   │   │   │   │   ├── TIFFReadRawTile.3tiff.html
+│   │   │   │   │   ├── TIFFReadRGBAImage.3tiff.html
+│   │   │   │   │   ├── TIFFReadRGBAStrip.3tiff.html
+│   │   │   │   │   ├── TIFFReadRGBATile.3tiff.html
+│   │   │   │   │   ├── TIFFReadScanline.3tiff.html
+│   │   │   │   │   ├── TIFFReadTile.3tiff.html
+│   │   │   │   │   ├── TIFFRGBAImage.3tiff.html
+│   │   │   │   │   ├── tiffset.1.html
+│   │   │   │   │   ├── TIFFSetDirectory.3tiff.html
+│   │   │   │   │   ├── TIFFSetField.3tiff.html
+│   │   │   │   │   ├── TIFFsize.3tiff.html
+│   │   │   │   │   ├── tiffsplit.1.html
+│   │   │   │   │   ├── TIFFstrip.3tiff.html
+│   │   │   │   │   ├── tiffsv.1.html
+│   │   │   │   │   ├── TIFFswab.3tiff.html
+│   │   │   │   │   ├── TIFFtile.3tiff.html
+│   │   │   │   │   ├── TIFFWarning.3tiff.html
+│   │   │   │   │   ├── TIFFWriteDirectory.3tiff.html
+│   │   │   │   │   ├── TIFFWriteEncodedStrip.3tiff.html
+│   │   │   │   │   ├── TIFFWriteEncodedTile.3tiff.html
+│   │   │   │   │   ├── TIFFWriteRawStrip.3tiff.html
+│   │   │   │   │   ├── TIFFWriteRawTile.3tiff.html
+│   │   │   │   │   ├── TIFFWriteScanline.3tiff.html
+│   │   │   │   │   └── TIFFWriteTile.3tiff.html
+│   │   │   │   ├── misc.html
+│   │   │   │   ├── support.html
+│   │   │   │   ├── TIFFTechNote2.html
+│   │   │   │   ├── tools.html
+│   │   │   │   ├── v3.4beta007.html
+│   │   │   │   ├── v3.4beta016.html
+│   │   │   │   ├── v3.4beta018.html
+│   │   │   │   ├── v3.4beta024.html
+│   │   │   │   ├── v3.4beta028.html
+│   │   │   │   ├── v3.4beta029.html
+│   │   │   │   ├── v3.4beta031.html
+│   │   │   │   ├── v3.4beta032.html
+│   │   │   │   ├── v3.4beta033.html
+│   │   │   │   ├── v3.4beta034.html
+│   │   │   │   ├── v3.4beta035.html
+│   │   │   │   ├── v3.4beta036.html
+│   │   │   │   ├── v3.5.1.html
+│   │   │   │   ├── v3.5.2.html
+│   │   │   │   ├── v3.5.3.html
+│   │   │   │   ├── v3.5.4.html
+│   │   │   │   ├── v3.5.5.html
+│   │   │   │   ├── v3.5.6-beta.html
+│   │   │   │   ├── v3.5.7.html
+│   │   │   │   ├── v3.6.0.html
+│   │   │   │   ├── v3.6.1.html
+│   │   │   │   ├── v3.7.0alpha.html
+│   │   │   │   ├── v3.7.0beta2.html
+│   │   │   │   ├── v3.7.0beta.html
+│   │   │   │   ├── v3.7.0.html
+│   │   │   │   ├── v3.7.1.html
+│   │   │   │   ├── v3.7.2.html
+│   │   │   │   ├── v3.7.3.html
+│   │   │   │   ├── v3.7.4.html
+│   │   │   │   ├── v3.8.0.html
+│   │   │   │   ├── v3.8.1.html
+│   │   │   │   ├── v3.8.2.html
+│   │   │   │   ├── v3.9.0beta.html
+│   │   │   │   ├── v3.9.1.html
+│   │   │   │   ├── v3.9.2.html
+│   │   │   │   ├── v4.0.0.html
+│   │   │   │   ├── v4.0.1.html
+│   │   │   │   └── v4.0.2.html
+│   │   │   ├── README
+│   │   │   ├── README.vms
+│   │   │   ├── RELEASE-DATE
+│   │   │   ├── TODO
+│   │   │   └── VERSION
+│   │   └── xz
+│   │       ├── AUTHORS
+│   │       ├── COPYING
+│   │       ├── COPYING.GPLv2
+│   │       ├── examples
+│   │       │   ├── 00_README.txt
+│   │       │   ├── 01_compress_easy.c
+│   │       │   ├── 02_decompress.c
+│   │       │   ├── 03_compress_custom.c
+│   │       │   └── Makefile
+│   │       ├── examples_old
+│   │       │   ├── xz_pipe_comp.c
+│   │       │   └── xz_pipe_decomp.c
+│   │       ├── faq.txt
+│   │       ├── history.txt
+│   │       ├── liblzma.def
+│   │       ├── lzma-file-format.txt
+│   │       ├── NEWS
+│   │       ├── README
+│   │       ├── THANKS
+│   │       ├── TODO
+│   │       └── xz-file-format.txt
+│   ├── fontconfig
+│   │   └── conf.avail
+│   │       ├── 10-autohint.conf
+│   │       ├── 10-no-sub-pixel.conf
+│   │       ├── 10-sub-pixel-bgr.conf
+│   │       ├── 10-sub-pixel-rgb.conf
+│   │       ├── 10-sub-pixel-vbgr.conf
+│   │       ├── 10-sub-pixel-vrgb.conf
+│   │       ├── 10-unhinted.conf
+│   │       ├── 11-lcdfilter-default.conf
+│   │       ├── 11-lcdfilter-legacy.conf
+│   │       ├── 11-lcdfilter-light.conf
+│   │       ├── 20-unhint-small-vera.conf
+│   │       ├── 25-unhint-nonlatin.conf
+│   │       ├── 30-metric-aliases.conf
+│   │       ├── 30-urw-aliases.conf
+│   │       ├── 40-nonlatin.conf
+│   │       ├── 45-latin.conf
+│   │       ├── 49-sansserif.conf
+│   │       ├── 50-user.conf
+│   │       ├── 51-local.conf
+│   │       ├── 60-latin.conf
+│   │       ├── 65-fonts-persian.conf
+│   │       ├── 65-khmer.conf
+│   │       ├── 65-nonlatin.conf
+│   │       ├── 69-unifont.conf
+│   │       ├── 70-no-bitmaps.conf
+│   │       ├── 70-yes-bitmaps.conf
+│   │       ├── 80-delicious.conf
+│   │       └── 90-synthetic.conf
+│   ├── gdb
+│   │   └── auto-load
+│   │       ├── libglib-2.0.so.0.3400.3-gdb.py
+│   │       └── libgobject-2.0.so.0.3400.3-gdb.py
+│   ├── glib-2.0
+│   │   ├── gdb
+│   │   │   ├── glib.py
+│   │   │   └── gobject.py
+│   │   ├── gettext
+│   │   │   ├── mkinstalldirs
+│   │   │   └── po
+│   │   │       └── Makefile.in.in
+│   │   └── schemas
+│   │       ├── gschema.dtd
+│   │       ├── gschemas.compiled
+│   │       ├── org.gtk.Demo.gschema.xml
+│   │       ├── org.gtk.Settings.ColorChooser.gschema.xml
+│   │       └── org.gtk.Settings.FileChooser.gschema.xml
+│   ├── gtk-3.0
+│   │   ├── demo
+│   │   │   ├── alphatest.png
+│   │   │   ├── apple-red.png
+│   │   │   ├── application.c
+│   │   │   ├── application.ui
+│   │   │   ├── appwindow.c
+│   │   │   ├── assistant.c
+│   │   │   ├── background.jpg
+│   │   │   ├── builder.c
+│   │   │   ├── button_box.c
+│   │   │   ├── changedisplay.c
+│   │   │   ├── clipboard.c
+│   │   │   ├── colorsel.c
+│   │   │   ├── combobox.c
+│   │   │   ├── css_accordion.c
+│   │   │   ├── css_accordion.css
+│   │   │   ├── css_basics.c
+│   │   │   ├── css_basics.css
+│   │   │   ├── css_multiplebgs.c
+│   │   │   ├── css_multiplebgs.css
+│   │   │   ├── css_pixbufs.c
+│   │   │   ├── css_pixbufs.css
+│   │   │   ├── css_shadows.c
+│   │   │   ├── css_shadows.css
+│   │   │   ├── cssview.css
+│   │   │   ├── demo.ui
+│   │   │   ├── dialog.c
+│   │   │   ├── drawingarea.c
+│   │   │   ├── editable_cells.c
+│   │   │   ├── entry_buffer.c
+│   │   │   ├── entry_completion.c
+│   │   │   ├── expander.c
+│   │   │   ├── fancy.css
+│   │   │   ├── floppybuddy.gif
+│   │   │   ├── gnome-applets.png
+│   │   │   ├── gnome-calendar.png
+│   │   │   ├── gnome-foot.png
+│   │   │   ├── gnome-fs-directory.png
+│   │   │   ├── gnome-fs-regular.png
+│   │   │   ├── gnome-gimp.png
+│   │   │   ├── gnome-gmush.png
+│   │   │   ├── gnome-gsame.png
+│   │   │   ├── gnu-keys.png
+│   │   │   ├── gtk-logo-24.png
+│   │   │   ├── gtk-logo-48.png
+│   │   │   ├── gtk-logo-rgb.gif
+│   │   │   ├── hypertext.c
+│   │   │   ├── iconview.c
+│   │   │   ├── iconview_edit.c
+│   │   │   ├── images.c
+│   │   │   ├── infobar.c
+│   │   │   ├── links.c
+│   │   │   ├── list_store.c
+│   │   │   ├── menus.c
+│   │   │   ├── menus.ui
+│   │   │   ├── offscreen_window2.c
+│   │   │   ├── offscreen_window.c
+│   │   │   ├── overlay.c
+│   │   │   ├── panes.c
+│   │   │   ├── pickers.c
+│   │   │   ├── pixbufs.c
+│   │   │   ├── printing.c
+│   │   │   ├── reset.css
+│   │   │   ├── rotated_text.c
+│   │   │   ├── search_entry.c
+│   │   │   ├── sizegroup.c
+│   │   │   ├── spinner.c
+│   │   │   ├── stock_browser.c
+│   │   │   ├── textscroll.c
+│   │   │   ├── textview.c
+│   │   │   ├── theming_custom_css.c
+│   │   │   ├── theming_style_classes.c
+│   │   │   ├── theming.ui
+│   │   │   ├── toolpalette.c
+│   │   │   ├── transparent.c
+│   │   │   ├── tree_store.c
+│   │   │   └── ui_manager.c
+│   │   └── gtkbuilder.rng
+│   ├── gtk-doc
+│   │   └── html
+│   │       ├── atk
+│   │       │   ├── api-index-1-12.html
+│   │       │   ├── api-index-1-13.html
+│   │       │   ├── api-index-1-18.html
+│   │       │   ├── api-index-1-20.html
+│   │       │   ├── api-index-1-22.html
+│   │       │   ├── api-index-1-24.html
+│   │       │   ├── api-index-1-26.html
+│   │       │   ├── api-index-1-28.html
+│   │       │   ├── api-index-1-30.html
+│   │       │   ├── api-index-1-32.html
+│   │       │   ├── api-index-1-3.html
+│   │       │   ├── api-index-1-4.html
+│   │       │   ├── api-index-1-6.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── AtkAction.html
+│   │       │   ├── atk-AtkHyperlinkImpl.html
+│   │       │   ├── atk-AtkPlug.html
+│   │       │   ├── atk-AtkSocket.html
+│   │       │   ├── atk-AtkState.html
+│   │       │   ├── AtkComponent.html
+│   │       │   ├── atk.devhelp2
+│   │       │   ├── AtkDocument.html
+│   │       │   ├── AtkEditableText.html
+│   │       │   ├── AtkGObjectAccessible.html
+│   │       │   ├── atk.html
+│   │       │   ├── AtkHyperlink.html
+│   │       │   ├── AtkHypertext.html
+│   │       │   ├── AtkImage.html
+│   │       │   ├── AtkNoOpObjectFactory.html
+│   │       │   ├── AtkNoOpObject.html
+│   │       │   ├── AtkObjectFactory.html
+│   │       │   ├── AtkObject.html
+│   │       │   ├── AtkRegistry.html
+│   │       │   ├── AtkRelation.html
+│   │       │   ├── AtkRelationSet.html
+│   │       │   ├── AtkSelection.html
+│   │       │   ├── AtkStateSet.html
+│   │       │   ├── AtkStreamableContent.html
+│   │       │   ├── AtkTable.html
+│   │       │   ├── AtkText.html
+│   │       │   ├── AtkUtil.html
+│   │       │   ├── AtkValue.html
+│   │       │   ├── home.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── left.png
+│   │       │   ├── right.png
+│   │       │   ├── style.css
+│   │       │   └── up.png
+│   │       ├── cairo
+│   │       │   ├── bindings-errors.html
+│   │       │   ├── bindings-fonts.html
+│   │       │   ├── bindings-memory.html
+│   │       │   ├── bindings-overloading.html
+│   │       │   ├── bindings-path.html
+│   │       │   ├── bindings-patterns.html
+│   │       │   ├── bindings-return-values.html
+│   │       │   ├── bindings-streams.html
+│   │       │   ├── bindings-surfaces.html
+│   │       │   ├── cairo-cairo-device-t.html
+│   │       │   ├── cairo-cairo-font-face-t.html
+│   │       │   ├── cairo-cairo-font-options-t.html
+│   │       │   ├── cairo-cairo-matrix-t.html
+│   │       │   ├── cairo-cairo-pattern-t.html
+│   │       │   ├── cairo-cairo-scaled-font-t.html
+│   │       │   ├── cairo-cairo-surface-t.html
+│   │       │   ├── cairo-cairo-t.html
+│   │       │   ├── cairo.devhelp
+│   │       │   ├── cairo.devhelp2
+│   │       │   ├── cairo-drawing.html
+│   │       │   ├── cairo-Error-handling.html
+│   │       │   ├── cairo-fonts.html
+│   │       │   ├── cairo-FreeType-Fonts.html
+│   │       │   ├── cairo-Image-Surfaces.html
+│   │       │   ├── cairo-Paths.html
+│   │       │   ├── cairo-PDF-Surfaces.html
+│   │       │   ├── cairo-PNG-Support.html
+│   │       │   ├── cairo-PostScript-Surfaces.html
+│   │       │   ├── cairo-Quartz-(CGFont)-Fonts.html
+│   │       │   ├── cairo-Quartz-Surfaces.html
+│   │       │   ├── cairo-Recording-Surfaces.html
+│   │       │   ├── cairo-Regions.html
+│   │       │   ├── cairo-support.html
+│   │       │   ├── cairo-surfaces.html
+│   │       │   ├── cairo-SVG-Surfaces.html
+│   │       │   ├── cairo-text.html
+│   │       │   ├── cairo-Transformations.html
+│   │       │   ├── cairo-Types.html
+│   │       │   ├── cairo-User-Fonts.html
+│   │       │   ├── cairo-Version-Information.html
+│   │       │   ├── cairo-Win32-Fonts.html
+│   │       │   ├── cairo-Win32-Surfaces.html
+│   │       │   ├── cairo-XLib-Surfaces.html
+│   │       │   ├── home.png
+│   │       │   ├── index-1.10.html
+│   │       │   ├── index-1.2.html
+│   │       │   ├── index-1.4.html
+│   │       │   ├── index-1.6.html
+│   │       │   ├── index-1.8.html
+│   │       │   ├── index-all.html
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── language-bindings.html
+│   │       │   ├── left.png
+│   │       │   ├── right.png
+│   │       │   ├── style.css
+│   │       │   └── up.png
+│   │       ├── gail-libgail-util3
+│   │       │   ├── gail-libgail-util3.devhelp2
+│   │       │   ├── gail-libgail-util3-GailMisc.html
+│   │       │   ├── gail-libgail-util3-GailTextUtil.html
+│   │       │   ├── home.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── left.png
+│   │       │   ├── libgail-util-main.html
+│   │       │   ├── right.png
+│   │       │   ├── style.css
+│   │       │   └── up.png
+│   │       ├── gdk3
+│   │       │   ├── annotation-glossary.html
+│   │       │   ├── api-index-3-0.html
+│   │       │   ├── api-index-3-2.html
+│   │       │   ├── api-index-3-4.html
+│   │       │   ├── api-index-3-6.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── arrow.png
+│   │       │   ├── based_arrow_down.png
+│   │       │   ├── based_arrow_up.png
+│   │       │   ├── boat.png
+│   │       │   ├── bogosity.png
+│   │       │   ├── bottom_left_corner.png
+│   │       │   ├── bottom_right_corner.png
+│   │       │   ├── bottom_side.png
+│   │       │   ├── bottom_tee.png
+│   │       │   ├── box_spiral.png
+│   │       │   ├── center_ptr.png
+│   │       │   ├── circle.png
+│   │       │   ├── clock.png
+│   │       │   ├── coffee_mug.png
+│   │       │   ├── crosshair.png
+│   │       │   ├── cross.png
+│   │       │   ├── cross_reverse.png
+│   │       │   ├── diamond_cross.png
+│   │       │   ├── dotbox.png
+│   │       │   ├── dot.png
+│   │       │   ├── double_arrow.png
+│   │       │   ├── draft_large.png
+│   │       │   ├── draft_small.png
+│   │       │   ├── draped_box.png
+│   │       │   ├── exchange.png
+│   │       │   ├── fleur.png
+│   │       │   ├── gdk3-Application-launching.html
+│   │       │   ├── gdk3-Cairo-Interaction.html
+│   │       │   ├── gdk3-Colors.html
+│   │       │   ├── gdk3-Cursors.html
+│   │       │   ├── gdk3.devhelp2
+│   │       │   ├── gdk3-Drag-and-Drop.html
+│   │       │   ├── gdk3-Events.html
+│   │       │   ├── gdk3-Event-Structures.html
+│   │       │   ├── gdk3-General.html
+│   │       │   ├── gdk3-Keyboard-Handling.html
+│   │       │   ├── gdk3-Pango-Interaction.html
+│   │       │   ├── gdk3-Pixbufs.html
+│   │       │   ├── gdk3-Points-Rectangles-and-Regions.html
+│   │       │   ├── gdk3-Properties-and-Atoms.html
+│   │       │   ├── gdk3-RGBA-Colors.html
+│   │       │   ├── gdk3-Selections.html
+│   │       │   ├── gdk3-Testing.html
+│   │       │   ├── gdk3-Threads.html
+│   │       │   ├── gdk3-Visuals.html
+│   │       │   ├── gdk3-Windows.html
+│   │       │   ├── gdk3-X-Window-System-Interaction.html
+│   │       │   ├── GdkDevice.html
+│   │       │   ├── GdkDeviceManager.html
+│   │       │   ├── GdkDisplay.html
+│   │       │   ├── GdkDisplayManager.html
+│   │       │   ├── GdkScreen.html
+│   │       │   ├── gobbler.png
+│   │       │   ├── gumby.png
+│   │       │   ├── hand1.png
+│   │       │   ├── hand2.png
+│   │       │   ├── heart.png
+│   │       │   ├── home.png
+│   │       │   ├── icon.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── iron_cross.png
+│   │       │   ├── leftbutton.png
+│   │       │   ├── left.png
+│   │       │   ├── left_ptr.png
+│   │       │   ├── left_side.png
+│   │       │   ├── left_tee.png
+│   │       │   ├── ll_angle.png
+│   │       │   ├── lr_angle.png
+│   │       │   ├── man.png
+│   │       │   ├── middlebutton.png
+│   │       │   ├── mouse.png
+│   │       │   ├── pencil.png
+│   │       │   ├── pirate.png
+│   │       │   ├── plus.png
+│   │       │   ├── question_arrow.png
+│   │       │   ├── reference.html
+│   │       │   ├── rightbutton.png
+│   │       │   ├── right.png
+│   │       │   ├── right_ptr.png
+│   │       │   ├── right_side.png
+│   │       │   ├── right_tee.png
+│   │       │   ├── rotated-text.png
+│   │       │   ├── rtl_logo.png
+│   │       │   ├── sailboat.png
+│   │       │   ├── sb_down_arrow.png
+│   │       │   ├── sb_h_double_arrow.png
+│   │       │   ├── sb_left_arrow.png
+│   │       │   ├── sb_right_arrow.png
+│   │       │   ├── sb_up_arrow.png
+│   │       │   ├── sb_v_double_arrow.png
+│   │       │   ├── shuttle.png
+│   │       │   ├── sizing.png
+│   │       │   ├── spider.png
+│   │       │   ├── spraycan.png
+│   │       │   ├── star.png
+│   │       │   ├── style.css
+│   │       │   ├── target.png
+│   │       │   ├── tcross.png
+│   │       │   ├── top_left_arrow.png
+│   │       │   ├── top_left_corner.png
+│   │       │   ├── top_right_corner.png
+│   │       │   ├── top_side.png
+│   │       │   ├── top_tee.png
+│   │       │   ├── trek.png
+│   │       │   ├── ul_angle.png
+│   │       │   ├── umbrella.png
+│   │       │   ├── up.png
+│   │       │   ├── ur_angle.png
+│   │       │   ├── watch.png
+│   │       │   ├── X_cursor.png
+│   │       │   └── xterm.png
+│   │       ├── gdk-pixbuf
+│   │       │   ├── annotation-glossary.html
+│   │       │   ├── api-index-2-12.html
+│   │       │   ├── api-index-2-14.html
+│   │       │   ├── api-index-2-26.html
+│   │       │   ├── api-index-2-2.html
+│   │       │   ├── api-index-2-4.html
+│   │       │   ├── api-index-2-6.html
+│   │       │   ├── api-index-2-8.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── composite.png
+│   │       │   ├── gdk-pixbuf-Animations.html
+│   │       │   ├── gdk-pixbuf-csource.html
+│   │       │   ├── gdk-pixbuf.devhelp2
+│   │       │   ├── gdk-pixbuf-File-Loading.html
+│   │       │   ├── gdk-pixbuf-File-saving.html
+│   │       │   ├── gdk-pixbuf-gdk-pixbuf-from-drawables.html
+│   │       │   ├── gdk-pixbuf-gdk-pixbuf-rendering.html
+│   │       │   ├── gdk-pixbuf-gdk-pixbuf-Xlib-initialization.html
+│   │       │   ├── gdk-pixbuf-Image-Data-in-Memory.html
+│   │       │   ├── gdk-pixbuf-Inline-data.html
+│   │       │   ├── GdkPixbufLoader.html
+│   │       │   ├── gdk-pixbuf-Module-Interface.html
+│   │       │   ├── gdk-pixbuf-query-loaders.html
+│   │       │   ├── gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html
+│   │       │   ├── gdk-pixbuf-Scaling.html
+│   │       │   ├── gdk-pixbuf-The-GdkPixbuf-Structure.html
+│   │       │   ├── gdk-pixbuf-Utilities.html
+│   │       │   ├── gdk-pixbuf-Versioning.html
+│   │       │   ├── gdk-pixbuf-X-Drawables-to-Pixbufs.html
+│   │       │   ├── gdk-pixbuf-Xlib-Rendering.html
+│   │       │   ├── gdk-pixbuf-XlibRGB.html
+│   │       │   ├── home.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── left.png
+│   │       │   ├── license.html
+│   │       │   ├── right.png
+│   │       │   ├── rn01.html
+│   │       │   ├── rn02.html
+│   │       │   ├── style.css
+│   │       │   └── up.png
+│   │       ├── gio
+│   │       │   ├── annotation-glossary.html
+│   │       │   ├── api-index-2-18.html
+│   │       │   ├── api-index-2-20.html
+│   │       │   ├── api-index-2-22.html
+│   │       │   ├── api-index-2-24.html
+│   │       │   ├── api-index-2-26.html
+│   │       │   ├── api-index-2-28.html
+│   │       │   ├── api-index-2-30.html
+│   │       │   ├── api-index-2-32.html
+│   │       │   ├── api-index-2-34.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── application.html
+│   │       │   ├── async.html
+│   │       │   ├── ch01.html
+│   │       │   ├── ch02.html
+│   │       │   ├── ch03.html
+│   │       │   ├── ch29.html
+│   │       │   ├── ch30.html
+│   │       │   ├── ch30s02.html
+│   │       │   ├── ch30s03.html
+│   │       │   ├── ch31.html
+│   │       │   ├── ch31s02.html
+│   │       │   ├── ch31s03.html
+│   │       │   ├── ch31s04.html
+│   │       │   ├── ch31s05.html
+│   │       │   ├── ch31s06.html
+│   │       │   ├── ch31s07.html
+│   │       │   ├── ch32.html
+│   │       │   ├── ch32s02.html
+│   │       │   ├── ch32s03.html
+│   │       │   ├── ch32s04.html
+│   │       │   ├── ch32s05.html
+│   │       │   ├── conversion.html
+│   │       │   ├── ExampleAnimal.html
+│   │       │   ├── ExampleCat.html
+│   │       │   ├── ExampleObject.html
+│   │       │   ├── ExampleObjectManagerClient.html
+│   │       │   ├── extending-gio.html
+│   │       │   ├── extending.html
+│   │       │   ├── failable_initialization.html
+│   │       │   ├── file_mon.html
+│   │       │   ├── file_ops.html
+│   │       │   ├── GActionGroup.html
+│   │       │   ├── GAction.html
+│   │       │   ├── GActionMap.html
+│   │       │   ├── GAppInfo.html
+│   │       │   ├── GApplicationCommandLine.html
+│   │       │   ├── GApplication.html
+│   │       │   ├── GAsyncInitable.html
+│   │       │   ├── GAsyncResult.html
+│   │       │   ├── GBufferedInputStream.html
+│   │       │   ├── GBufferedOutputStream.html
+│   │       │   ├── GCancellable.html
+│   │       │   ├── GCharsetConverter.html
+│   │       │   ├── GConverter.html
+│   │       │   ├── GCredentials.html
+│   │       │   ├── GDataInputStream.html
+│   │       │   ├── GDataOutputStream.html
+│   │       │   ├── GDBusActionGroup.html
+│   │       │   ├── GDBusAuthObserver.html
+│   │       │   ├── gdbus-codegen.html
+│   │       │   ├── GDBusConnection.html
+│   │       │   ├── gdbus-convenience.html
+│   │       │   ├── gdbus.html
+│   │       │   ├── GDBusInterface.html
+│   │       │   ├── GDBusInterfaceSkeleton.html
+│   │       │   ├── gdbus-lowlevel.html
+│   │       │   ├── GDBusMenuModel.html
+│   │       │   ├── GDBusMessage.html
+│   │       │   ├── GDBusMethodInvocation.html
+│   │       │   ├── GDBusObject.html
+│   │       │   ├── GDBusObjectManagerClient.html
+│   │       │   ├── GDBusObjectManager.html
+│   │       │   ├── GDBusObjectManagerServer.html
+│   │       │   ├── GDBusObjectProxy.html
+│   │       │   ├── GDBusObjectSkeleton.html
+│   │       │   ├── gdbus-org.gtk.GDBus.Example.ObjectManager.Animal.html
+│   │       │   ├── gdbus-org.gtk.GDBus.Example.ObjectManager.Cat.html
+│   │       │   ├── GDBusProxy.html
+│   │       │   ├── GDBusServer.html
+│   │       │   ├── GDrive.html
+│   │       │   ├── GEmblemedIcon.html
+│   │       │   ├── GEmblem.html
+│   │       │   ├── GFileDescriptorBased.html
+│   │       │   ├── GFileEnumerator.html
+│   │       │   ├── GFile.html
+│   │       │   ├── GFileIcon.html
+│   │       │   ├── GFileInfo.html
+│   │       │   ├── GFileInputStream.html
+│   │       │   ├── GFileIOStream.html
+│   │       │   ├── GFileMonitor.html
+│   │       │   ├── GFilenameCompleter.html
+│   │       │   ├── GFileOutputStream.html
+│   │       │   ├── GFilterInputStream.html
+│   │       │   ├── GFilterOutputStream.html
+│   │       │   ├── GIcon.html
+│   │       │   ├── GInetAddress.html
+│   │       │   ├── GInetSocketAddress.html
+│   │       │   ├── GInitable.html
+│   │       │   ├── GInputStream.html
+│   │       │   ├── gio-D-Bus-Addresses.html
+│   │       │   ├── gio-D-Bus-Introspection-Data.html
+│   │       │   ├── gio-D-Bus-Utilities.html
+│   │       │   ├── gio-Desktop-file-based-GAppInfo.html
+│   │       │   ├── gio.devhelp2
+│   │       │   ├── gio-Extension-Points.html
+│   │       │   ├── gio-GActionGroup-exporter.html
+│   │       │   ├── gio-GContentType.html
+│   │       │   ├── gio-GConverterInputstream.html
+│   │       │   ├── gio-GConverterOutputstream.html
+│   │       │   ├── gio-GDBusError.html
+│   │       │   ├── gio-GFileAttribute.html
+│   │       │   ├── gio-GInetAddressMask.html
+│   │       │   ├── gio-GIOError.html
+│   │       │   ├── gio-GIOScheduler.html
+│   │       │   ├── gio-GMenuModel-exporter.html
+│   │       │   ├── gio-gpollableutils.html
+│   │       │   ├── gio-GResource.html
+│   │       │   ├── gio-GSettingsSchema-GSettingsSchemaSource.html
+│   │       │   ├── gio-GWin32InputStream.html
+│   │       │   ├── gio-GWin32OutputStream.html
+│   │       │   ├── gio-hierarchy.html
+│   │       │   ├── GIOModule.html
+│   │       │   ├── gio-Owning-Bus-Names.html
+│   │       │   ├── gio-querymodules.html
+│   │       │   ├── GIOStream.html
+│   │       │   ├── gio-TLS-Overview.html
+│   │       │   ├── gio-Unix-Mounts.html
+│   │       │   ├── gio-Watching-Bus-Names.html
+│   │       │   ├── glib-compile-resources.html
+│   │       │   ├── glib-compile-schemas.html
+│   │       │   ├── GLoadableIcon.html
+│   │       │   ├── GMemoryInputStream.html
+│   │       │   ├── GMemoryOutputStream.html
+│   │       │   ├── GMenu.html
+│   │       │   ├── GMenuModel.html
+│   │       │   ├── GMount.html
+│   │       │   ├── GMountOperation.html
+│   │       │   ├── GNetworkAddress.html
+│   │       │   ├── GNetworkMonitor.html
+│   │       │   ├── GNetworkService.html
+│   │       │   ├── GOutputStream.html
+│   │       │   ├── GPermission.html
+│   │       │   ├── GPollableInputStream.html
+│   │       │   ├── GPollableOutputStream.html
+│   │       │   ├── GProxyAddress.html
+│   │       │   ├── GProxy.html
+│   │       │   ├── GProxyResolver.html
+│   │       │   ├── GRemoteActionGroup.html
+│   │       │   ├── GResolver.html
+│   │       │   ├── gresource-tool.html
+│   │       │   ├── GSeekable.html
+│   │       │   ├── GSettingsBackend.html
+│   │       │   ├── GSettings.html
+│   │       │   ├── gsettings-tool.html
+│   │       │   ├── GSimpleActionGroup.html
+│   │       │   ├── GSimpleAction.html
+│   │       │   ├── GSimpleAsyncResult.html
+│   │       │   ├── GSimplePermission.html
+│   │       │   ├── GSocketAddress.html
+│   │       │   ├── GSocketClient.html
+│   │       │   ├── GSocketConnectable.html
+│   │       │   ├── GSocketConnection.html
+│   │       │   ├── GSocketControlMessage.html
+│   │       │   ├── GSocket.html
+│   │       │   ├── GSocketListener.html
+│   │       │   ├── GSocketService.html
+│   │       │   ├── GSrvTarget.html
+│   │       │   ├── GTcpConnection.html
+│   │       │   ├── GTcpWrapperConnection.html
+│   │       │   ├── GTestDBus.html
+│   │       │   ├── GThemedIcon.html
+│   │       │   ├── GThreadedSocketService.html
+│   │       │   ├── GTlsBackend.html
+│   │       │   ├── GTlsCertificate.html
+│   │       │   ├── GTlsClientConnection.html
+│   │       │   ├── GTlsConnection.html
+│   │       │   ├── GTlsDatabase.html
+│   │       │   ├── GTlsFileDatabase.html
+│   │       │   ├── GTlsInteraction.html
+│   │       │   ├── GTlsPassword.html
+│   │       │   ├── GTlsServerConnection.html
+│   │       │   ├── GUnixConnection.html
+│   │       │   ├── GUnixCredentialsMessage.html
+│   │       │   ├── GUnixFDList.html
+│   │       │   ├── GUnixFDMessage.html
+│   │       │   ├── GUnixInputStream.html
+│   │       │   ├── GUnixOutputStream.html
+│   │       │   ├── GUnixSocketAddress.html
+│   │       │   ├── GVfs.html
+│   │       │   ├── gvfs-overview.png
+│   │       │   ├── GVolume.html
+│   │       │   ├── GVolumeMonitor.html
+│   │       │   ├── GZlibCompressor.html
+│   │       │   ├── GZlibDecompressor.html
+│   │       │   ├── highlevel-socket.html
+│   │       │   ├── home.png
+│   │       │   ├── icons.html
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── left.png
+│   │       │   ├── menu-example.png
+│   │       │   ├── menu-model.png
+│   │       │   ├── migrating.html
+│   │       │   ├── networking.html
+│   │       │   ├── permissions.html
+│   │       │   ├── pt01.html
+│   │       │   ├── pt02.html
+│   │       │   ├── resolver.html
+│   │       │   ├── resources.html
+│   │       │   ├── right.png
+│   │       │   ├── running-gio-apps.html
+│   │       │   ├── settings.html
+│   │       │   ├── streaming.html
+│   │       │   ├── style.css
+│   │       │   ├── testing.html
+│   │       │   ├── tls.html
+│   │       │   ├── tools.html
+│   │       │   ├── types.html
+│   │       │   ├── up.png
+│   │       │   ├── utils.html
+│   │       │   └── volume_mon.html
+│   │       ├── glib
+│   │       │   ├── annotation-glossary.html
+│   │       │   ├── api-index-2-10.html
+│   │       │   ├── api-index-2-12.html
+│   │       │   ├── api-index-2-14.html
+│   │       │   ├── api-index-2-16.html
+│   │       │   ├── api-index-2-18.html
+│   │       │   ├── api-index-2-20.html
+│   │       │   ├── api-index-2-22.html
+│   │       │   ├── api-index-2-24.html
+│   │       │   ├── api-index-2-26.html
+│   │       │   ├── api-index-2-28.html
+│   │       │   ├── api-index-2-2.html
+│   │       │   ├── api-index-2-30.html
+│   │       │   ├── api-index-2-32.html
+│   │       │   ├── api-index-2-34.html
+│   │       │   ├── api-index-2-4.html
+│   │       │   ├── api-index-2-6.html
+│   │       │   ├── api-index-2-8.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── deprecated.html
+│   │       │   ├── file-name-encodings.png
+│   │       │   ├── glib-Arrays.html
+│   │       │   ├── glib-Asynchronous-Queues.html
+│   │       │   ├── glib-Atomic-Operations.html
+│   │       │   ├── glib-Automatic-String-Completion.html
+│   │       │   ├── glib-Balanced-Binary-Trees.html
+│   │       │   ├── glib-Base64-Encoding.html
+│   │       │   ├── glib-Basic-Types.html
+│   │       │   ├── glib-Bookmark-file-parser.html
+│   │       │   ├── glib-building.html
+│   │       │   ├── glib-Byte-Arrays.html
+│   │       │   ├── glib-Byte-Order-Macros.html
+│   │       │   ├── glib-Caches.html
+│   │       │   ├── glib-changes.html
+│   │       │   ├── glib-Character-Set-Conversion.html
+│   │       │   ├── glib-Commandline-option-parser.html
+│   │       │   ├── glib-compiling.html
+│   │       │   ├── glib-core.html
+│   │       │   ├── glib-cross-compiling.html
+│   │       │   ├── glib-Data-Checksums.html
+│   │       │   ├── glib-Data-HMACs.html
+│   │       │   ├── glib-Datasets.html
+│   │       │   ├── glib-data-types.html
+│   │       │   ├── glib-Date-and-Time-Functions.html
+│   │       │   ├── glib-Deprecated-Thread-APIs.html
+│   │       │   ├── glib.devhelp2
+│   │       │   ├── glib-Double-ended-Queues.html
+│   │       │   ├── glib-Doubly-Linked-Lists.html
+│   │       │   ├── glib-Dynamic-Loading-of-Modules.html
+│   │       │   ├── glib-Error-Reporting.html
+│   │       │   ├── glib-File-Utilities.html
+│   │       │   ├── glib-fundamentals.html
+│   │       │   ├── glib-GDateTime.html
+│   │       │   ├── glib-gettextize.html
+│   │       │   ├── glib-Glob-style-pattern-matching.html
+│   │       │   ├── glib-GTimeZone.html
+│   │       │   ├── glib-GVariant.html
+│   │       │   ├── glib-GVariantType.html
+│   │       │   ├── glib-Hash-Tables.html
+│   │       │   ├── glib-Hook-Functions.html
+│   │       │   ├── glib-Hostname-Utilities.html
+│   │       │   ├── glib.html
+│   │       │   ├── glib-I18N.html
+│   │       │   ├── glib-IO-Channels.html
+│   │       │   ├── glib-Keyed-Data-Lists.html
+│   │       │   ├── glib-Key-value-file-parser.html
+│   │       │   ├── glib-Lexical-Scanner.html
+│   │       │   ├── glib-Memory-Allocation.html
+│   │       │   ├── glib-Memory-Slices.html
+│   │       │   ├── glib-Message-Logging.html
+│   │       │   ├── glib-Miscellaneous-Macros.html
+│   │       │   ├── glib-Miscellaneous-Utility-Functions.html
+│   │       │   ├── glib-N-ary-Trees.html
+│   │       │   ├── glib-Numerical-Definitions.html
+│   │       │   ├── glib-Perl-compatible-regular-expressions.html
+│   │       │   ├── glib-Pointer-Arrays.html
+│   │       │   ├── glib-programming.html
+│   │       │   ├── glib-Quarks.html
+│   │       │   ├── glib-Random-Numbers.html
+│   │       │   ├── glib-regex-syntax.html
+│   │       │   ├── glib-Relations-and-Tuples.html
+│   │       │   ├── glib-resources.html
+│   │       │   ├── glib-running.html
+│   │       │   ├── glib-Sequences.html
+│   │       │   ├── glib-Shell-related-Utilities.html
+│   │       │   ├── glib-Simple-XML-Subset-Parser.html
+│   │       │   ├── glib-Singly-Linked-Lists.html
+│   │       │   ├── glib-Spawning-Processes.html
+│   │       │   ├── glib-Standard-Macros.html
+│   │       │   ├── glib-String-Chunks.html
+│   │       │   ├── glib-Strings.html
+│   │       │   ├── glib-String-Utility-Functions.html
+│   │       │   ├── glib-Testing.html
+│   │       │   ├── glib-The-Main-Event-Loop.html
+│   │       │   ├── glib-Thread-Pools.html
+│   │       │   ├── glib-Threads.html
+│   │       │   ├── glib-Timers.html
+│   │       │   ├── glib-Trash-Stacks.html
+│   │       │   ├── glib-Type-Conversion-Macros.html
+│   │       │   ├── glib-Unicode-Manipulation.html
+│   │       │   ├── glib-UNIX-specific-utilities-and-integration.html
+│   │       │   ├── glib-URI-Functions.html
+│   │       │   ├── glib-utilities.html
+│   │       │   ├── glib-Version-Information.html
+│   │       │   ├── glib-Warnings-and-Assertions.html
+│   │       │   ├── glib-Windows-Compatibility-Functions.html
+│   │       │   ├── gtester.html
+│   │       │   ├── gtester-report.html
+│   │       │   ├── gvariant-format-strings.html
+│   │       │   ├── gvariant-text.html
+│   │       │   ├── home.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── left.png
+│   │       │   ├── mainloop-states.gif
+│   │       │   ├── right.png
+│   │       │   ├── style.css
+│   │       │   ├── tools.html
+│   │       │   └── up.png
+│   │       ├── gobject
+│   │       │   ├── annotation-glossary.html
+│   │       │   ├── api-index-2-10.html
+│   │       │   ├── api-index-2-12.html
+│   │       │   ├── api-index-2-14.html
+│   │       │   ├── api-index-2-18.html
+│   │       │   ├── api-index-2-22.html
+│   │       │   ├── api-index-2-24.html
+│   │       │   ├── api-index-2-26.html
+│   │       │   ├── api-index-2-28.html
+│   │       │   ├── api-index-2-2.html
+│   │       │   ├── api-index-2-30.html
+│   │       │   ├── api-index-2-32.html
+│   │       │   ├── api-index-2-34.html
+│   │       │   ├── api-index-2-4.html
+│   │       │   ├── api-index-2-6.html
+│   │       │   ├── api-index-2-8.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── ch01s02.html
+│   │       │   ├── chapter-gobject.html
+│   │       │   ├── chapter-gtype.html
+│   │       │   ├── chapter-intro.html
+│   │       │   ├── chapter-signal.html
+│   │       │   ├── GBinding.html
+│   │       │   ├── glib-genmarshal.html
+│   │       │   ├── glib-mkenums.html
+│   │       │   ├── glue.png
+│   │       │   ├── gobject-Boxed-Types.html
+│   │       │   ├── gobject-Closures.html
+│   │       │   ├── gobject.devhelp2
+│   │       │   ├── gobject-Enumeration-and-Flag-Types.html
+│   │       │   ├── gobject-Generic-values.html
+│   │       │   ├── gobject-GParamSpec.html
+│   │       │   ├── gobject-memory.html
+│   │       │   ├── gobject-properties.html
+│   │       │   ├── gobject-query.html
+│   │       │   ├── gobject-Signals.html
+│   │       │   ├── gobject-Standard-Parameter-and-Value-Types.html
+│   │       │   ├── gobject-The-Base-Object-Type.html
+│   │       │   ├── gobject-Type-Information.html
+│   │       │   ├── gobject-Value-arrays.html
+│   │       │   ├── gobject-Varargs-Value-Collection.html
+│   │       │   ├── gtype-conventions.html
+│   │       │   ├── gtype-instantiable-classed.html
+│   │       │   ├── GTypeModule.html
+│   │       │   ├── gtype-non-instantiable-classed.html
+│   │       │   ├── gtype-non-instantiable.html
+│   │       │   ├── GTypePlugin.html
+│   │       │   ├── home.png
+│   │       │   ├── howto-gobject-chainup.html
+│   │       │   ├── howto-gobject-code.html
+│   │       │   ├── howto-gobject-construction.html
+│   │       │   ├── howto-gobject-destruction.html
+│   │       │   ├── howto-gobject.html
+│   │       │   ├── howto-gobject-methods.html
+│   │       │   ├── howto-interface.html
+│   │       │   ├── howto-interface-implement.html
+│   │       │   ├── howto-interface-override.html
+│   │       │   ├── howto-interface-prerequisite.html
+│   │       │   ├── howto-interface-properties.html
+│   │       │   ├── howto-signals.html
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── left.png
+│   │       │   ├── pr01.html
+│   │       │   ├── pt01.html
+│   │       │   ├── pt02.html
+│   │       │   ├── pt03.html
+│   │       │   ├── right.png
+│   │       │   ├── rn01.html
+│   │       │   ├── rn02.html
+│   │       │   ├── signal.html
+│   │       │   ├── style.css
+│   │       │   ├── tools-ginspector.html
+│   │       │   ├── tools-gob.html
+│   │       │   ├── tools-gtkdoc.html
+│   │       │   ├── tools-refdb.html
+│   │       │   ├── tools-vala.html
+│   │       │   └── up.png
+│   │       ├── gtk3
+│   │       │   ├── aboutdialog.png
+│   │       │   ├── AbstractObjects.html
+│   │       │   ├── accel-label.png
+│   │       │   ├── Actions.html
+│   │       │   ├── annotation-glossary.html
+│   │       │   ├── api-index-3-0.html
+│   │       │   ├── api-index-3-2.html
+│   │       │   ├── api-index-3-4.html
+│   │       │   ├── api-index-3-6.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── appchooserbutton.png
+│   │       │   ├── appchooserdialog.png
+│   │       │   ├── ApplicationChoosing.html
+│   │       │   ├── application-exit.png
+│   │       │   ├── Application.html
+│   │       │   ├── arrows.png
+│   │       │   ├── assistant.png
+│   │       │   ├── background.png
+│   │       │   ├── bloatpad-gnome.png
+│   │       │   ├── bloatpad-osx.png
+│   │       │   ├── bloatpad-xfce.png
+│   │       │   ├── border1.png
+│   │       │   ├── border2.png
+│   │       │   ├── border3.png
+│   │       │   ├── box-expand.png
+│   │       │   ├── box-packing.png
+│   │       │   ├── Builder.html
+│   │       │   ├── button.png
+│   │       │   ├── ButtonWidgets.html
+│   │       │   ├── ch02.html
+│   │       │   ├── ch03.html
+│   │       │   ├── ch24s02.html
+│   │       │   ├── ch26s02.html
+│   │       │   ├── ch28s02.html
+│   │       │   ├── ch28s03.html
+│   │       │   ├── chap-drawing-model.html
+│   │       │   ├── check-button.png
+│   │       │   ├── checklist-gdkeventexpose-region.html
+│   │       │   ├── checklist-modifiers.html
+│   │       │   ├── checklist-named-icons.html
+│   │       │   ├── checks.png
+│   │       │   ├── color-button.png
+│   │       │   ├── colorchooser.png
+│   │       │   ├── colorsel.png
+│   │       │   ├── combo-box-entry.png
+│   │       │   ├── combo-box.png
+│   │       │   ├── dialog-error.png
+│   │       │   ├── dialog-information.png
+│   │       │   ├── dialog-password.png
+│   │       │   ├── dialog-question.png
+│   │       │   ├── dialog-warning.png
+│   │       │   ├── DisplayWidgets.html
+│   │       │   ├── document-new.png
+│   │       │   ├── document-open.png
+│   │       │   ├── document-print.png
+│   │       │   ├── document-print-preview.png
+│   │       │   ├── document-properties.png
+│   │       │   ├── document-revert-ltr.png
+│   │       │   ├── document-revert-rtl.png
+│   │       │   ├── document-save-as.png
+│   │       │   ├── document-save.png
+│   │       │   ├── down-center.png
+│   │       │   ├── down-end.png
+│   │       │   ├── down-start.png
+│   │       │   ├── drawing.png
+│   │       │   ├── drive-harddisk.png
+│   │       │   ├── ease-in-out.png
+│   │       │   ├── ease-in.png
+│   │       │   ├── ease-out.png
+│   │       │   ├── ease.png
+│   │       │   ├── edit-clear.png
+│   │       │   ├── edit-copy.png
+│   │       │   ├── edit-cut.png
+│   │       │   ├── edit-delete.png
+│   │       │   ├── edit-find.png
+│   │       │   ├── edit-find-replace.png
+│   │       │   ├── edit-paste.png
+│   │       │   ├── edit-redo-ltr.png
+│   │       │   ├── edit-redo-rtl.png
+│   │       │   ├── edit-select-all.png
+│   │       │   ├── edit-undo-ltr.png
+│   │       │   ├── edit-undo-rtl.png
+│   │       │   ├── entry.png
+│   │       │   ├── expanders.png
+│   │       │   ├── extensions.png
+│   │       │   ├── figure-hierarchical-drawing.png
+│   │       │   ├── figure-windowed-label.png
+│   │       │   ├── file-button.png
+│   │       │   ├── filechooser.png
+│   │       │   ├── focus.png
+│   │       │   ├── folder.png
+│   │       │   ├── font-button.png
+│   │       │   ├── fontchooser.png
+│   │       │   ├── fontsel.png
+│   │       │   ├── format-indent-less-ltr.png
+│   │       │   ├── format-indent-less-rtl.png
+│   │       │   ├── format-indent-more-ltr.png
+│   │       │   ├── format-indent-more-rtl.png
+│   │       │   ├── format-justify-center.png
+│   │       │   ├── format-justify-fill.png
+│   │       │   ├── format-justify-left.png
+│   │       │   ├── format-justify-right.png
+│   │       │   ├── format-text-bold.png
+│   │       │   ├── format-text-italic.png
+│   │       │   ├── format-text-strikethrough.png
+│   │       │   ├── format-text-underline.png
+│   │       │   ├── frame-gap.png
+│   │       │   ├── frame.png
+│   │       │   ├── frames.png
+│   │       │   ├── glossary.html
+│   │       │   ├── go-bottom.png
+│   │       │   ├── go-down.png
+│   │       │   ├── go-first-ltr.png
+│   │       │   ├── go-first-rtl.png
+│   │       │   ├── go-home.png
+│   │       │   ├── go-jump-ltr.png
+│   │       │   ├── go-jump-rtl.png
+│   │       │   ├── go-last-ltr.png
+│   │       │   ├── go-last-rtl.png
+│   │       │   ├── go-next-ltr.png
+│   │       │   ├── go-next-rtl.png
+│   │       │   ├── go-previous-ltr.png
+│   │       │   ├── go-previous-rtl.png
+│   │       │   ├── go-top.png
+│   │       │   ├── go-up.png
+│   │       │   ├── gradient1.png
+│   │       │   ├── gradient2.png
+│   │       │   ├── gradient3.png
+│   │       │   ├── gradient4.png
+│   │       │   ├── grid-packing.png
+│   │       │   ├── gtk3-Accelerator-Maps.html
+│   │       │   ├── gtk3-Bindings.html
+│   │       │   ├── gtk3-Clipboards.html
+│   │       │   ├── gtk3.devhelp2
+│   │       │   ├── gtk3-Drag-and-Drop.html
+│   │       │   ├── gtk3-Feature-Test-Macros.html
+│   │       │   ├── gtk3-Filesystem-utilities.html
+│   │       │   ├── gtk3-General.html
+│   │       │   ├── gtk3-GtkGradient.html
+│   │       │   ├── gtk3-GtkStyleProperties.html
+│   │       │   ├── gtk3-GtkSymbolicColor.html
+│   │       │   ├── gtk3-GtkTreeView-drag-and-drop.html
+│   │       │   ├── gtk3-GtkWidgetPath.html
+│   │       │   ├── gtk3-High-level-Printing-API.html
+│   │       │   ├── gtk3-Keyboard-Accelerators.html
+│   │       │   ├── gtk3-Orientable.html
+│   │       │   ├── gtk3-Resource-Files.html
+│   │       │   ├── gtk3-Selections.html
+│   │       │   ├── gtk3-Standard-Enumerations.html
+│   │       │   ├── gtk3-Stock-Items.html
+│   │       │   ├── gtk3-Testing.html
+│   │       │   ├── gtk3-Themeable-Stock-Images.html
+│   │       │   ├── GtkAboutDialog.html
+│   │       │   ├── GtkAccelLabel.html
+│   │       │   ├── GtkAccessible.html
+│   │       │   ├── GtkActionable.html
+│   │       │   ├── GtkActionGroup.html
+│   │       │   ├── GtkAction.html
+│   │       │   ├── GtkActivatable.html
+│   │       │   ├── GtkAdjustment.html
+│   │       │   ├── GtkAlignment.html
+│   │       │   ├── GtkAppChooserButton.html
+│   │       │   ├── GtkAppChooserDialog.html
+│   │       │   ├── GtkAppChooser.html
+│   │       │   ├── GtkAppChooserWidget.html
+│   │       │   ├── GtkApplication.html
+│   │       │   ├── GtkApplicationWindow.html
+│   │       │   ├── gtk-apply.png
+│   │       │   ├── GtkArrow.html
+│   │       │   ├── GtkAspectFrame.html
+│   │       │   ├── GtkAssistant.html
+│   │       │   ├── gtkbase.html
+│   │       │   ├── GtkBin.html
+│   │       │   ├── GtkBox.html
+│   │       │   ├── gtk-broadway.html
+│   │       │   ├── GtkBuildable.html
+│   │       │   ├── GtkBuilder.html
+│   │       │   ├── gtk-building.html
+│   │       │   ├── GtkButtonBox.html
+│   │       │   ├── GtkButton.html
+│   │       │   ├── GtkCalendar.html
+│   │       │   ├── gtk-cancel.png
+│   │       │   ├── gtk-caps-lock-warning.png
+│   │       │   ├── GtkCellAreaBox.html
+│   │       │   ├── GtkCellAreaContext.html
+│   │       │   ├── GtkCellArea.html
+│   │       │   ├── GtkCellEditable.html
+│   │       │   ├── GtkCellLayout.html
+│   │       │   ├── GtkCellRendererAccel.html
+│   │       │   ├── GtkCellRendererCombo.html
+│   │       │   ├── GtkCellRenderer.html
+│   │       │   ├── GtkCellRendererPixbuf.html
+│   │       │   ├── GtkCellRendererProgress.html
+│   │       │   ├── GtkCellRendererSpin.html
+│   │       │   ├── GtkCellRendererSpinner.html
+│   │       │   ├── GtkCellRendererText.html
+│   │       │   ├── GtkCellRendererToggle.html
+│   │       │   ├── GtkCellView.html
+│   │       │   ├── GtkCheckButton.html
+│   │       │   ├── GtkCheckMenuItem.html
+│   │       │   ├── GtkColorButton.html
+│   │       │   ├── GtkColorChooserDialog.html
+│   │       │   ├── GtkColorChooser.html
+│   │       │   ├── GtkColorChooserWidget.html
+│   │       │   ├── gtk-color-picker.png
+│   │       │   ├── GtkColorSelectionDialog.html
+│   │       │   ├── GtkColorSelection.html
+│   │       │   ├── GtkComboBox.html
+│   │       │   ├── GtkComboBoxText.html
+│   │       │   ├── gtk-compiling.html
+│   │       │   ├── gtk-connect.png
+│   │       │   ├── GtkContainer.html
+│   │       │   ├── gtk-convert.png
+│   │       │   ├── GtkCssProvider.html
+│   │       │   ├── GtkDialog.html
+│   │       │   ├── gtk-disconnect.png
+│   │       │   ├── gtk-dnd-multiple.png
+│   │       │   ├── gtk-dnd.png
+│   │       │   ├── GtkDrawingArea.html
+│   │       │   ├── GtkEditable.html
+│   │       │   ├── gtk-edit.png
+│   │       │   ├── GtkEntryBuffer.html
+│   │       │   ├── GtkEntryCompletion.html
+│   │       │   ├── GtkEntry.html
+│   │       │   ├── GtkEventBox.html
+│   │       │   ├── GtkExpander.html
+│   │       │   ├── GtkFileChooserButton.html
+│   │       │   ├── GtkFileChooserDialog.html
+│   │       │   ├── GtkFileChooser.html
+│   │       │   ├── GtkFileChooserWidget.html
+│   │       │   ├── GtkFileFilter.html
+│   │       │   ├── GtkFixed.html
+│   │       │   ├── GtkFontButton.html
+│   │       │   ├── GtkFontChooserDialog.html
+│   │       │   ├── GtkFontChooser.html
+│   │       │   ├── GtkFontChooserWidget.html
+│   │       │   ├── gtk-font.png
+│   │       │   ├── GtkFontSelectionDialog.html
+│   │       │   ├── GtkFontSelection.html
+│   │       │   ├── GtkFrame.html
+│   │       │   ├── gtk-getting-started.html
+│   │       │   ├── GtkGrid.html
+│   │       │   ├── GtkHandleBox.html
+│   │       │   ├── GtkHBox.html
+│   │       │   ├── GtkHButtonBox.html
+│   │       │   ├── GtkHPaned.html
+│   │       │   ├── GtkHScale.html
+│   │       │   ├── GtkHScrollbar.html
+│   │       │   ├── GtkHSeparator.html
+│   │       │   ├── GtkHSV.html
+│   │       │   ├── gtk.html
+│   │       │   ├── GtkIconTheme.html
+│   │       │   ├── GtkIconView.html
+│   │       │   ├── GtkImage.html
+│   │       │   ├── GtkImageMenuItem.html
+│   │       │   ├── GtkIMContext.html
+│   │       │   ├── GtkIMContextSimple.html
+│   │       │   ├── GtkIMMulticontext.html
+│   │       │   ├── gtk-index.png
+│   │       │   ├── GtkInfoBar.html
+│   │       │   ├── GtkInvisible.html
+│   │       │   ├── GtkLabel.html
+│   │       │   ├── gtk-launch.html
+│   │       │   ├── GtkLayout.html
+│   │       │   ├── GtkLevelBar.html
+│   │       │   ├── GtkLinkButton.html
+│   │       │   ├── GtkListStore.html
+│   │       │   ├── GtkLockButton.html
+│   │       │   ├── GtkMenuBar.html
+│   │       │   ├── GtkMenuButton.html
+│   │       │   ├── GtkMenu.html
+│   │       │   ├── GtkMenuItem.html
+│   │       │   ├── GtkMenuShell.html
+│   │       │   ├── GtkMenuToolButton.html
+│   │       │   ├── GtkMessageDialog.html
+│   │       │   ├── gtk-migrating-2-to-3.html
+│   │       │   ├── gtk-migrating-checklist.html
+│   │       │   ├── gtk-migrating-GtkGrid.html
+│   │       │   ├── gtk-migrating-GtkStyleContext-bonus-points.html
+│   │       │   ├── gtk-migrating-GtkStyleContext-checklist.html
+│   │       │   ├── gtk-migrating-GtkStyleContext-css.html
+│   │       │   ├── gtk-migrating-GtkStyleContext.html
+│   │       │   ├── gtk-migrating-GtkStyleContext-parser-extensions.html
+│   │       │   ├── gtk-migrating-GtkStyleContext-parsing.html
+│   │       │   ├── gtk-migrating-smclient-GtkApplication.html
+│   │       │   ├── gtk-migrating-theme-GtkStyleContext-engines.html
+│   │       │   ├── gtk-migrating-unique-GtkApplication.html
+│   │       │   ├── GtkMisc.html
+│   │       │   ├── gtk-no.png
+│   │       │   ├── GtkNotebook.html
+│   │       │   ├── GtkNumerableIcon.html
+│   │       │   ├── gtkobjects.html
+│   │       │   ├── GtkOffscreenWindow.html
+│   │       │   ├── gtk-ok.png
+│   │       │   ├── gtk-orientation-landscape.png
+│   │       │   ├── gtk-orientation-portrait.png
+│   │       │   ├── gtk-orientation-reverse-landscape.png
+│   │       │   ├── gtk-orientation-reverse-portrait.png
+│   │       │   ├── gtk-osx.html
+│   │       │   ├── GtkOverlay.html
+│   │       │   ├── GtkPageSetup.html
+│   │       │   ├── gtk-page-setup.png
+│   │       │   ├── GtkPageSetupUnixDialog.html
+│   │       │   ├── GtkPaned.html
+│   │       │   ├── GtkPaperSize.html
+│   │       │   ├── GtkPlug.html
+│   │       │   ├── gtk-preferences.png
+│   │       │   ├── GtkPrintContext.html
+│   │       │   ├── GtkPrinter.html
+│   │       │   ├── GtkPrintJob.html
+│   │       │   ├── GtkPrintSettings.html
+│   │       │   ├── GtkPrintUnixDialog.html
+│   │       │   ├── GtkProgressBar.html
+│   │       │   ├── gtk-query-immodules-3.0.html
+│   │       │   ├── gtk-question-index.html
+│   │       │   ├── GtkRadioAction.html
+│   │       │   ├── GtkRadioButton.html
+│   │       │   ├── GtkRadioMenuItem.html
+│   │       │   ├── GtkRadioToolButton.html
+│   │       │   ├── GtkRange.html
+│   │       │   ├── GtkRecentAction.html
+│   │       │   ├── GtkRecentChooserDialog.html
+│   │       │   ├── GtkRecentChooser.html
+│   │       │   ├── GtkRecentChooserMenu.html
+│   │       │   ├── GtkRecentChooserWidget.html
+│   │       │   ├── GtkRecentFilter.html
+│   │       │   ├── GtkRecentManager.html
+│   │       │   ├── gtk-resources.html
+│   │       │   ├── gtk-running.html
+│   │       │   ├── GtkScaleButton.html
+│   │       │   ├── GtkScale.html
+│   │       │   ├── GtkScrollable.html
+│   │       │   ├── GtkScrollbar.html
+│   │       │   ├── GtkScrolledWindow.html
+│   │       │   ├── GtkSearchEntry.html
+│   │       │   ├── gtk-select-color.png
+│   │       │   ├── GtkSeparator.html
+│   │       │   ├── GtkSeparatorMenuItem.html
+│   │       │   ├── GtkSeparatorToolItem.html
+│   │       │   ├── GtkSettings.html
+│   │       │   ├── GtkSizeGroup.html
+│   │       │   ├── GtkSocket.html
+│   │       │   ├── GtkSpinButton.html
+│   │       │   ├── GtkSpinner.html
+│   │       │   ├── GtkStatusbar.html
+│   │       │   ├── GtkStatusIcon.html
+│   │       │   ├── GtkStyleContext.html
+│   │       │   ├── GtkStyle.html
+│   │       │   ├── GtkStyleProvider.html
+│   │       │   ├── GtkSwitch.html
+│   │       │   ├── GtkTable.html
+│   │       │   ├── GtkTearoffMenuItem.html
+│   │       │   ├── GtkTextBuffer.html
+│   │       │   ├── GtkTextIter.html
+│   │       │   ├── GtkTextMark.html
+│   │       │   ├── GtkTextTag.html
+│   │       │   ├── GtkTextTagTable.html
+│   │       │   ├── GtkTextView.html
+│   │       │   ├── GtkThemingEngine.html
+│   │       │   ├── GtkToggleAction.html
+│   │       │   ├── GtkToggleButton.html
+│   │       │   ├── GtkToggleToolButton.html
+│   │       │   ├── GtkToolbar.html
+│   │       │   ├── GtkToolButton.html
+│   │       │   ├── GtkToolItemGroup.html
+│   │       │   ├── GtkToolItem.html
+│   │       │   ├── GtkToolPalette.html
+│   │       │   ├── GtkToolShell.html
+│   │       │   ├── GtkTooltip.html
+│   │       │   ├── GtkTreeModelFilter.html
+│   │       │   ├── GtkTreeModel.html
+│   │       │   ├── GtkTreeModelSort.html
+│   │       │   ├── GtkTreeSelection.html
+│   │       │   ├── GtkTreeSortable.html
+│   │       │   ├── GtkTreeStore.html
+│   │       │   ├── GtkTreeViewColumn.html
+│   │       │   ├── GtkTreeView.html
+│   │       │   ├── GtkUIManager.html
+│   │       │   ├── gtk-undelete-ltr.png
+│   │       │   ├── gtk-undelete-rtl.png
+│   │       │   ├── gtk-update-icon-cache.html
+│   │       │   ├── GtkVBox.html
+│   │       │   ├── GtkVButtonBox.html
+│   │       │   ├── GtkViewport.html
+│   │       │   ├── GtkVolumeButton.html
+│   │       │   ├── GtkVPaned.html
+│   │       │   ├── GtkVScale.html
+│   │       │   ├── GtkVScrollbar.html
+│   │       │   ├── GtkVSeparator.html
+│   │       │   ├── GtkWidget.html
+│   │       │   ├── GtkWindowGroup.html
+│   │       │   ├── GtkWindow.html
+│   │       │   ├── gtk-windows.html
+│   │       │   ├── gtk-x11.html
+│   │       │   ├── gtk-yes.png
+│   │       │   ├── handles.png
+│   │       │   ├── hello-world.png
+│   │       │   ├── help-about.png
+│   │       │   ├── help-contents.png
+│   │       │   ├── home.png
+│   │       │   ├── icon-view.png
+│   │       │   ├── image-missing.png
+│   │       │   ├── image.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── label.png
+│   │       │   ├── layout-btlr.png
+│   │       │   ├── layout-btrl.png
+│   │       │   ├── LayoutContainers.html
+│   │       │   ├── layout-lrbt.png
+│   │       │   ├── layout-lrtb.png
+│   │       │   ├── layout-rlbt.png
+│   │       │   ├── layout-rltb.png
+│   │       │   ├── layout-tblr.png
+│   │       │   ├── layout-tbrl.png
+│   │       │   ├── left-center.png
+│   │       │   ├── left-end.png
+│   │       │   ├── left.png
+│   │       │   ├── left-start.png
+│   │       │   ├── levelbar.png
+│   │       │   ├── linear.png
+│   │       │   ├── link-button.png
+│   │       │   ├── list-add.png
+│   │       │   ├── list-and-tree.png
+│   │       │   ├── list-remove.png
+│   │       │   ├── lockbutton-locked.png
+│   │       │   ├── lock-button.png
+│   │       │   ├── lockbutton.png
+│   │       │   ├── lockbutton-sorry.png
+│   │       │   ├── lockbutton-unlocked.png
+│   │       │   ├── media-floppy.png
+│   │       │   ├── media-optical.png
+│   │       │   ├── media-playback-pause.png
+│   │       │   ├── media-playback-start-ltr.png
+│   │       │   ├── media-playback-start-rtl.png
+│   │       │   ├── media-playback-stop.png
+│   │       │   ├── media-record.png
+│   │       │   ├── media-seek-backward-ltr.png
+│   │       │   ├── media-seek-backward-rtl.png
+│   │       │   ├── media-seek-forward-ltr.png
+│   │       │   ├── media-seek-forward-rtl.png
+│   │       │   ├── media-skip-backward-ltr.png
+│   │       │   ├── media-skip-backward-rtl.png
+│   │       │   ├── media-skip-forward-ltr.png
+│   │       │   ├── media-skip-forward-rtl.png
+│   │       │   ├── menubar.png
+│   │       │   ├── menu-button.png
+│   │       │   ├── MenusAndCombos.html
+│   │       │   ├── messagedialog.png
+│   │       │   ├── migrating.html
+│   │       │   ├── MiscObjects.html
+│   │       │   ├── multiline-text.png
+│   │       │   ├── network-idle.png
+│   │       │   ├── notebook.png
+│   │       │   ├── numerableicon2.png
+│   │       │   ├── numerableicon.png
+│   │       │   ├── NumericEntry.html
+│   │       │   ├── options.png
+│   │       │   ├── Ornaments.html
+│   │       │   ├── pagesetupdialog.png
+│   │       │   ├── panes.png
+│   │       │   ├── PlugSocket.html
+│   │       │   ├── printdialog.png
+│   │       │   ├── printer-error.png
+│   │       │   ├── printer-info.png
+│   │       │   ├── printer-paused.png
+│   │       │   ├── printer-warning.png
+│   │       │   ├── Printing.html
+│   │       │   ├── process-stop.png
+│   │       │   ├── progressbar.png
+│   │       │   ├── pt06.html
+│   │       │   ├── radio-group.png
+│   │       │   ├── recentchooserdialog.png
+│   │       │   ├── RecentDocuments.html
+│   │       │   ├── right-center.png
+│   │       │   ├── right-end.png
+│   │       │   ├── right.png
+│   │       │   ├── right-start.png
+│   │       │   ├── scales.png
+│   │       │   ├── scrolledwindow.png
+│   │       │   ├── ScrollingWidgets.html
+│   │       │   ├── search-entry.png
+│   │       │   ├── SelectorWidgets.html
+│   │       │   ├── separator.png
+│   │       │   ├── slices.png
+│   │       │   ├── sliders.png
+│   │       │   ├── spinbutton.png
+│   │       │   ├── spinner.png
+│   │       │   ├── statusbar.png
+│   │       │   ├── style.css
+│   │       │   ├── switch.png
+│   │       │   ├── system-run.png
+│   │       │   ├── TextWidget.html
+│   │       │   ├── TextWidgetObjects.html
+│   │       │   ├── text-x-generic.png
+│   │       │   ├── theming.html
+│   │       │   ├── toggle-button.png
+│   │       │   ├── toolbar.png
+│   │       │   ├── toolpalette.png
+│   │       │   ├── tools-check-spelling.png
+│   │       │   ├── tree-view-coordinates.png
+│   │       │   ├── TreeWidget.html
+│   │       │   ├── TreeWidgetObjects.html
+│   │       │   ├── up-center.png
+│   │       │   ├── up-end.png
+│   │       │   ├── up.png
+│   │       │   ├── up-start.png
+│   │       │   ├── view-fullscreen.png
+│   │       │   ├── view-refresh.png
+│   │       │   ├── view-restore.png
+│   │       │   ├── view-sort-ascending.png
+│   │       │   ├── view-sort-descending.png
+│   │       │   ├── volumebutton.png
+│   │       │   ├── widget-hvalign.png
+│   │       │   ├── window-close.png
+│   │       │   ├── window-default.png
+│   │       │   ├── window.png
+│   │       │   ├── WindowWidgets.html
+│   │       │   ├── zoom-fit-best.png
+│   │       │   ├── zoom-in.png
+│   │       │   ├── zoom-original.png
+│   │       │   └── zoom-out.png
+│   │       ├── libcroco
+│   │       │   ├── ch01.html
+│   │       │   ├── home.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── left.png
+│   │       │   ├── libcroco-cr-additional-sel.html
+│   │       │   ├── libcroco-cr-attr-sel.html
+│   │       │   ├── libcroco-cr-cascade.html
+│   │       │   ├── libcroco-cr-declaration.html
+│   │       │   ├── libcroco-cr-doc-handler.html
+│   │       │   ├── libcroco-cr-enc-handler.html
+│   │       │   ├── libcroco-cr-fonts.html
+│   │       │   ├── libcroco-cr-input.html
+│   │       │   ├── libcroco-cr-num.html
+│   │       │   ├── libcroco-cr-om-parser.html
+│   │       │   ├── libcroco-cr-parser.html
+│   │       │   ├── libcroco-cr-parsing-location.html
+│   │       │   ├── libcroco-cr-prop-list.html
+│   │       │   ├── libcroco-cr-pseudo.html
+│   │       │   ├── libcroco-cr-rgb.html
+│   │       │   ├── libcroco-cr-selector.html
+│   │       │   ├── libcroco-cr-sel-eng.html
+│   │       │   ├── libcroco-cr-simple-sel.html
+│   │       │   ├── libcroco-cr-statement.html
+│   │       │   ├── libcroco-cr-string.html
+│   │       │   ├── libcroco-cr-style.html
+│   │       │   ├── libcroco-cr-stylesheet.html
+│   │       │   ├── libcroco-cr-term.html
+│   │       │   ├── libcroco-cr-tknzr.html
+│   │       │   ├── libcroco-cr-token.html
+│   │       │   ├── libcroco-cr-utils.html
+│   │       │   ├── libcroco.devhelp2
+│   │       │   ├── libcroco-libcroco-config.html
+│   │       │   ├── right.png
+│   │       │   ├── style.css
+│   │       │   └── up.png
+│   │       ├── libxml2
+│   │       │   ├── general.html
+│   │       │   ├── home.png
+│   │       │   ├── index.html
+│   │       │   ├── left.png
+│   │       │   ├── libxml2-c14n.html
+│   │       │   ├── libxml2-catalog.html
+│   │       │   ├── libxml2-chvalid.html
+│   │       │   ├── libxml2-debugXML.html
+│   │       │   ├── libxml2.devhelp
+│   │       │   ├── libxml2-dict.html
+│   │       │   ├── libxml2-DOCBparser.html
+│   │       │   ├── libxml2-encoding.html
+│   │       │   ├── libxml2-entities.html
+│   │       │   ├── libxml2-globals.html
+│   │       │   ├── libxml2-hash.html
+│   │       │   ├── libxml2-HTMLparser.html
+│   │       │   ├── libxml2-HTMLtree.html
+│   │       │   ├── libxml2-list.html
+│   │       │   ├── libxml2-nanoftp.html
+│   │       │   ├── libxml2-nanohttp.html
+│   │       │   ├── libxml2-parser.html
+│   │       │   ├── libxml2-parserInternals.html
+│   │       │   ├── libxml2-pattern.html
+│   │       │   ├── libxml2-relaxng.html
+│   │       │   ├── libxml2-SAX2.html
+│   │       │   ├── libxml2-SAX.html
+│   │       │   ├── libxml2-schemasInternals.html
+│   │       │   ├── libxml2-schematron.html
+│   │       │   ├── libxml2-threads.html
+│   │       │   ├── libxml2-tree.html
+│   │       │   ├── libxml2-uri.html
+│   │       │   ├── libxml2-valid.html
+│   │       │   ├── libxml2-xinclude.html
+│   │       │   ├── libxml2-xlink.html
+│   │       │   ├── libxml2-xmlautomata.html
+│   │       │   ├── libxml2-xmlerror.html
+│   │       │   ├── libxml2-xmlexports.html
+│   │       │   ├── libxml2-xmlIO.html
+│   │       │   ├── libxml2-xmlmemory.html
+│   │       │   ├── libxml2-xmlmodule.html
+│   │       │   ├── libxml2-xmlreader.html
+│   │       │   ├── libxml2-xmlregexp.html
+│   │       │   ├── libxml2-xmlsave.html
+│   │       │   ├── libxml2-xmlschemas.html
+│   │       │   ├── libxml2-xmlschemastypes.html
+│   │       │   ├── libxml2-xmlstring.html
+│   │       │   ├── libxml2-xmlunicode.html
+│   │       │   ├── libxml2-xmlversion.html
+│   │       │   ├── libxml2-xmlwriter.html
+│   │       │   ├── libxml2-xpath.html
+│   │       │   ├── libxml2-xpathInternals.html
+│   │       │   ├── libxml2-xpointer.html
+│   │       │   ├── right.png
+│   │       │   ├── style.css
+│   │       │   └── up.png
+│   │       ├── pango
+│   │       │   ├── annotation-glossary.html
+│   │       │   ├── api-index-1-10.html
+│   │       │   ├── api-index-1-12.html
+│   │       │   ├── api-index-1-14.html
+│   │       │   ├── api-index-1-16.html
+│   │       │   ├── api-index-1-18.html
+│   │       │   ├── api-index-1-20.html
+│   │       │   ├── api-index-1-22.html
+│   │       │   ├── api-index-1-24.html
+│   │       │   ├── api-index-1-26.html
+│   │       │   ├── api-index-1-28.html
+│   │       │   ├── api-index-1-2.html
+│   │       │   ├── api-index-1-30.html
+│   │       │   ├── api-index-1-4.html
+│   │       │   ├── api-index-1-6.html
+│   │       │   ├── api-index-1-8.html
+│   │       │   ├── api-index-deprecated.html
+│   │       │   ├── api-index-full.html
+│   │       │   ├── home.png
+│   │       │   ├── index.html
+│   │       │   ├── index.sgml
+│   │       │   ├── layout.gif
+│   │       │   ├── left.png
+│   │       │   ├── lowlevel.html
+│   │       │   ├── pango-ATSUI-Fonts.html
+│   │       │   ├── pango-Bidirectional-Text.html
+│   │       │   ├── pango-Cairo-Rendering.html
+│   │       │   ├── pango-CoreText-Fonts.html
+│   │       │   ├── pango-Coverage-Maps.html
+│   │       │   ├── pango.devhelp2
+│   │       │   ├── PangoEngineLang.html
+│   │       │   ├── PangoEngineShape.html
+│   │       │   ├── pango-Engines.html
+│   │       │   ├── PangoFcDecoder.html
+│   │       │   ├── PangoFcFont.html
+│   │       │   ├── PangoFcFontMap.html
+│   │       │   ├── pango-Fonts.html
+│   │       │   ├── pango-FreeType-Fonts-and-Rendering.html
+│   │       │   ├── pango-Glyph-Storage.html
+│   │       │   ├── pango-hierarchy.html
+│   │       │   ├── pango.html
+│   │       │   ├── pango-Layout-Objects.html
+│   │       │   ├── PangoMarkupFormat.html
+│   │       │   ├── pango-Miscellaneous-Utilities.html
+│   │       │   ├── pango-Modules.html
+│   │       │   ├── pango-OpenType-Font-Handling.html
+│   │       │   ├── pango-pango-renderer.html
+│   │       │   ├── pango-querymodules.html
+│   │       │   ├── pango-Scripts-and-Languages.html
+│   │       │   ├── pango-Tab-Stops.html
+│   │       │   ├── pango-Text-Attributes.html
+│   │       │   ├── pango-Text-Processing.html
+│   │       │   ├── pango-Version-Checking.html
+│   │       │   ├── pango-Vertical-Text.html
+│   │       │   ├── pango-Win32-Fonts-and-Rendering.html
+│   │       │   ├── pango-X-Fonts-and-Rendering.html
+│   │       │   ├── pango-Xft-Fonts-and-Rendering.html
+│   │       │   ├── rendering.html
+│   │       │   ├── right.png
+│   │       │   ├── rotated-text.png
+│   │       │   ├── style.css
+│   │       │   ├── tools.html
+│   │       │   └── up.png
+│   │       └── rsvg-2.0
+│   │           ├── annotation-glossary.html
+│   │           ├── api-index-2-14.html
+│   │           ├── api-index-2-22.html
+│   │           ├── api-index-2-32.html
+│   │           ├── api-index-2-36.html
+│   │           ├── api-index-2-4.html
+│   │           ├── api-index-2-8.html
+│   │           ├── api-index-2-9.html
+│   │           ├── api-index-deprecated.html
+│   │           ├── api-index-full.html
+│   │           ├── home.png
+│   │           ├── index.html
+│   │           ├── index.sgml
+│   │           ├── left.png
+│   │           ├── licence.html
+│   │           ├── object-tree.html
+│   │           ├── right.png
+│   │           ├── rsvg-2.0.devhelp2
+│   │           ├── RsvgHandle.html
+│   │           ├── rsvg.html
+│   │           ├── rsvg-Using-RSVG-with-cairo.html
+│   │           ├── rsvg-Using-RSVG-with-GdkPixbuf.html
+│   │           ├── rsvg-Using-RSVG-with-GIO.html
+│   │           ├── rsvg-Version-check-and-feature-tests.html
+│   │           ├── style.css
+│   │           └── up.png
+│   ├── icons
+│   │   ├── gnome-light
+│   │   │   ├── 16x16
+│   │   │   │   └── mimetypes
+│   │   │   │       ├── application-x-executable.png
+│   │   │   │       ├── binary.png
+│   │   │   │       ├── exec.png
+│   │   │   │       ├── gnome-fs-executable.png
+│   │   │   │       ├── gnome-mime-application-x-executable.png
+│   │   │   │       └── gnome-mime-application-x-ms-dos-executable.png
+│   │   │   ├── 22x22
+│   │   │   │   └── mimetypes
+│   │   │   │       ├── application-x-executable.png
+│   │   │   │       ├── binary.png
+│   │   │   │       ├── exec.png
+│   │   │   │       ├── gnome-fs-executable.png
+│   │   │   │       ├── gnome-mime-application-x-executable.png
+│   │   │   │       └── gnome-mime-application-x-ms-dos-executable.png
+│   │   │   ├── 24x24
+│   │   │   │   └── mimetypes
+│   │   │   │       ├── application-x-executable.png
+│   │   │   │       ├── binary.png
+│   │   │   │       ├── exec.png
+│   │   │   │       ├── gnome-fs-executable.png
+│   │   │   │       ├── gnome-mime-application-x-executable.png
+│   │   │   │       └── gnome-mime-application-x-ms-dos-executable.png
+│   │   │   ├── 256x256
+│   │   │   │   └── mimetypes
+│   │   │   │       ├── application-x-executable.png
+│   │   │   │       ├── binary.png
+│   │   │   │       ├── exec.png
+│   │   │   │       ├── gnome-fs-executable.png
+│   │   │   │       ├── gnome-mime-application-x-executable.png
+│   │   │   │       └── gnome-mime-application-x-ms-dos-executable.png
+│   │   │   ├── 32x32
+│   │   │   │   └── mimetypes
+│   │   │   │       ├── application-x-executable.png
+│   │   │   │       ├── binary.png
+│   │   │   │       ├── exec.png
+│   │   │   │       ├── gnome-fs-executable.png
+│   │   │   │       ├── gnome-mime-application-x-executable.png
+│   │   │   │       └── gnome-mime-application-x-ms-dos-executable.png
+│   │   │   ├── 48x48
+│   │   │   │   └── mimetypes
+│   │   │   │       ├── application-x-executable.png
+│   │   │   │       ├── binary.png
+│   │   │   │       ├── exec.png
+│   │   │   │       ├── gnome-fs-executable.png
+│   │   │   │       ├── gnome-mime-application-x-executable.png
+│   │   │   │       └── gnome-mime-application-x-ms-dos-executable.png
+│   │   │   ├── icon-theme.cache
+│   │   │   ├── index.theme
+│   │   │   └── scalable
+│   │   │       ├── actions
+│   │   │       │   ├── edit-clear-symbolic.svg
+│   │   │       │   ├── edit-find-symbolic.svg
+│   │   │       │   ├── go-up-symbolic.svg
+│   │   │       │   ├── list-add-symbolic.svg
+│   │   │       │   └── list-remove-symbolic.svg
+│   │   │       ├── emblems
+│   │   │       │   ├── emblem-default-symbolic.svg
+│   │   │       │   └── emblem-important-symbolic.svg
+│   │   │       └── status
+│   │   │           └── battery-caution-charging-symbolic.svg
+│   │   └── hicolor
+│   │       ├── 128x128
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 16x16
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 192x192
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 22x22
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 24x24
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 256x256
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 32x32
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 36x36
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 48x48
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 64x64
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 72x72
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── 96x96
+│   │       │   ├── actions
+│   │       │   ├── animations
+│   │       │   ├── apps
+│   │       │   ├── categories
+│   │       │   ├── devices
+│   │       │   ├── emblems
+│   │       │   ├── emotes
+│   │       │   ├── filesystems
+│   │       │   ├── intl
+│   │       │   ├── mimetypes
+│   │       │   ├── places
+│   │       │   ├── status
+│   │       │   └── stock
+│   │       │       ├── chart
+│   │       │       ├── code
+│   │       │       ├── data
+│   │       │       ├── form
+│   │       │       ├── image
+│   │       │       ├── io
+│   │       │       ├── media
+│   │       │       ├── navigation
+│   │       │       ├── net
+│   │       │       ├── object
+│   │       │       ├── table
+│   │       │       └── text
+│   │       ├── index.theme
+│   │       └── scalable
+│   │           ├── actions
+│   │           ├── animations
+│   │           ├── apps
+│   │           ├── categories
+│   │           ├── devices
+│   │           ├── emblems
+│   │           ├── emotes
+│   │           ├── filesystems
+│   │           ├── intl
+│   │           ├── mimetypes
+│   │           ├── places
+│   │           ├── status
+│   │           └── stock
+│   │               ├── chart
+│   │               ├── code
+│   │               ├── data
+│   │               ├── form
+│   │               ├── image
+│   │               ├── io
+│   │               ├── media
+│   │               ├── navigation
+│   │               ├── net
+│   │               ├── object
+│   │               ├── table
+│   │               └── text
+│   ├── locale
+│   │   ├── af
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── am
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ang
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ar
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── as
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ast
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── az
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── az_IR
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── be
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── be@latin
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── bg
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── bn
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── bn_IN
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── br
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── bs
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ca
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ca@valencia
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── crh
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── cs
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── csb
+│   │   │   └── LC_MESSAGES
+│   │   │       └── gdk-pixbuf.mo
+│   │   ├── cy
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── da
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── de
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── dz
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── el
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── en
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── en@boldquot
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gettext-runtime.mo
+│   │   │       └── gettext-tools.mo
+│   │   ├── en_CA
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── en_GB
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── en@quot
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gettext-runtime.mo
+│   │   │       └── gettext-tools.mo
+│   │   ├── en@shaw
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── eo
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── es
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── et
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── eu
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── fa
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── fi
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── fr
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ga
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── gl
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── gu
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── he
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── hi
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── hr
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── hu
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── hy
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ia
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── id
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── io
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── is
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── it
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ja
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ka
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── kg
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── kk
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── km
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── kn
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ko
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ku
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ky
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── lg
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── li
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── locale.alias
+│   │   ├── lt
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── lv
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── mai
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── mg
+│   │   │   └── LC_MESSAGES
+│   │   │       └── glib20.mo
+│   │   ├── mi
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── mk
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ml
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── mn
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── mr
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ms
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── my
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── nb
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── nds
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ne
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── nl
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── nn
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── nso
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── oc
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── or
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── pa
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── pl
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ps
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── pt
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── pt_BR
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ro
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ru
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── rw
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── si
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── sk
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── sl
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── sq
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── sr
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── sr@ije
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── sr@latin
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── sv
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ta
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── te
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── th
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── tk
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── tl
+│   │   │   └── LC_MESSAGES
+│   │   │       └── glib20.mo
+│   │   ├── tr
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── tt
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ug
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── uk
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── ur
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── uz
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── uz@cyrillic
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── vi
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── wa
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── xh
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── yi
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── zh_CN
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── zh_HK
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   ├── zh_TW
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── atk10.mo
+│   │   │       ├── gdk-pixbuf.mo
+│   │   │       ├── gettext-runtime.mo
+│   │   │       ├── gettext-tools.mo
+│   │   │       ├── glib20.mo
+│   │   │       ├── gtk30.mo
+│   │   │       └── gtk30-properties.mo
+│   │   └── zu
+│   │       └── LC_MESSAGES
+│   │           └── atk10.mo
+│   ├── man
+│   │   └── man1
+│   │       ├── autopoint.1
+│   │       ├── envsubst.1
+│   │       ├── gdbus.1
+│   │       ├── gdbus-codegen.1
+│   │       ├── gdk-pixbuf-csource.1
+│   │       ├── gdk-pixbuf-query-loaders.1
+│   │       ├── gettext.1
+│   │       ├── gettextize.1
+│   │       ├── gio-querymodules.1
+│   │       ├── glib-compile-resources.1
+│   │       ├── glib-compile-schemas.1
+│   │       ├── glib-genmarshal.1
+│   │       ├── glib-gettextize.1
+│   │       ├── glib-mkenums.1
+│   │       ├── gobject-query.1
+│   │       ├── gresource.1
+│   │       ├── gsettings.1
+│   │       ├── gtester.1
+│   │       ├── gtester-report.1
+│   │       ├── gtk-launch.1
+│   │       ├── gtk-query-immodules-3.0.1
+│   │       ├── gtk-update-icon-cache.1
+│   │       ├── ngettext.1
+│   │       ├── pango-querymodules.1
+│   │       ├── pango-view.1
+│   │       ├── pkg-config.1
+│   │       └── xml2-config.1
+│   ├── themes
+│   │   ├── Default
+│   │   │   └── gtk-3.0
+│   │   │       └── gtk-keys.css
+│   │   └── Emacs
+│   │       └── gtk-3.0
+│   │           └── gtk-keys.css
+│   └── xml
+│       └── fontconfig
+│           └── fonts.dtd
+└── src
+    └── tarnyko
+        └── scripts
+            ├── 01_libiconv.sh
+            ├── 02_gettext.sh
+            ├── 11_zlib.sh
+            ├── 12_xz.sh
+            ├── 13_libxml2.sh
+            ├── 21_libffi.sh
+            ├── 22_glib.sh
+            ├── 23_pkg-config.sh
+            ├── 31_libpng.sh
+            ├── 32_libfreetype.sh
+            ├── 33_libfontconfig.sh
+            ├── 34_pixman.sh
+            ├── 35_cairo.sh
+            ├── 36_pango.sh
+            ├── 41_libjpeg.sh
+            ├── 42_libjasper.sh
+            ├── 43_libtiff.sh
+            ├── 44_gdk-pixbuf.sh
+            ├── 51_atk.sh
+            ├── 52_gtk3.sh
+            ├── 61_libcroco.sh
+            ├── 62_librsvg.sh
+            ├── 71_icon-naming-utils.sh
+            ├── 72_hicolor-icon-theme.sh
+            ├── 73_gnome-icon-theme.sh
+            ├── 74_gnome-icon-theme-symbolic.sh
+            ├── BUILD_ALL.sh
+            └── logs
+                ├── 01_libiconv-makeinstall.log
+                ├── 01_libiconv-make.log
+                ├── 02_gettext-makeinstall.log
+                ├── 02_gettext-make.log
+                ├── 11_zlib-make.log
+                ├── 12_xz-makeinstall.log
+                ├── 12_xz-make.log
+                ├── 13_libxml2-makeinstall.log
+                ├── 13_libxml2-make.log
+                ├── 21_libffi-makeinstall.log
+                ├── 21_libffi-make.log
+                ├── 22_glib-makeinstall.log
+                ├── 22_glib-make.log
+                ├── 23_pkg-config-makeinstall.log
+                ├── 23_pkg-config-make.log
+                ├── 31_libpng-makeinstall.log
+                ├── 31_libpng-make.log
+                ├── 32_libfreetype-makeinstall.log
+                ├── 32_libfreetype-make.log
+                ├── 33_libfontconfig-makeinstall.log
+                ├── 33_libfontconfig-make.log
+                ├── 34_pixman-makeinstall.log
+                ├── 34_pixman-make.log
+                ├── 35_cairo-makeinstall.log
+                ├── 35_cairo-make.log
+                ├── 36_pango-makeinstall.log
+                ├── 36_pango-make.log
+                ├── 41_libjpeg-makeinstall.log
+                ├── 41_libjpeg-make.log
+                ├── 42_libjasper-makeinstall.log
+                ├── 42_libjasper-make.log
+                ├── 43_libtiff-makeinstall.log
+                ├── 43_libtiff-make.log
+                ├── 44_gdk-pixbuf-makeinstall.log
+                ├── 44_gdk-pixbuf-make.log
+                ├── 51_atk-makeinstall.log
+                ├── 51_atk-make.log
+                ├── 52_gtk3-makeinstall.log
+                ├── 52_gtk3-make.log
+                ├── 61_libcroco-makeinstall.log
+                ├── 61_libcroco-make.log
+                ├── 62_librsvg-makeinstall.log
+                ├── 62_librsvg-make.log
+                ├── 71_hicolor-icon-theme-makeinstall.log
+                ├── 71_hicolor-icon-theme-make.log
+                ├── 71_icon-naming-utils-makeinstall.log
+                ├── 71_icon-naming-utils-make.log
+                ├── 73_gnome-icon-theme-makeinstall.log
+                ├── 73_gnome-icon-theme-make.log
+                ├── 73_gnome-icon-theme-symbolic-makeinstall.log
+                └── 73_gnome-icon-theme-symbolic-make.log
+
+717 directories, 3643 files

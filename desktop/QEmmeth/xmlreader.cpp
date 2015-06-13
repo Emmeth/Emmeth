@@ -8,11 +8,12 @@
 
 #include "xmlreader.h"
 #include <QFile>
-//#include <QtXml>
 #include <QXmlStreamReader>
 #include <QMessageBox>
 #include <QDebug>
 #include <QFileInfo>
+#include "jsonparser.h"
+
 
 
 xmlReader::xmlReader()
@@ -26,6 +27,10 @@ xmlReader::~xmlReader()
 }
 
 void xmlReader::load(QString fileName){
+    qDebug() << "jsonParser started...";
+    //jsonParser list;
+    //list.parse();
+
     QFileInfo fi(fileName);
     QFile xmlFile(fi.completeBaseName());
     xmlFile.open(QIODevice::ReadOnly);

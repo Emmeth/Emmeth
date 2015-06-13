@@ -33,6 +33,7 @@ private:
     QScrollArea scrollArea;
     void MainWindow::loadFile(QFile fileName);
     void MainWindow::imageLabel();
+    void display(QString string);
 };
 
 #endif // MAINWINDOW_H
