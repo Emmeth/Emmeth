@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Benni\Programmierung\Emmeth\desktop\tools\openjpeg_v1_4_sources_r697\CMakeFiles\aa46ca059b7107ef04b7e3ae40eb7ea5\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7058A31E-2B6F-49AE-98AF-84052A7D1821}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
