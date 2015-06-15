@@ -33,5 +33,10 @@
 ._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
+thumbs.db
 Thumbs.db
+
+# Folders #
+###########
+
+library
