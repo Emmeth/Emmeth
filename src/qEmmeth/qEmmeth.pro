@@ -8,7 +8,8 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Emmeth-qt
+TARGET = qEmmeth
+DESTDIR = ../../build
 TEMPLATE = app
 
 
@@ -20,7 +21,8 @@ SOURCES += main.cpp\
     htmlreader.cpp \
     aboutDialog.cpp \
     txteditor.cpp \
-    jsonparser.cpp
+    jsonparser.cpp \
+    pdfreader.cpp
 
 FORMS    += mainwindow.ui \
     bookstore.ui
@@ -33,22 +35,17 @@ HEADERS += \
     xmlreader.h \
     aboutDialog.h \
     txteditor.h \
-    jsonparser.h
+    jsonparser.h \
+    pdfreader.h
 
 RESOURCES += \
     icons.qrc \
     de-de.qrc \
     en-us.qrc \
-    strings.qrc
+    strings.qrc \
+    gpl.qrc
 
 DISTFILES += \
-    assets/icons/128.png \
-    assets/icons/16.png \
-    assets/icons/24.png \
-    assets/icons/32.png \
-    assets/icons/48.png \
-    assets/icons/256.png \
-    assets/icons/512.png \
     README.md \
     GPL3.txt \
     GPL3.html \
@@ -56,4 +53,6 @@ DISTFILES += \
     assets/xmlschemas/tanach-xml.json \
     XMLHandlers.md \
     assets/abbreviations/info.md \
-    assets/abbreviations/en-US.json
+    assets/abbreviations/en-US.json \
+
+DEPLOYMENT += \
