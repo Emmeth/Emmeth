@@ -8,10 +8,12 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = qEmmeth
-DESTDIR = ../../build
+TARGET = Emmeth
+win32:DESTDIR = ../../windows/release
+unix:DESTDIR = ../../linux/release
+osx:DESTDIR = ../../osx/release
 TEMPLATE = app
-
+VERSION = 0.1
 
 SOURCES += main.cpp\
         mainwindow.cpp \
@@ -22,7 +24,8 @@ SOURCES += main.cpp\
     aboutDialog.cpp \
     txteditor.cpp \
     jsonparser.cpp \
-    pdfreader.cpp
+    settingsdialog.cpp \
+    logindialog.cpp
 
 FORMS    += mainwindow.ui \
     bookstore.ui
@@ -36,14 +39,16 @@ HEADERS += \
     aboutDialog.h \
     txteditor.h \
     jsonparser.h \
-    pdfreader.h
+    settingsdialog.h \
+    logindialog.h
 
 RESOURCES += \
     icons.qrc \
     de-de.qrc \
     en-us.qrc \
     strings.qrc \
-    gpl.qrc
+    gpl.qrc \
+    files.qrc
 
 DISTFILES += \
     README.md \
@@ -54,5 +59,7 @@ DISTFILES += \
     XMLHandlers.md \
     assets/abbreviations/info.md \
     assets/abbreviations/en-US.json \
+    TODO.md \
+    assets/splashscreen.jpg
 
 DEPLOYMENT += \

@@ -2,6 +2,7 @@
 #define XMLREADER_H
 #include <QFile>
 #include <QXmlStreamReader>
+#include <QString>
 
 
 class xmlReader
@@ -9,7 +10,11 @@ class xmlReader
 public:
     xmlReader();
     ~xmlReader();
-    static void load(QString fileName);
+    QString load(QString fileName);
+    QString loadInfo(QString fileName);
+    bool validate(QString fileName);
+    QStringList readChapterVerses(QString fileName);
+    QString readBookTitle(QString fileName);
 
 private:
     QXmlStreamReader xml;

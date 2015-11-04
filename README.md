@@ -1,5 +1,5 @@
 # About Emmeth
->Emmeth = Hebrew word for truth.
+>Emmeth = Hebrew for truth.
 >Then you will know the truth, and the truth will set you free. (John 8:32 NIV)
 
 ## Vision

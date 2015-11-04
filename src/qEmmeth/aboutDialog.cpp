@@ -42,7 +42,7 @@ void aboutDialog::open()
     layout->addWidget(label5);
     //TODO
     //change file path to Application Directory
-    QFile gplFile("C:/Users/Benni/Programmierung/Emmeth/desktop/QEmmeth/GPL3.html");
+    QFile gplFile("://GPL3.html");
     gplFile.open(QIODevice::ReadOnly);
     QString gplString = gplFile.readAll();
     gplFile.close();
@@ -63,7 +63,7 @@ void aboutDialog::open()
     imageLabel->setScaledContents(true);
     //TODO
     //change file path to Application Directory
-    QPixmap pixmap("C:/Users/Benni/Programmierung/Emmeth/desktop/QEmmeth/assets/icons/128.png");
+    QPixmap pixmap(":/appicon/assets/icons/128.png");
     qDebug() << qApp->applicationDirPath();
     imageLabel->setPixmap(pixmap);
 

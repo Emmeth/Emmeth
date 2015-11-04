@@ -72,6 +72,13 @@
     <property name="title">
      <string>&amp;Windows</string>
     </property>
+    <addaction name="action_Fullscreen"/>
+    <addaction name="separator"/>
+    <addaction name="action_Cascade"/>
+    <addaction name="action_Tile"/>
+    <addaction name="separator"/>
+    <addaction name="actionSymbols"/>
+    <addaction name="actionScripts"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -85,7 +92,7 @@
    </widget>
    <widget class="QMenu" name="menuExtras">
     <property name="title">
-     <string>Extras</string>
+     <string>E&amp;xtras</string>
     </property>
     <addaction name="actionLogin"/>
     <addaction name="actionAbout_Book"/>
@@ -96,9 +103,64 @@
     <addaction name="actionPlugins"/>
     <addaction name="action_Settings"/>
    </widget>
+   <widget class="QMenu" name="menu_Books">
+    <property name="title">
+     <string>&amp;Books</string>
+    </property>
+    <widget class="QMenu" name="menu_Bibles">
+     <property name="title">
+      <string>&amp;Bibles</string>
+     </property>
+     <widget class="QMenu" name="menuHebrew">
+      <property name="title">
+       <string>Hebrew</string>
+      </property>
+      <addaction name="actionWLC"/>
+      <addaction name="actionAleppo"/>
+      <addaction name="actionBHS"/>
+     </widget>
+     <addaction name="menuHebrew"/>
+    </widget>
+    <addaction name="menu_Bibles"/>
+    <addaction name="action_Dictionaries"/>
+    <addaction name="action_Lexicas"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <widget class="QMenu" name="menuAnalytics">
+     <property name="title">
+      <string>Analytics</string>
+     </property>
+     <addaction name="actionWord_Statitics"/>
+     <addaction name="actionWord_Analysis"/>
+     <addaction name="actionSyntactical_Analysis"/>
+     <addaction name="actionStyle_Analysis"/>
+     <addaction name="actionSemantical_Analysis"/>
+     <addaction name="actionHebrew_Calendar"/>
+     <addaction name="actionGematria_calculator"/>
+    </widget>
+    <widget class="QMenu" name="menuFeatures">
+     <property name="title">
+      <string>Features</string>
+     </property>
+     <addaction name="actionTimelines"/>
+     <addaction name="actionMaps"/>
+     <addaction name="action3D_Models"/>
+     <addaction name="actionVideos"/>
+     <addaction name="actionGraphics"/>
+    </widget>
+    <addaction name="actionAdvanced_Search"/>
+    <addaction name="separator"/>
+    <addaction name="menuAnalytics"/>
+    <addaction name="menuFeatures"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuWindows"/>
+   <addaction name="menu_Books"/>
+   <addaction name="menuTools"/>
    <addaction name="menuExtras"/>
    <addaction name="menuHelp"/>
   </widget>
@@ -224,7 +286,7 @@
      <normaloff>:/faenza/actions/24/assets/icons/faenza/actions/24/add.png</normaloff>:/faenza/actions/24/assets/icons/faenza/actions/24/add.png</iconset>
    </property>
    <property name="text">
-    <string>Plugins</string>
+    <string>&amp;Plugins</string>
    </property>
   </action>
   <action name="actionContextual_Help">
@@ -389,6 +451,124 @@
   <action name="action_Bookshop">
    <property name="text">
     <string>&amp;Bookshop</string>
+   </property>
+  </action>
+  <action name="action_Fullscreen">
+   <property name="text">
+    <string>&amp;Fullscreen</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="action_Cascade">
+   <property name="text">
+    <string>&amp;Cascade</string>
+   </property>
+  </action>
+  <action name="action_Tile">
+   <property name="text">
+    <string>&amp;Tile</string>
+   </property>
+  </action>
+  <action name="action_Dictionaries">
+   <property name="text">
+    <string>&amp;Dictionaries</string>
+   </property>
+  </action>
+  <action name="action_Lexicas">
+   <property name="text">
+    <string>&amp;Lexicas</string>
+   </property>
+  </action>
+  <action name="actionWLC">
+   <property name="text">
+    <string>Westminster Leningrad Codex</string>
+   </property>
+  </action>
+  <action name="actionAdvanced_Search">
+   <property name="text">
+    <string>Advanced &amp;Search</string>
+   </property>
+  </action>
+  <action name="actionWord_Statitics">
+   <property name="text">
+    <string>Word Statitics</string>
+   </property>
+  </action>
+  <action name="actionWord_Analysis">
+   <property name="text">
+    <string>Word Analysis</string>
+   </property>
+  </action>
+  <action name="actionSyntactical_Analysis">
+   <property name="text">
+    <string>Syntactical Analysis</string>
+   </property>
+  </action>
+  <action name="actionMaps">
+   <property name="text">
+    <string>Maps</string>
+   </property>
+  </action>
+  <action name="actionTimelines">
+   <property name="text">
+    <string>Timelines</string>
+   </property>
+  </action>
+  <action name="actionVideos">
+   <property name="text">
+    <string>Videos</string>
+   </property>
+  </action>
+  <action name="actionGraphics">
+   <property name="text">
+    <string>Graphics</string>
+   </property>
+  </action>
+  <action name="action3D_Models">
+   <property name="text">
+    <string>3D Models</string>
+   </property>
+  </action>
+  <action name="actionStyle_Analysis">
+   <property name="text">
+    <string>Style Analysis</string>
+   </property>
+  </action>
+  <action name="actionSemantical_Analysis">
+   <property name="text">
+    <string>Semantical Analysis</string>
+   </property>
+  </action>
+  <action name="actionHebrew_Calendar">
+   <property name="text">
+    <string>Hebrew Calendar</string>
+   </property>
+  </action>
+  <action name="actionGematria_calculator">
+   <property name="text">
+    <string>Gematria calculator</string>
+   </property>
+  </action>
+  <action name="actionSymbols">
+   <property name="text">
+    <string>Symbols</string>
+   </property>
+  </action>
+  <action name="actionScripts">
+   <property name="text">
+    <string>Scripts</string>
+   </property>
+  </action>
+  <action name="actionAleppo">
+   <property name="text">
+    <string>Aleppo Codex</string>
+   </property>
+  </action>
+  <action name="actionBHS">
+   <property name="text">
+    <string>BHS</string>
    </property>
   </action>
  </widget>

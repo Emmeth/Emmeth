@@ -5,12 +5,12 @@
 
 int main(int argc, char *argv[])
 {
-    QString fileName = "C:/Users/Benni/Programmierung/Emmeth/desktop/tanach-xml/Amos.xml";
-    xmlReader::load(fileName);
 
     QApplication emmeth(argc, argv);
     MainWindow w;
 
+    //deactivate splash screen for faster testing
+    //w.splashscreen();
     w.show();
 
     return emmeth.exec();

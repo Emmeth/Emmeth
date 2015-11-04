@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>GPL3.html</file>
+        <file>GPL3.txt</file>
+    </qresource>
+    <qresource prefix="/assets/xmlschemas">
+        <file>assets/xmlschemas/tanach-xml.json</file>
+        <file>assets/xmlschemas/tanach-xml.xsd</file>
+    </qresource>
+</RCC>
