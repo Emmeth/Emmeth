@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Emmeth by bsesic</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/bsesic/Emmeth">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/bsesic/Emmeth/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/bsesic/Emmeth/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Emmeth</h1>
+          <p>A free, open source bible software.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/bsesic">bsesic</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="about-emmeth" class="anchor" href="#about-emmeth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Emmeth</h1>
+
+<blockquote>
+<p>Emmeth = Hebrew for truth.
+Then you will know the truth, and the truth will set you free. (John 8:32 NIV)</p>
+</blockquote>
+
+<h2>
+<a id="vision" class="anchor" href="#vision" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Vision</h2>
+
+<p>Emmeth is a free, open source bible software.
+It's purpose is to be free, easy to use.
+It supports sermon preparation, daily bible reading, studying, scientific use.
+It is multi platform (Windows, Mac, Linux), has a webapp and mobile versions.</p>
+
+<h2>
+<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How it works</h2>
+
+<p>The bible software comes for free. You can either download the source and compile it or download a stable build for your operating system.
+Emmeth has a base software which comes for free all the functions are free of use.
+To use it, you need to download in (the base software included) bookstore. 
+You need to have an account to download books from the bookstore.
+Downloading books is restricted and you need sometimes to purchase the books in order to download them. This is due because of licenses from the authors and the publishers.
+Some books are for free, if they are in public domain or under free to use licenses.
+Emmeth wants to honor the work of others and respects licenses.
+The books, notes and anything else will be synced to your online account.
+The purchase can be made through the bookstore and the files will be downloaded and synced automatically.</p>
+
+<h2>
+<a id="version-history" class="anchor" href="#version-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version history</h2>
+
+<p><strong>0.0.1 unstable, pre-alpha</strong>
+Still in development, a lot of stuff needs to be done.
+It can be forked and added to.</p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>For developers see more in the doc folder.
+You can also look at the documentation at the website.
+The desktop version is coded in qt for multi platform purpose.</p>
+
+<h2>
+<a id="compiling-from-source" class="anchor" href="#compiling-from-source" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compiling from source</h2>
+
+<h3>
+<a id="download-from-github" class="anchor" href="#download-from-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download from github</h3>
+
+<p>Download the zip file of the entire folder.
+OR
+Clone in Desktop if yo have the github sotware installed.
+OR
+Clone using command line.
+git clone <a href="mailto:git@github.com">git@github.com</a>:bsesic/Emmeth.git</p>
+
+<h3>
+<a id="using-qt" class="anchor" href="#using-qt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>using QT</h3>
+
+<p>There is a QT .pro file in the src folder, called Emmeth.pro in qEmmeth.
+Load it and configure your kits.
+Make sure you compile into build or test folder (preferred).</p>
+
+<h3>
+<a id="command-line" class="anchor" href="#command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>command line</h3>
+
+<p>Needs qmake (from MinGW). Make sure the path is configured correctly.
+cd src/qEmmeth
+qmake qEmmeth.pro
+make
+make install</p>
+
+<h2>
+<a id="folder-structure" class="anchor" href="#folder-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Folder structure</h2>
+
+<p>build - compiled files. Builds for Windows, Mac &amp; Linux go here, stable and nightly.
+docs - documentation (mostly developer stuff)
+src - source files, also assets, graphics, etc.
+test - compiled files used to test development build.
+tools - tools for writing, editing, compiling, which is not part of the base system (mostly python). Also plugins.</p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>You like the project?
+Do you want to contribute to?
+There are many ways to contribute.
+1. Code the base software.
+2. Code a mobile app for ios or android.
+3. Translate the software into your language.
+4. Code the web app.
+5. Contribute bibles, dictionaries, lexicons, books, maps, images and other stuff.
+6. Testing software and reporting bugs.</p>
+
+<h2>
+<a id="tasks" class="anchor" href="#tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tasks</h2>
+
+<p>[ ] translating
+[ ] webapp (based on laravel)
+[ ] API
+[ ] IOS app
+[ ] Android app</p>
+
+<h2>
+<a id="developers" class="anchor" href="#developers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developer(s)</h2>
+
+<p>Lead programmer:
+Benjamin Schnabel
+Tuebingen, Germany</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>The base software is licensed under the GPL 3 License.
+See more here:
+<a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html">http://www.gnu.org/licenses/gpl-3.0-standalone.html</a>
+The bibles, books, dictionaries, maps, lexicons and other stuff is not part of the base program and are under the restrictions and licenes of the various authors and publishers.
+See more on the website.</p>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>Website: <a href="http://www.emmeth.com">http://www.emmeth.com</a>
+Email: <a href="mailto:info@emmeth.com">info@emmeth.com</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
