@@ -63,7 +63,7 @@ tools - tools for writing, editing, compiling, which is not part of the base sys
 You like the project?
 Join our slack channel.
 
-[emmeth.slack.com link](http://emmeth.slack.com)
+[emmeth.slack.com](http://emmeth.slack.com)
 
 Do you want to contribute?
 There are many ways to contribute.
