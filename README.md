@@ -61,7 +61,10 @@ tools - tools for writing, editing, compiling, which is not part of the base sys
 
 ## Contributing
 You like the project?
-Do you want to contribute to?
+Join our slack channel.
+emmeth.slack.com
+
+Do you want to contribute?
 There are many ways to contribute.
 1. Code the base software.
 2. Code a mobile app for ios or android.
@@ -81,6 +84,7 @@ There are many ways to contribute.
 Lead programmer:
 Benjamin Schnabel
 Tuebingen, Germany
+
 
 ## License
 The base software is licensed under the GPL 3 License.
