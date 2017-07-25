@@ -1,0 +1,21 @@
+{
+    "mainframe"     : "Tanach",
+    "Tanach"        :"mainframe",
+    "teiHeader"     :"header",
+    "notes"         :"ignore",
+    "fileDesc"      :"ignore",
+    "encodingDesc"  :"encoding",
+    "profileDesc"   :"ignore",
+    "tanach"        :"read",
+    "book"          :"read",
+    "names"         :"desc",
+    "name"          :"name",
+    "abbrev"        :"abbrev",
+    "filename"      :"ignore",
+    "hebrewname"    :"ignore",
+    "c"             :"chapter",
+    "n"             :"value",
+    "v"             :"verse",
+    "w"             :"word",
+    "x"             :"ignore"
+}
