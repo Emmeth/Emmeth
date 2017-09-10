@@ -33,7 +33,8 @@ SOURCES += main.cpp\
     library.cpp \
     texteditor.cpp \
     sqldatabase.cpp \
-    reference.cpp
+    reference.cpp \
+    search.cpp
 
 RESOURCES += \
     icons.qrc \
@@ -74,7 +75,8 @@ HEADERS += \
     library.h \
     texteditor.h \
     sqldatabase.h \
-    reference.h
+    reference.h \
+    search.h
 
 FORMS += \
     mainwindow.ui \

@@ -1,17 +1,13 @@
 #ifndef REFERENCE_H
 #define REFERENCE_H
 
-#include <QObject>
 
-class Reference : public QObject
+class Reference
 {
-    Q_OBJECT
 public:
-    explicit Reference(QObject *parent = 0);
+    Reference();
 
-signals:
-
-public slots:
+    Reference(const String &s);
 };
 
 #endif // REFERENCE_H

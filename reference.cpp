@@ -47,13 +47,15 @@
 **********************/
 
 
-
-Reference::Reference(QObject *parent) : QObject(parent)
+Reference::Reference()
 {
-
+    String BookNumber;
+    String Book;
+    String Chapter;
+    String Verse;
 }
 
-Reference::~Reference()
+Reference::Reference(const String &s)
 {
-    this
+
 }
