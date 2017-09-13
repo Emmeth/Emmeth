@@ -1,6 +1,13 @@
 #TODO#
 * PDF Library
 
+## Fixme ##
+Fix scaling in OsX
+switch MdiArea in Win and OsX
+Fix Verse selector
+Fix Book selector
+
+
 ##Texteditor ##
 
 * Comboboxes

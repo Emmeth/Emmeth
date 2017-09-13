@@ -1,4 +1,6 @@
 #include "reference.h"
+
+#include <QString>
 /*****************
 / class for  referencing the bible and texts
 /
@@ -49,13 +51,13 @@
 
 Reference::Reference()
 {
-    String BookNumber;
-    String Book;
-    String Chapter;
-    String Verse;
+    QString BookNumber;
+    QString Book;
+    QString Chapter;
+    QString Verse;
 }
 
-Reference::Reference(const String &s)
+Reference::Reference(const QString &s)
 {
 
 }

@@ -87,6 +87,7 @@ private:
     QVBoxLayout* vBoxLayout;
     QHBoxLayout* hBoxLayoutActions;
     QHBoxLayout* hBoxLayoutFormat;
+    QHBoxLayout* hBoxLayoutFeatures;
     QComboBox *comboFont;
     QStringList fonts;
     QComboBox *comboSize;

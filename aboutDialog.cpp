@@ -24,36 +24,44 @@
 #include <QScrollArea>
 #include <QObject>
 
-void aboutDialog::open()
+AboutDialog::AboutDialog(QWidget *parent) : QWidget (parent)
 {
     //initialize Dialog
-    QDialog *aDialog = new QDialog;
-    aDialog->setWindowTitle("About Emmeth");
-    QHBoxLayout *hLayout = new QHBoxLayout;
+    QDialog *dialog = new QDialog;
+    dialog->setWindowTitle("About Emmeth");
+    QGridLayout *gridLayout = new QGridLayout;
+
     QVBoxLayout *layout =new QVBoxLayout;
-    aDialog->setWindowIcon(QIcon(":/assets/icons/Moleskine.ico"));
+    dialog->setWindowIcon(QIcon(":/assets/icons/Moleskine.ico"));
 
     //Copyright
-    QLabel *label1 = new QLabel(tr("<h1>About Emmeth</h1>"));
-    layout->addWidget(label1);
+    QLabel *labelAbout = new QLabel(tr("<h1>About Emmeth</h1>"));
+    layout->addWidget(labelAbout);
     QString version = "<h2>Version info:\n</h2> 0.0.1 (unstable,";
     QChar c = (0x03B1);
     version += c;
     version += ")";
-    QLabel *label2 = new QLabel(version);
-    layout->addWidget(label2);
-    QString copy = " Benjamin Schnabel, 2015";
+    QLabel *labelCopyright = new QLabel(version);
+    layout->addWidget(labelCopyright);
+    QString copyright = " Benjamin Schnabel, et al., ";
     c = (0x00a9);
     QString developers = "<h2>Developers</h2>\n";
-    copy  = developers + c + copy;
-    QLabel *label3 = new QLabel(copy);
-    layout->addWidget(label3);
+    QDate year;
+    copyright  = developers + c + copyright + year.currentDate().toString("yyyy");
+    QLabel *labelDevelopers = new QLabel(copyright);
+    layout->addWidget(labelDevelopers);
 
     //Application licences and thanks
-    QLabel *label4 = new QLabel(tr("<h2>Licences:</h2>"));
-    layout->addWidget(label4);
-    QLabel *label5 = new QLabel(tr("<ul><li>GPL\n</li><li>Qt\n</li><li>poppler</li></ul>"));
-    layout->addWidget(label5);
+    QLabel *labelLicences = new QLabel(tr("<h2>Licences:</h2>"));
+    layout->addWidget(labelLicences);
+    QLabel *labelPoppler = new QLabel(tr("<ul><li>GPL\n</li><li>Qt\n</li><li>poppler</li></ul>"));
+    layout->addWidget(labelPoppler);
+    QLabel *labelIcon = new QLabel (tr("<h2>Icons</h2>"));
+    layout->addWidget(labelIcon);
+    QLabel *labelMoleskine = new QLabel (tr("Moleskin by <a href=\"http://www.http://stezycki.com\">Michael Stezycki</a>"));
+    layout->addWidget(labelMoleskine);
+    QLabel *labelFaenza = new QLabel (tr("Faenza Icons by <a href=\"https://github.com/shlinux/faenza-icon-theme\">Matthieu James</a>"));
+    layout->addWidget(labelFaenza);
 
     //TODO
     //change file path to Application Directory
@@ -65,12 +73,12 @@ void aboutDialog::open()
     QLabel *gplLabel = new QLabel(gplString);
     QScrollArea *scrollArea = new QScrollArea();
     scrollArea->setWidget(gplLabel);
-    layout->addWidget(scrollArea);
+    scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
     //website
-    QLabel *webLabel = new QLabel(tr("<a href=\"http://www.emmeth.com\">www.emmeth.com</a>"));
-    webLabel->setAlignment(Qt::AlignCenter);
-    layout->addWidget(webLabel);
+    QLabel *labelWebsite = new QLabel(tr("<h2>Our website:</h2> <a href=\"http://www.emmeth.com\">www.emmeth.com</a>"));
+    labelWebsite->setAlignment(Qt::AlignLeft);
+    layout->addWidget(labelWebsite);
 
     //Application Image
     QLabel *imageLabel = new QLabel();
@@ -86,20 +94,32 @@ void aboutDialog::open()
 
     imageLabel->setAlignment(Qt::AlignCenter);
     imageLabel->setSizePolicy(QSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed));
-    //aDialog->setSizePolicy( QSizePolicy::Fixed, QSizePolicy::Fixed);
 
     //Close button
     QPushButton *btnClose = new QPushButton("Close");
-    QObject::connect(btnClose, SIGNAL(clicked(bool)),aDialog,SLOT(close()));
-    layout->addWidget(btnClose);
+    QObject::connect(btnClose, SIGNAL(clicked(bool)),dialog,SLOT(close()));
+    //FIXME: On close application, close the widget too.
 
-    hLayout->addWidget(imageLabel);
-    hLayout->addLayout(layout);
-    aDialog->setLayout(hLayout);
-    //aDialog->setMaximumSize(500,200);
-    aDialog->setMinimumSize(500,200);
-    aDialog->show();
-    aDialog->raise();
-    aDialog->activateWindow();
+    gridLayout->addWidget(imageLabel,0,0);
+    gridLayout->addLayout(layout,0,1);
+    gridLayout->addWidget(scrollArea,1,0,1,2);
+    gridLayout->addWidget(btnClose,2,0,1,2);
+
+    dialog->setLayout(gridLayout);
+
+    dialog->setMinimumSize(500,200);
+    dialog->show();
+    dialog->raise();
+    dialog->activateWindow();
 }
+
+AboutDialog::~AboutDialog() {
+
+}
+
+void AboutDialog::on_actionQuit_triggered()
+{
+    this->close();
+}
+
 

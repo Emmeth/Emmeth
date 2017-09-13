@@ -1,13 +1,16 @@
 #ifndef REFERENCE_H
 #define REFERENCE_H
 
+#include <QString>
+
+
 
 class Reference
 {
 public:
     Reference();
 
-    Reference(const String &s);
+    Reference(const QString &s);
 };
 
 #endif // REFERENCE_H

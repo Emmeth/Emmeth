@@ -64,6 +64,8 @@ TextEditor::TextEditor(QWidget *parent): QWidget(parent)
     vBoxLayout = new QVBoxLayout(this);
     hBoxLayoutActions = new QHBoxLayout(); //new HBoxLayout for Pushbuttons for Actions, frist row.
     hBoxLayoutFormat = new QHBoxLayout();  //new HBoxLayout for Pushbuttons for Formating, second row.
+    hBoxLayoutFeatures = new QHBoxLayout();  //new HBoxLayout for Pushbuttons for Formating, third row. Otherwise the panel gets to long.
+
 
     //editor icons
 
@@ -286,12 +288,13 @@ TextEditor::TextEditor(QWidget *parent): QWidget(parent)
     hBoxLayoutFormat->addWidget(btnAlignJustify);
     hBoxLayoutFormat->addWidget(btnAlignRight);
     hBoxLayoutFormat->addWidget(btnLTR);
-    hBoxLayoutFormat->addWidget(btnRTL);
-    hBoxLayoutFormat->addWidget(btnIndentMore);
-    hBoxLayoutFormat->addWidget(btnIndentLess);
-    hBoxLayoutFormat->addWidget(btnList);
-    hBoxLayoutFormat->addWidget(btnSpellcheck);
-    hBoxLayoutFormat->addStretch();
+    hBoxLayoutFormat->addWidget(btnRTL); // After directions add the second row.
+
+    hBoxLayoutFeatures->addWidget(btnIndentMore);
+    hBoxLayoutFeatures->addWidget(btnIndentLess);
+    hBoxLayoutFeatures->addWidget(btnList);
+    hBoxLayoutFeatures->addWidget(btnSpellcheck);
+    hBoxLayoutFeatures->addStretch();
 
     //add Textedit
     textEdit = new QTextEdit();
@@ -302,8 +305,6 @@ TextEditor::TextEditor(QWidget *parent): QWidget(parent)
     textEdit->setWordWrapMode(QTextOption::WordWrap);
     textEdit->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     textEdit->setCursor(Qt::IBeamCursor);
-
-
 
     //set Font
     QFont textFont("Arial");
@@ -343,6 +344,7 @@ TextEditor::TextEditor(QWidget *parent): QWidget(parent)
     //add all hBoxlayouts to the main layout
     vBoxLayout->addLayout(hBoxLayoutActions);
     vBoxLayout->addLayout(hBoxLayoutFormat);
+    vBoxLayout->addLayout(hBoxLayoutFeatures);
 
     vBoxLayout->addWidget(textEdit);
 

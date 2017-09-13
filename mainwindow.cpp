@@ -83,7 +83,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QApplication::setApplicationVersion("0.1");
 
     //set default shortcuts
-    QShortcut *shortcutCopy = new QShortcut(QKeySequence("Ctrl+Ü"), parent);
+    QShortcut *shortcutCopy = new QShortcut(QKeySequence("Ctrl+Ü"), this);
     QObject::connect(shortcutCopy, SIGNAL(activated()), this, SLOT(copy()));
 }
 
@@ -256,8 +256,8 @@ bool MainWindow::saveAs() {
 void MainWindow::about()
 {
     //open the about dialog
-
-    aboutDialog::open();
+    AboutDialog *aboutDialog = new AboutDialog(this);
+      //XXX aboutDialog::open();
 }
 
 
@@ -290,19 +290,25 @@ void MainWindow::loadFile(QString fileName, bool newFile)
     qDebug() << "base: " + base;
     qDebug() << "ending: " + ending;
 
-    //open according to the ending
-    //TODO change to switch
+    // open according to the ending
+    // TODO change to switch
     if(ending == "pdf"){    //load reader classes and render by the reader.
         //construct new window and menu for pdf
         addPdf(fileName);
 
-        //TODO: load pdf
+        //TO1O: load pdf
         //QImage pdfImage = pdfReader::load(fileName.fileName()); //FIXME
         //render pdf Image
 
     }
+
+    /***************************************************
+     * if the file is of type xml => load the xml parser
+     *
+     */
+
     if(ending == "xml"){
-        //opening xml file
+        // opening xml file
         // same as emmeth file (.emt)
 
         qDebug() << "reading xml file.";
@@ -311,27 +317,37 @@ void MainWindow::loadFile(QString fileName, bool newFile)
         //read the content and more
         xmlReader *reader = new xmlReader();
         QString result = reader->load(fileName);
-        QStringList Verses = reader->readChapterVerses(fileName);
-        bookName = reader->readBookTitle(fileName);
 
-        //build UI
-        //if(newFile == true){
-        createMdiArea(result);
-        //}
+        // If the file returns nothing,
+        // don't continue.
+        if(result != NULL){
+            QStringList Verses = reader->readChapterVerses(fileName);
+            bookName = reader->readBookTitle(fileName);
 
-        //add book name, chapter and verses
-        //exception handler for if bookname is not found.
-        if(!bookName.isEmpty()){
-            qDebug() << cmbBook->findText(bookName);
-            cmbBook->setCurrentIndex(cmbBook->findText(bookName));
-            //cmbBook->addItem(bookName);
-            for(int i = 1; i <= Verses.count(); i++){
-                cmbChapter->addItem(QString::number(i));
+            // build UI
+            //XXX if(newFile == true){
+            createMdiArea(result);
+            //XXX }
+
+            // add book name, chapter and verses
+            // exception handler for if bookname is not found.
+            if(!bookName.isEmpty()){
+                qDebug() << cmbBook->findText(bookName);
+                cmbBook->setCurrentIndex(cmbBook->findText(bookName));
+                //XXX cmbBook->addItem(bookName);
+                for(int i = 1; i <= Verses.count(); i++){
+                    cmbChapter->addItem(QString::number(i));
+                }
+                for(int i = 1; i <= Verses[0].toInt(); i++){
+                    cmbVerse->addItem(QString::number(i));
+                }
             }
-            for(int i = 1; i <= Verses[0].toInt(); i++){
-                cmbVerse->addItem(QString::number(i));
-            }
+        }else {
+           QErrorMessage *errorMessage = new QErrorMessage(this);
+           errorMessage->showMessage(QString("Could not open file"));
         }
+
+
     }
 
     if(ending == "txt"){
@@ -361,11 +377,23 @@ void MainWindow::loadFile(QString fileName, bool newFile)
 
 void MainWindow::on_actionQuit_triggered()
 {
-    this->close();
+    //Todo: Check in the settings if the Dialog needs to be reopened.
 
-    QList<QDialog *> allDialogs = findChildren<QDialog *>();
-    for(int i = 0; i < allDialogs.size(); ++i) {
-        allDialogs.at(i)->close();
+    //add close Dialog
+    QMessageBox *closeDialog = new QMessageBox(this);
+    closeDialog->setIcon(QMessageBox::Question);
+    closeDialog->setText(tr("Are you sure you want to close the application?"));
+    QCheckBox *checkBox = new QCheckBox(tr("Remind me again."), this);
+    checkBox->setCheckState(Qt::Checked);
+
+    closeDialog->setCheckBox(checkBox);
+    closeDialog->setStandardButtons(QMessageBox::Ok | QMessageBox::Abort);
+    closeDialog->setDefaultButton(QMessageBox::Abort);
+    int ret = closeDialog->exec();
+
+    //Todo: check the checkbox.
+    if (ret == QMessageBox::Ok){
+        QApplication::closeAllWindows();
     }
 }
 
@@ -438,7 +466,8 @@ void MainWindow::createMdiArea(QString content){
     //Widget als central widget
     QWidget *widget = new QWidget();
     //create mdiSubWindow
-    mdiSubWindow = new QMdiSubWindow(mdiArea);
+    //XXX subWindow = new QMdiSubWindow(mdiArea);
+    QWidget *subWindow = new QWidget(this);
     gridLayout = new QGridLayout();
     gridLayout->setColumnStretch(0,1);
     gridLayout->setOriginCorner(Qt::TopRightCorner);
@@ -447,7 +476,7 @@ void MainWindow::createMdiArea(QString content){
     createSearchArea();
 
     //create Textedit
-    textEdit = new QTextEdit(mdiSubWindow);
+    textEdit = new QTextEdit(subWindow);
     textEdit->setText(content);
     textEdit->setReadOnly(true);
 
@@ -499,18 +528,26 @@ void MainWindow::createMdiArea(QString content){
 
 
     //mdiSubWindow->setWindowTitle(fileName);
-    mdiSubWindow->setWindowIcon(QIcon(":/appicon/assets/icons/24.png"));
-    mdiSubWindow->setWindowState(Qt::WindowNoState);
-    mdiSubWindow->setAttribute(Qt::WA_DeleteOnClose);
+    subWindow->setWindowIcon(QIcon(":/appicon/assets/icons/24.png"));
+    subWindow->setWindowState(Qt::WindowNoState);
+    subWindow->setAttribute(Qt::WA_DeleteOnClose);
     //mdiSubWindow->setLayout();
 
-    mdiArea->addSubWindow(mdiSubWindow);
+    //XXX mdiArea->addSubWindow(subWindow);
     gridLayout->addWidget(textEdit,1,0);
 
     widget->setLayout(gridLayout);
-    mdiSubWindow->setWidget(widget);
-    mdiSubWindow->setMinimumSize(300,300);
-    mdiSubWindow->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    widget->setParent(this);
+    widget->setMinimumSize(300,300);
+    widget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    widget->setWindowFlags(Qt::Window);
+    widget->show();
+
+    //XXX subWindow->setLayout(gridLayout);
+
+    //XXX setCentralWidget(widget);
+    //XXX subWindow->setMinimumSize(300,300);
+    //XXX subWindow->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     
     
     //add copy and paste connectors
@@ -518,7 +555,7 @@ void MainWindow::createMdiArea(QString content){
     connect(ui->actionCopy, SIGNAL(triggered),this, SLOT(copy()));
     connect(ui->actionPaste, SIGNAL(triggered),this, SLOT(paste()));
 
-    mdiSubWindow->show();
+    //XXX subWindow->show();
 
 }
 
@@ -565,8 +602,8 @@ void MainWindow::createSearchArea(){
     //add slots
     //FIXME: these slots are conditional and trigger an error on compiling.
     QObject::connect(cmbBook, SIGNAL(currentIndexChanged(int)), this, SLOT(bookNameChanged()));
-    //XXX QObject::connect(cmbChapter, SIGNAL(currentIndexChanged(int)), this, SLOT(on_action_cmbChapter_triggered()));
-    //XXX QObject::connect(cmbVerse, SIGNAL(currentIndexChanged(int)),this, SLOT(on_action_cmbVerse_triggered()));
+    QObject::connect(cmbChapter, SIGNAL(currentIndexChanged(int)), this, SLOT(on_action_cmbChapter_triggered()));
+    QObject::connect(cmbVerse, SIGNAL(currentIndexChanged(int)),this, SLOT(on_action_cmbVerse_triggered()));
 
 
 }
@@ -710,6 +747,7 @@ void MainWindow::bookInfo(){
     //QLabel *label = new QLabel();
     xmlReader *reader = new xmlReader();
 
+    //FIXME: OsX, Win, Linux
     QString result = reader->loadInfo(QCoreApplication::applicationDirPath() + "\\library\\bibles\\tanach-xml\\Genesis.xml");
     //label->setText(result);
 
@@ -1029,7 +1067,11 @@ void MainWindow::defaultBook(QString book){
     //default books from the Main Menu
 
     //get standart paths, different on each platfrom.
-    QString path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    //FIXME: check platforms and include files on install
+    //XXX QString path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+
+    //FIXME: for development purposes only.
+    QString path = QCoreApplication::applicationDirPath()+("/../../../../..");
     if(book == "wlc"){
         path.append("/library/bibles/tanach-xml/Genesis.xml");
     }

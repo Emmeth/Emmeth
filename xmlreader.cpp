@@ -35,125 +35,145 @@ xmlReader::~xmlReader()
 }
 
 QString xmlReader::load(QString fileName){
-    //loads a xml file
+    /******************
+     * loads a xml file
+     ******************
+     *
+     * Returns the parsed content or an error if the loading fails.
+     */
 
-    qDebug() << "reading xml file";
-    QFile xmlFile(fileName);
-    xmlFile.open(QIODevice::ReadOnly|QIODevice::Text);
+    //try to load the file
+    try {
+        qDebug() << "Reading xml file: " << fileName;
+        QFile xmlFile(fileName);
+        xmlFile.open(QIODevice::ReadOnly|QIODevice::Text);
 
-    QXmlStreamReader xml;
-    xml.setDevice(&xmlFile);
-    //qDebug() << "Encoding: " + xml.documentEncoding().toString();
+        QXmlStreamReader xml;
+        xml.setDevice(&xmlFile);
 
-    //TODO: read through the json parser.
-    //qDebug() << "jsonParser started...";
-    //jsonParser *jsonParse = new jsonParser();
-    //jsonParse->load(":/assets/xmlschemas/assets/xmlschemas/tanach-xml.json");
+        if(xml.hasError() == true) {
+            xml.raiseError("Error handling xml document");
+            return NULL;
+        }
 
-    QString result;
-    QTextDocument *document = new QTextDocument;
-    //TODO: make this a rtf document, formatted
-    //while(xml.readNextStartElement()){
-    xml.readNext();
-    while(!xml.atEnd() ){ //&& !xml.hasError()){
-        //qDebug() << xml.name();
-        xml.readNextStartElement();
-        if(xml.isStartElement()){
-            // if(xml.name() == "book"){ //look for the beginning of the document
+        //XXX qDebug() << "Encoding: " + xml.documentEncoding().toString();
+
+        //TODO: read through the json parser.
+        //XXX qDebug() << "jsonParser started...";
+        //XXX jsonParser *jsonParse = new jsonParser();
+        //XXX jsonParse->load(":/assets/xmlschemas/assets/xmlschemas/tanach-xml.json");
+
+        QString result;
+        QTextDocument *document = new QTextDocument;
+        //TODO: make this a rtf document, formatted
+        //while(xml.readNextStartElement()){
+        xml.readNext();
+        while(!xml.atEnd() ){ //&& !xml.hasError()){
             //qDebug() << xml.name();
-            //result += xml.text().toString();
-            //}
+            xml.readNextStartElement();
+            if(xml.isStartElement()){
+                // if(xml.name() == "book"){ //look for the beginning of the document
+                //qDebug() << xml.name();
+                //result += xml.text().toString();
+                //}
 
-            if(xml.name()== "w"){ //read without new line
-                QString w = xml.readElementText(QXmlStreamReader::SkipChildElements);
-                //remove slashes from the text
-                result += w.remove("/");
-                //remove space after Linae Mappekh
-                if(!w.endsWith("־")){
+                if(xml.name()== "w"){ //read without new line
+                    QString w = xml.readElementText(QXmlStreamReader::SkipChildElements);
+                    //remove slashes from the text
+                    result += w.remove("/");
+                    //remove space after Linae Mappekh
+                    if(!w.endsWith("־")){
+                        result += " ";
+                    }
+                }
+                //}
+
+                //TODO: declare color in user theme file and load it
+                QString chapterColor  = "#68C3A3";
+                QString verseColor    = "#66CC99";
+                QString parashahColor = "#6C7A89";
+                int currentBook = 0;
+                int currentChapter = 0;
+                int currentVerse = 0;
+
+                //for tanach xml
+                if(xml.name() == "c"){ //if chapter found, display it
+                    QXmlStreamAttributes attr = xml.attributes();
+                    result += "<a id=\"ch_";
+                    result += attr.first().value().toString();
+                    result += "\"><h1 dir=\"rtl\" style=\"color:";
+                    result += chapterColor;
+                    result += ";\">";
+                    result += attr.first().value().toString();
+                    result += "</h1></a>";
+                    result += "\n";
+                    currentChapter++;
+                }
+
+                //for tanach xml
+                if(xml.name() == "v"){
+                    QXmlStreamAttributes attr = xml.attributes();
+                    result += "<a id=\"c";
+                    result += currentChapter + "_v";
+                    result += attr.first().value().toString();
+                    result += "\"><b style=\"color:";
+                    result += verseColor;
+                    result += ";\">";
+                    result += attr.first().value().toString();
+                    result += "</b></a>";
                     result += " ";
                 }
-            }
-            //}
 
-            //TODO: declare color in user theme file and load it
-            QString chapterColor  = "#68C3A3";
-            QString verseColor    = "#66CC99";
-            QString parashahColor = "#6C7A89";
-            int currentBook = 0;
-            int currentChapter = 0;
-            int currentVerse = 0;
+                //for tanach xml
+                if(xml.name() == "pe"){
+                    result += " <b style=\"color:";
+                    result += parashahColor;
+                    result += ";\">פ</b><br />";
+                }
+                if(xml.name() == "samekh"){
+                    result += "<b style=\"color:";
+                    result += parashahColor;
+                    result += ";\">ס</b> ";
+                }
+
+                //for sblgnt
+                if(xml.name()== "title"){
+                    result += "<h1 style=\"color:"+chapterColor+"; \">" + xml.readElementText(QXmlStreamReader::SkipChildElements) + "</h1>";
+                }
+                if(xml.name()== "verse-number"){
+                    result += "<a><b style=\"color:"+ verseColor +";\">"+ xml.readElementText(QXmlStreamReader::SkipChildElements)+"</b></a> ";
+                }
+                if(xml.name()== "w"){ //read without new line
+                    result += xml.readElementText(QXmlStreamReader::SkipChildElements);
+                }
+                if(xml.name()== "suffix"){
+                    result += xml.readElementText(QXmlStreamReader::SkipChildElements);
+                }
+
+            } else { xml.readNext();}
+        }
+
+        if (xml.hasError()) {
+            // do error handling
+            QMessageBox::critical(0, "Error",xml.errorString(),QMessageBox::Close);
+            xml.raiseError();
+            qDebug() << "Error string: " << xml.errorString();
+            qDebug() << "Error: " << xml.error();
+            return NULL;
+        }
+
+        //qDebug() << "Result: " + result;
+        xmlFile.close();
+        qDebug() << "Reading done.";
+        return result;
 
 
+    } catch (...) { //FIXME: find right exception handler.
+        qDebug() << "Error reading file: ";
 
-            //for tanach xml
-            if(xml.name() == "c"){ //if chapter found, display it
-                QXmlStreamAttributes attr = xml.attributes();
-                result += "<a id=\"ch_";
-                result += attr.first().value().toString();
-                result += "\"><h1 dir=\"rtl\" style=\"color:";
-                result += chapterColor;
-                result += ";\">";
-                result += attr.first().value().toString();
-                result += "</h1></a>";
-                result += "\n";
-                currentChapter++;
-            }
-
-            //for tanach xml
-            if(xml.name() == "v"){
-                QXmlStreamAttributes attr = xml.attributes();
-                result += "<a id=\"c";
-                result += currentChapter + "_v";
-                result += attr.first().value().toString();
-                result += "\"><b style=\"color:";
-                result += verseColor;
-                result += ";\">";
-                result += attr.first().value().toString();
-                result += "</b></a>";
-                result += " ";
-            }
-
-            //for tanach xml
-            if(xml.name() == "pe"){
-                result += " <b style=\"color:";
-                result += parashahColor;
-                result += ";\">פ</b><br />";
-            }
-            if(xml.name() == "samekh"){
-                result += "<b style=\"color:";
-                result += parashahColor;
-                result += ";\">ס</b> ";
-            }
-
-            //for sblgnt
-            if(xml.name()== "title"){
-                result += "<h1 style=\"color:"+chapterColor+"; \">" + xml.readElementText(QXmlStreamReader::SkipChildElements) + "</h1>";
-            }
-            if(xml.name()== "verse-number"){
-                result += "<a><b style=\"color:"+ verseColor +";\">"+ xml.readElementText(QXmlStreamReader::SkipChildElements)+"</b></a> ";
-            }
-            if(xml.name()== "w"){ //read without new line
-                result += xml.readElementText(QXmlStreamReader::SkipChildElements);
-            }
-            if(xml.name()== "suffix"){
-                result += xml.readElementText(QXmlStreamReader::SkipChildElements);
-            }
-
-        } else { xml.readNext();}
+        return NULL;
     }
 
-    if (xml.hasError()) {
-        // do error handling
-        QMessageBox::critical(0, "Error",xml.errorString(),QMessageBox::Close);
-        xml.raiseError();
-        qDebug() << "Error string: " << xml.errorString();
-        qDebug() << "Error: " << xml.error();
-    }
-
-    //qDebug() << "Result: " + result;
-    xmlFile.close();
-    qDebug() << "reading done.";
-    return result;
 }
 
 QString xmlReader::loadInfo(QString fileName){

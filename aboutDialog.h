@@ -9,19 +9,23 @@
  * @brief
  *
  */
-class aboutDialog : public QWidget
+class AboutDialog : public QWidget
 {
     Q_OBJECT
+
 public:
     /**
      * @brief
      *
      */
-    static void open();
+    explicit AboutDialog(QWidget *parent = 0);
+    ~AboutDialog();
 
 signals:
 
 public slots:
+private slots:
+    void on_actionQuit_triggered();
 };
 
 #endif // ABOUTDIALOG_H
