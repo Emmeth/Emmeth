@@ -296,9 +296,6 @@ void MainWindow::loadFile(QString fileName, bool newFile)
         //construct new window and menu for pdf
         addPdf(fileName);
 
-        //TO1O: load pdf
-        //QImage pdfImage = pdfReader::load(fileName.fileName()); //FIXME
-        //render pdf Image
 
     }
 
@@ -1149,7 +1146,10 @@ void MainWindow::addPdf(QString fileName){
     widget = new QWidget();
     widget->setLayout(gridLayout);
     //widget->setLayout()
-    QDesktopServices::openUrl(QUrl(fileName, QUrl::TolerantMode));
+
+    //TODO: load pdf
+    pdfReader* reader = new pdfReader();
+    reader->load(fileName);
 
 }
 

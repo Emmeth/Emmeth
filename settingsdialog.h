@@ -65,6 +65,7 @@ private:
     void closeDialog();
     QDialog *sDialog; /**< TODO: describe */
     QComboBox *cmbLanguages; /**< TODO: describe */
+    void loadGeneralTab();
 };
 
 #endif // SETTINGSDIALOG_H

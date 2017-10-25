@@ -35,13 +35,15 @@ AboutDialog::AboutDialog(QWidget *parent) : QWidget (parent)
     dialog->setWindowIcon(QIcon(":/assets/icons/Moleskine.ico"));
 
     //Copyright
-    QLabel *labelAbout = new QLabel(tr("<h1>About Emmeth</h1>"));
+    QLabel *labelAbout = new QLabel(tr("<h1>About Emmeth - אמת</h1>"));
     layout->addWidget(labelAbout);
-    QString version = "<h2>Version info:\n</h2> 0.0.1 (unstable,";
+    QString versionNumber = QCoreApplication::applicationVersion();
+
+    QString versionInfo = "<h2>Version info:\n</h2> "+ versionNumber +" (unstable,";
     QChar c = (0x03B1);
-    version += c;
-    version += ")";
-    QLabel *labelCopyright = new QLabel(version);
+    versionInfo += c;
+    versionInfo += ")";
+    QLabel *labelCopyright = new QLabel(versionInfo);
     layout->addWidget(labelCopyright);
     QString copyright = " Benjamin Schnabel, et al., ";
     c = (0x00a9);

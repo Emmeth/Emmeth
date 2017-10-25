@@ -45,10 +45,10 @@ SettingsDialog::SettingsDialog(QWidget* parent) : QWidget(parent)
     btnSave->setText(QObject::tr("Save"));  
 
     //add the buttons to the layout
-    QHBoxLayout *hBoxLayout = new QHBoxLayout();
-    hBoxLayout->addWidget(btnOk);
-    hBoxLayout->addWidget(btnCancel);
-    hBoxLayout->addWidget(btnSave);
+    //XXX QHBoxLayout *hBoxLayout = new QHBoxLayout();
+    //XXX hBoxLayout->addWidget(btnOk);
+    //XXX hBoxLayout->addWidget(btnCancel);
+    //XXX hBoxLayout->addWidget(btnSave);
 
     QVBoxLayout *vBoxLayout = new QVBoxLayout();
     vBoxLayout->addWidget(cmbLanguages);
@@ -109,9 +109,38 @@ SettingsDialog::SettingsDialog(QWidget* parent) : QWidget(parent)
     tabs->addTab(groupBoxGeneral, tr("General"));
     tabs->addTab(groupBoxLanguages, tr("Languages"));
 
-    QVBoxLayout *layout = new QVBoxLayout();
-    layout->addWidget(tabs);
-    layout->addLayout(hBoxLayout);
+     //GridLayout as master
+    QGridLayout *layout = new QGridLayout();
+    //Header label
+    QLabel *header = new QLabel();
+    //default header
+    header->setText(tr("General"));
+
+    //Search input field
+    QLineEdit *searchInput = new QLineEdit();
+    searchInput->setPlaceholderText(tr("search"));
+
+    //ListWidget on the left side
+    QListWidget *listWidget = new QListWidget();
+    //Add the corresponding items.
+    new QListWidgetItem(tr("General"), listWidget);
+    new QListWidgetItem(tr("Editor"), listWidget);
+    new QListWidgetItem(tr("Languages"), listWidget);
+
+    //XXX QVBoxLayout *layout = new QVBoxLayout();
+    //XXX layout->addWidget(tabs);
+    //XXX layout->addLayout(hBoxLayout);
+
+    layout->addWidget(searchInput,0,0);
+    layout->addWidget(listWidget,1,0,2,1);
+    layout->addWidget(header,0,1);
+    layout->addWidget(tabs,1,1,1,3);
+    layout->addWidget(btnSave,3,0);
+    QSpacerItem *spacer = new QSpacerItem(0, 0, QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
+    layout->addItem(spacer,3,1);
+    layout->addWidget(btnCancel,3,2);
+    layout->addWidget(btnOk,3,3);
+
     setLayout(layout);
 
     setMinimumSize(500,200);
@@ -205,4 +234,8 @@ void SettingsDialog::openFontDialog(){
 
     QFont font = QFontDialog::getFont(&ok, QFont("Arial", 10), this, "Select Latin Font");
     latinFont = font; //TODO: refactor for general use.
+}
+
+void SettingsDialog::loadGeneralTab(){
+
 }

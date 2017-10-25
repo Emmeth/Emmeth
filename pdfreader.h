@@ -4,6 +4,7 @@
 #include <QImage>
 #include <QString>
 #include <QFile>
+#include "PDFParser.h"
 
 /**
  * @brief
@@ -28,7 +29,7 @@ public:
      * @param QString
      * @return QImage
      */
-    static void load(QString);
+    PDFHummus::EStatusCode load(QString);
     /**
      * @brief
      *
@@ -37,6 +38,7 @@ public:
      */
     static QString search(QString value);
 
+    unsigned long pagesCount(QString file);
 private:
     QFile fileName; /**< TODO: describe */
     QImage image; /**< TODO: describe */

@@ -15,6 +15,12 @@ unix:DESTDIR = ../linux/release
 osx:DESTDIR = ../osx/release
 TEMPLATE = app
 VERSION = 0.1
+QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.12
+CONFIG   += x86_64
+CONFIG   += stl
+CONFIG   += c++14
+
+#TODO: configure for win 64 build
 
 #for the icons
 RC_FILE = emmethapp.rc
@@ -81,3 +87,18 @@ HEADERS += \
 FORMS += \
     mainwindow.ui \
     bookstore.ui
+
+#include the PDF-Writer Library (PDF Hummus)
+#TODO: include win 64 libraries
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../libraries/PDF-Writer/PDFWriter/release/ -lPDFWriter
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../libraries/PDF-Writer/PDFWriter/debug/ -lPDFWriter
+else:unix: LIBS += -L$$PWD/../libraries/PDF-Writer/PDFWriter/ -lPDFWriter
+
+INCLUDEPATH += $$PWD/../libraries/PDF-Writer/PDFWriter
+DEPENDPATH += $$PWD/../libraries/PDF-Writer/PDFWriter
+
+win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../libraries/PDF-Writer/PDFWriter/release/libPDFWriter.a
+else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../libraries/PDF-Writer/PDFWriter/debug/libPDFWriter.a
+else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../libraries/PDF-Writer/PDFWriter/release/PDFWriter.lib
+else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../libraries/PDF-Writer/PDFWriter/debug/PDFWriter.lib
+else:unix: PRE_TARGETDEPS += $$PWD/../libraries/PDF-Writer/PDFWriter/libPDFWriter.a
