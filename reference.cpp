@@ -1,8 +1,12 @@
 #include "reference.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <QString>
+
 /*****************
 / class for  referencing the bible and texts
 /
-/ Benjamin Schnabel (2017)
+/ 1Benjamin Schnabel (2017)
 /
 / Structure as follows:
 /  translation | book number* | book name | chapter | verse
@@ -49,13 +53,13 @@
 
 Reference::Reference()
 {
-    String BookNumber;
-    String Book;
-    String Chapter;
-    String Verse;
+    QString BookNumber;
+    QString Book;
+    QString Chapter;
+    QString Verse;
 }
 
-Reference::Reference(const String &s)
+Reference::Reference(QString &s)
 {
 
 }

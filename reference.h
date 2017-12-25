@@ -1,5 +1,8 @@
 #ifndef REFERENCE_H
 #define REFERENCE_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <QString>
 
 
 class Reference
@@ -7,7 +10,7 @@ class Reference
 public:
     Reference();
 
-    Reference(const String &s);
+    Reference(QString &s);
 };
 
 #endif // REFERENCE_H

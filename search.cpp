@@ -1,4 +1,7 @@
 #include "search.h"
+#include <QString>
+#include <stdio.h>
+#include <stdlib.h>
 
 /*****
 This class provides the search algorithm.
@@ -21,17 +24,17 @@ Simple seach:
 */
 
 
-Search::Search(String searchTerm)
+Search::Search(QString searchTerm)
 {
 
 }
 
-Search::Search(String searchTerm, String language)
+Search::Search(QString searchTerm, QString language)
 {
 
 }
 
-Search::Search(String searchTern, String language, String file)
+Search::Search(QString searchTern, QString language, QString file)
 {
 
 }
