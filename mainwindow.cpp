@@ -158,7 +158,7 @@ QString MainWindow::openFileDialog(){
         messageBox.exec();
 
         //TODO: throw an execption and continue without drawing a new mdiArea
-
+    return 0;
     }
 }
 
@@ -183,6 +183,7 @@ QStringList MainWindow::openFilesDialog(){
 
     }else{
         //TODO: throw an execption and continue without drawing a new mdiArea
+        return QStringList("");
     }
 }
 
