@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'bookstore.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.0
+** Created by: Qt User Interface Compiler version 5.10.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -48,9 +48,9 @@ public:
 
     void retranslateUi(QWidget *bookstore)
     {
-        bookstore->setWindowTitle(QApplication::translate("bookstore", "Form", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("bookstore", "Tab 1", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("bookstore", "Tab 2", 0));
+        bookstore->setWindowTitle(QApplication::translate("bookstore", "Form", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("bookstore", "Tab 1", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("bookstore", "Tab 2", nullptr));
     } // retranslateUi
 
 };

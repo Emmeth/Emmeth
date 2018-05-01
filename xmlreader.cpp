@@ -12,7 +12,6 @@
 #include <QMessageBox>
 #include <QDebug>
 #include <QFileInfo>
-#include <QMessageBox>
 #include <QIcon>
 #include <QTextDocument>
 #include <QVector>
@@ -21,7 +20,6 @@
 //#include <QtXmlPatterns/QXmlSchemaValidator>
 
 #include "jsonparser.h"
-
 
 
 xmlReader::xmlReader()

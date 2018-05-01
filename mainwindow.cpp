@@ -55,6 +55,7 @@
 #include <QDir>
 #include <QAction>
 #include <QTextEdit>
+#include <QShortcut>
 
 /**
  * @desc construtor
@@ -83,8 +84,38 @@ MainWindow::MainWindow(QWidget *parent) :
     QApplication::setApplicationVersion("0.1");
 
     //set default shortcuts
-    QShortcut *shortcutCopy = new QShortcut(QKeySequence("Ctrl+Ü"), parent);
+    //cut
+
+    //copy
+    QShortcut *shortcutCopy = new QShortcut(QKeySequence(Qt::Key_Copy), this);
     QObject::connect(shortcutCopy, SIGNAL(activated()), this, SLOT(copy()));
+
+    //paste
+
+    //open
+
+    //save
+
+    //quit
+    QShortcut *shortcutQuit = new QShortcut(QKeySequence(Qt::Key_Alt, Qt::Key_F4), this);
+    QObject::connect(shortcutQuit, SIGNAL(activated()), this, SLOT(on_actionQuit_triggered()));
+
+    //print
+    QShortcut *shortcutPrint= new QShortcut(QKeySequence(Qt::Key_Print), this);
+    QObject::connect(shortcutPrint, SIGNAL(activated()), this, SLOT(printFile()));
+
+    //setting
+    QShortcut *shortcutSettings = new QShortcut(QKeySequence(Qt::Key_F10), this);
+    connect(shortcutSettings, SIGNAL(activated()), this, SLOT(settings()));
+
+    //Fullscreen
+    QShortcut *shortcutFullscreen = new QShortcut(QKeySequence(Qt::Key_F11), this);
+    QObject::connect(shortcutFullscreen, SIGNAL(activated()), this, SLOT(on_action_Fullscreen_triggered()));
+
+    //TODO: Search
+    //QShortcut *shortcutSearch = new QShortcut(QKeySequence(Qt::Key_Control, Qt::Key_Shift, Qt::Key_F), this);
+    //QObject::connect(shortcutSearch, SIGNAL(activated()), this, SLOT(search())));
+
 }
 
 /**
@@ -564,9 +595,9 @@ void MainWindow::createSearchArea(){
 
     //add slots
     //FIXME: these slots are conditional and trigger an error on compiling.
-    QObject::connect(cmbBook, SIGNAL(currentIndexChanged(int)), this, SLOT(bookNameChanged()));
-    //XXX QObject::connect(cmbChapter, SIGNAL(currentIndexChanged(int)), this, SLOT(on_action_cmbChapter_triggered()));
-    //XXX QObject::connect(cmbVerse, SIGNAL(currentIndexChanged(int)),this, SLOT(on_action_cmbVerse_triggered()));
+    connect(cmbBook, SIGNAL(currentIndexChanged(int)), this, SLOT(bookNameChanged()));
+    connect(cmbChapter, SIGNAL(currentIndexChanged(int)), this, SLOT(on_action_cmbChapter_triggered()));
+    connect(cmbVerse, SIGNAL(currentIndexChanged(int)),this, SLOT(on_action_cmbVerse_triggered()));
 
 
 }
@@ -738,6 +769,8 @@ void MainWindow::on_actionAbout_Book_triggered()
     bookInfo();
 }
 
+
+//toogle Fullscreen
 void MainWindow::on_action_Fullscreen_triggered()
 {
 

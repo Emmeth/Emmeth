@@ -6,6 +6,7 @@
 
 QT       += core gui
 QT       += sql
+QT       += xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -34,7 +35,9 @@ SOURCES += main.cpp\
     texteditor.cpp \
     sqldatabase.cpp \
     reference.cpp \
-    search.cpp
+    search.cpp \
+    xmlparser.cpp \
+    pluginslibrary.cpp
 
 RESOURCES += \
     icons.qrc \
@@ -56,7 +59,8 @@ DISTFILES += \
     TODO.md \
     assets/splashscreen.jpg \
     Doxyfile \
-    emmethapp.rc
+    emmethapp.rc \
+    .gitignore
 
 DEPLOYMENT += \
 
@@ -76,7 +80,9 @@ HEADERS += \
     texteditor.h \
     sqldatabase.h \
     reference.h \
-    search.h
+    search.h \
+    xmlparser.h \
+    pluginslibrary.h
 
 FORMS += \
     mainwindow.ui \
