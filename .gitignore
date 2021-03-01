@@ -283,3 +283,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/qt,macos,windows,qtcreator,python
+
+# Exclude build folder
+builds/
+
